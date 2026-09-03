@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-width=1.0">
+    <title>Mục Lục Các Bài Học</title>
+    <!-- Thư viện FontAwesome để lấy Icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        /* Cài đặt hình nền vũ trụ */
+        body {
+            /* Bạn có thể thay link ảnh vũ trụ khác vào phần url() bên dưới nếu muốn */
+            background-image: url('https://images.unsplash.com/photo-1462331940025-496dfbfc7564?q=80&w=2048&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 40px 20px;
+            color: #ffffff;
+        }
+
+        /* Khung chứa các link (Hiệu ứng kính trong suốt) */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: rgba(15, 23, 42, 0.7); /* Màu nền tối trong suốt */
+            padding: 40px;
+            border-radius: 20px;
+            backdrop-filter: blur(10px); /* Làm mờ cảnh phía sau khung */
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.5);
+        }
+
+        h1 {
+            text-align: center;
+            color: #ffd54f; /* Màu vàng sáng */
+            font-size: 36px;
+            margin-bottom: 40px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+        }
+
+        /* Lưới hiển thị các link */
+        .link-grid {
+            display: grid;
+            /* Tự động chia cột, mỗi cột rộng tối thiểu 150px */
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            gap: 20px;
+        }
+
+        /* Thiết kế từng nút link */
+        .link-item {
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            padding: 15px;
+            border-radius: 12px;
+            text-decoration: none;
+            color: #ffffff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            font-weight: bold;
+            font-size: 16px;
+            transition: all 0.3s ease;
+        }
+
+        /* Hiệu ứng khi di chuột vào nút link */
+        .link-item:hover {
+            background: rgba(255, 213, 79, 0.2);
+            border-color: #ffd54f;
+            color: #ffd54f;
+            transform: translateY(-5px); /* Nẩy lên nhẹ */
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Màu của icon */
+        .link-item i {
+            color: #64b5f6; /* Màu xanh biển nhạt */
+            font-size: 18px;
+            transition: all 0.3s ease;
+        }
+
+        /* Đổi màu icon khi di chuột */
+        .link-item:hover i {
+            color: #ffd54f;
+        }
+
+        /* Tương thích cho màn hình điện thoại */
+        @media (max-width: 600px) {
+            .container { padding: 20px; }
+            h1 { font-size: 24px; }
+            .link-grid { grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>🌌 TOÁN LỚP 5🌌</h1>
+        
+        <!-- Khung này sẽ chứa 100 links được tạo bằng Javascript bên dưới -->
+        <div class="link-grid" id="menu-container"></div>
+    </div>
+
+    <script>
+        // Lấy thẻ chứa (container)
+        const menuContainer = document.getElementById('menu-container');
+
+        // Vòng lặp tự động tạo 100 links từ index1.html đến index100.html
+        for (let i = 1; i <= 100; i++) {
+            // Tạo một thẻ <a>
+            const linkElement = document.createElement('a');
+            
+            // Gán đường dẫn href
+            linkElement.href = `index${i}.html`;
+            
+            // Gán class để CSS trang trí
+            linkElement.className = 'link-item';
+            
+            // Nội dung bên trong thẻ <a> gồm Icon tên lửa và Chữ
+            // Bạn có thể đổi chữ "Bài" thành chữ khác nếu muốn
+            linkElement.innerHTML = `<i class="fa-solid fa-rocket"></i> Bài ${i}`;
+            
+            // Thêm thẻ <a> vào trong khung
+            menuContainer.appendChild(linkElement);
+        }
+    </script>
+
+</body>
+</html>
