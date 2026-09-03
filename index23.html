@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-width=1.0">
+    <title>Bài 23: Chia số tự nhiên cho số tự nhiên ra số thập phân - Toán Lớp 5</title>
+    <!-- Cấu hình MathJax để render công thức toán học -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+      window.MathJax = {
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']],
+          displayMath: [['$$', '$$'], ['\\[', '\\]']]
+        }
+      };
+    </script>
+    <style>
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            background-color: #f4f9f4; 
+            color: #333; 
+            line-height: 1.6; 
+            padding: 20px; 
+            margin: 0;
+        }
+        .container { 
+            max-width: 800px; 
+            margin: 0 auto; 
+            background: #fff; 
+            padding: 30px; 
+            border-radius: 12px; 
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1); 
+        }
+        h1 { color: #2e7d32; text-align: center; border-bottom: 2px solid #a5d6a7; padding-bottom: 10px; }
+        h2 { color: #1565c0; margin-top: 30px; }
+        h3 { color: #d84315; }
+        .theory-box { 
+            background: #e3f2fd; 
+            padding: 15px; 
+            border-left: 5px solid #1976d2; 
+            border-radius: 5px; 
+            margin-bottom: 20px; 
+        }
+        .exercise-box { 
+            background: #fff3e0; 
+            padding: 15px; 
+            border-left: 5px solid #ff9800; 
+            border-radius: 5px; 
+            margin-bottom: 20px; 
+        }
+        .solution-box { 
+            background: #e8f5e9; 
+            padding: 15px; 
+            border-left: 5px solid #43a047; 
+            border-radius: 5px; 
+            margin-top: 30px; 
+        }
+        ul { margin-top: 5px; }
+        .math-step { margin-left: 20px; margin-bottom: 15px; }
+        .highlight { font-weight: bold; color: #d32f2f; }
+        .rule-box { background-color: #fff9c4; padding: 10px; border-radius: 5px; border-left: 4px solid #fbc02d; font-weight: bold; margin-top: 10px; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Bài 23: Chia một số tự nhiên cho một số tự nhiên<br>mà thương tìm được là một số thập phân</h1>
+    <p style="text-align: center; font-style: italic;">"Đôi khi phép chia tưởng chừng như bế tắc vì còn dư, nhưng chỉ cần kiên nhẫn thêm một dấu phẩy và một số 0 tròn trịa, cánh cửa mới lại mở ra!"</p>
+
+    <h2>I. Kiến thức cần nhớ</h2>
+    <div class="theory-box">
+        <p>Từ trước đến nay, khi chia hai số tự nhiên mà còn dư, các con thường dừng lại. Nhưng với số thập phân, chúng ta có thể chia tiếp để tìm ra kết quả chính xác đến từng li!</p>
+        
+        <div class="rule-box">
+            Khi chia một số tự nhiên cho một số tự nhiên mà còn dư, ta tiếp tục chia theo 3 bước:
+            <ul>
+                <li><strong>Bước 1:</strong> Viết <strong>dấu phẩy</strong> vào bên phải số thương.</li>
+                <li><strong>Bước 2:</strong> Viết thêm <strong>chữ số 0</strong> vào bên phải số dư.</li>
+                <li><strong>Bước 3:</strong> Lấy số mới tạo thành chia tiếp cho số chia. (Nếu lại còn dư, ta cứ việc thêm số 0 vào số dư mới rồi lại chia tiếp).</li>
+            </ul>
+        </div>
+
+        <h3>Ví dụ mẫu: Tính $27 : 4$</h3>
+        <ul>
+            <li>Ta lấy $27 : 4 = 6$, dư $3$.</li>
+            <li>Để chia tiếp, ta viết <strong>dấu phẩy</strong> vào bên phải số $6$ (thành $\mathbf{6,}$ ).</li>
+            <li>Thêm số <strong>$0$</strong> vào bên phải số dư $3$ (thành $30$). Lấy $30 : 4 = 7$, dư $2$. Thương lúc này là $6,7$.</li>
+            <li>Vẫn còn dư $2$, ta lại thêm <strong>$0$</strong> vào số dư $2$ (thành $20$). Lấy $20 : 4 = 5$, dư $0$.</li>
+            <li>Phép chia kết thúc. Kết quả: $\mathbf{27 : 4 = 6,75}$.</li>
+        </ul>
+        
+        <p><strong>Lưu ý đặc biệt:</strong> Nếu số bị chia BÉ HƠN số chia (Ví dụ: $3 : 4$), ta lấy $3 : 4 = \mathbf{0}$, viết dấu phẩy vào sau số $0$, rồi thêm một chữ số $0$ vào số $3$ thành $30$ và chia bình thường nhé!</p>
+    </div>
+
+    <h2>II. Bài tập tự luyện</h2>
+    <div class="exercise-box">
+        <p><strong>Bài 1:</strong> Đặt tính rồi tính:</p>
+        <ul>
+            <li>a) $12 : 5$</li>
+            <li>b) $43 : 4$</li>
+        </ul>
+        
+        <p><strong>Bài 2:</strong> Đặt tính rồi tính (Trường hợp số bị chia bé hơn số chia):</p>
+        <ul>
+            <li>a) $3 : 4$</li>
+            <li>b) $6 : 8$</li>
+        </ul>
+
+        <p><strong>Bài 3:</strong> Sư phụ có một cuộn dây dù dài $15 \text{ m}$. Sư phụ muốn cắt cuộn dây đó thành $4$ đoạn dài bằng nhau để các chú tiểu buộc những bao gạo lớn. Hỏi mỗi đoạn dây dù dài bao nhiêu mét?</p>
+
+        <p><strong>Bài 4:</strong> Nhà bếp chùa thu hoạch được $9 \text{ kg}$ hạt sen. Sư cô muốn chia đều số hạt sen này vào $2$ hũ sành để bảo quản. Hỏi mỗi hũ đựng bao nhiêu ki-lô-gam hạt sen?</p>
+    </div>
+
+    <h2>III. Lời giải chi tiết (Làm nháp xong mới được xem nhé!)</h2>
+    <div class="solution-box">
+        <p><strong>Bài 1: Chia tiếp khi có số dư</strong></p>
+        <div class="math-step">
+            a) $12 : 5 = \mathbf{2,4}$<br>
+            <em>(Giải thích: $12 : 5 = 2$ dư $2$. Phẩy ở thương, thêm số $0$ vào dư $2$ thành $20$. $20 : 5 = 4$).</em>
+        </div>
+        <div class="math-step">
+            b) $43 : 4 = \mathbf{10,75}$<br>
+            <em>(Giải thích: $43 : 4 = 10$ dư $3$. Phẩy ở thương, thêm $0$ thành $30$. $30 : 4 = 7$ dư $2$. Lại thêm $0$ thành $20$. $20 : 4 = 5$).</em>
+        </div>
+
+        <p><strong>Bài 2: Số bị chia bé hơn số chia</strong></p>
+        <div class="math-step">
+            a) $3 : 4 = \mathbf{0,75}$<br>
+            <em>(Giải thích: $3$ không chia được cho $4$, viết $0$ vào thương. Phẩy ở thương, thêm $0$ vào $3$ thành $30$. $30 : 4 = 7$ dư $2$, thêm $0$ thành $20$, $20 : 4 = 5$).</em>
+        </div>
+        <div class="math-step">
+            b) $6 : 8 = \mathbf{0,75}$<br>
+            <em>(Giải thích: $6$ chia $8$ được $0$ dư $6$. Phẩy ở thương, thêm $0$ thành $60$. $60 : 8 = 7$ dư $4$, thêm $0$ thành $40$, $40 : 8 = 5$).</em>
+        </div>
+
+        <p><strong>Bài 3: Bài toán cắt dây dù</strong></p>
+        <div class="math-step">
+            <em>Bài giải:</em><br>
+            Mỗi đoạn dây dù có chiều dài là:<br>
+            $$ 15 : 4 = 3,75 \text{ (m)} $$<br>
+            <em>(Cách tính: $15 : 4 = 3$ dư $3$, phẩy ở thương, thêm $0$ thành $30$, $30 : 4 = 7$ dư $2$, thêm $0$ thành $20$, $20 : 4 = 5$).</em><br>
+            <strong>Đáp số:</strong> $3,75 \text{ m}$.
+        </div>
+
+        <p><strong>Bài 4: Bài toán chia hạt sen</strong></p>
+        <div class="math-step">
+            <em>Bài giải:</em><br>
+            Mỗi hũ sành đựng số ki-lô-gam hạt sen là:<br>
+            $$ 9 : 2 = 4,5 \text{ (kg)} $$<br>
+            <em>(Cách tính: $9 : 2 = 4$ dư $1$, phẩy ở thương, thêm $0$ thành $10$, $10 : 2 = 5$).</em><br>
+            <strong>Đáp số:</strong> $4,5 \text{ kg}$.
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>

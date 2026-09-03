@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-width=1.0">
+    <title>Bài 28: Giải toán về tỉ số phần trăm (Dạng 1) - Toán Lớp 5</title>
+    <!-- Cấu hình MathJax để render công thức toán học -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+      window.MathJax = {
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']],
+          displayMath: [['$$', '$$'], ['\\[', '\\]']]
+        }
+      };
+    </script>
+    <style>
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            background-color: #f4f9f4; 
+            color: #333; 
+            line-height: 1.6; 
+            padding: 20px; 
+            margin: 0;
+        }
+        .container { 
+            max-width: 800px; 
+            margin: 0 auto; 
+            background: #fff; 
+            padding: 30px; 
+            border-radius: 12px; 
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1); 
+        }
+        h1 { color: #2e7d32; text-align: center; border-bottom: 2px solid #a5d6a7; padding-bottom: 10px; }
+        h2 { color: #1565c0; margin-top: 30px; }
+        h3 { color: #d84315; }
+        .theory-box { 
+            background: #e3f2fd; 
+            padding: 15px; 
+            border-left: 5px solid #1976d2; 
+            border-radius: 5px; 
+            margin-bottom: 20px; 
+        }
+        .exercise-box { 
+            background: #fff3e0; 
+            padding: 15px; 
+            border-left: 5px solid #ff9800; 
+            border-radius: 5px; 
+            margin-bottom: 20px; 
+        }
+        .solution-box { 
+            background: #e8f5e9; 
+            padding: 15px; 
+            border-left: 5px solid #43a047; 
+            border-radius: 5px; 
+            margin-top: 30px; 
+        }
+        ul { margin-top: 5px; }
+        .math-step { margin-left: 20px; margin-bottom: 15px; }
+        .highlight { font-weight: bold; color: #d32f2f; }
+        .rule-box { background-color: #fff9c4; padding: 10px; border-radius: 5px; border-left: 4px solid #fbc02d; font-weight: bold; margin-top: 10px; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Bài 28: Giải toán về tỉ số phần trăm (Dạng 1)</h1>
+    <h3 style="text-align: center; color: #388e3c;">Tìm tỉ số phần trăm của hai số</h3>
+    <p style="text-align: center; font-style: italic;">"Để biết sự tinh tấn của mình so với ngày hôm qua, ta dùng phép so sánh. Tìm tỉ số phần trăm chính là tìm xem một phần chiếm bao nhiêu không gian trong một tổng thể đấy các con!"</p>
+
+    <h2>I. Kiến thức cần nhớ</h2>
+    <div class="theory-box">
+        <p>Muốn tìm tỉ số phần trăm của hai số $A$ và $B$, ta làm theo <strong>2 bước</strong> cực kỳ đơn giản sau:</p>
+        
+        <div class="rule-box">
+            <ul>
+                <li><strong>Bước 1: Tìm thương.</strong> Lấy số thứ nhất chia cho số thứ hai ($A : B$).</li>
+                <li><strong>Bước 2: Viết thành phần trăm.</strong> Nhân thương đó với $100$ (tức là dời dấu phẩy sang phải 2 bước) rồi viết thêm ký hiệu <strong>$\%$</strong> vào bên phải.</li>
+            </ul>
+        </div>
+
+        <h3>Ví dụ mẫu:</h3>
+        <p>Tìm tỉ số phần trăm của <strong>$3$</strong> và <strong>$4$</strong>.</p>
+        <ul>
+            <li>Ta lấy: $3 : 4 = 0,75$</li>
+            <li>Đổi $0,75$ thành tỉ số phần trăm: $0,75 \times 100 = 75$, viết thêm $\%$ thành $\mathbf{75\%}$.</li>
+            <li><em>Trình bày ngắn gọn trong bài làm:</em> $\mathbf{3 : 4 = 0,75 = 75\%}$.</li>
+        </ul>
+    </div>
+
+    <h2>II. Bài tập tự luyện</h2>
+    <div class="exercise-box">
+        <p><strong>Bài 1:</strong> Tìm tỉ số phần trăm của các cặp số sau (Trình bày theo mẫu $A : B = \dots = \dots \%$):</p>
+        <ul>
+            <li>a) $15$ và $40$</li>
+            <li>b) $1,2$ và $2,5$</li>
+        </ul>
+        
+        <p><strong>Bài 2:</strong> Chùa ta hiện có tất cả $25$ vị xuất gia đang tu tập, trong đó có $12$ chú tiểu. Hỏi số chú tiểu chiếm bao nhiêu phần trăm tổng số người xuất gia trong chùa?</p>
+
+        <p><strong>Bài 3:</strong> Mùa xuân năm nay, sư phụ gieo $50$ hạt sen vào đầm lầy trước cổng chùa. Sau một tháng, có $42$ hạt sen nảy mầm và vươn lên thành những lá sen xanh mướt. Hỏi tỉ số phần trăm hạt sen nảy mầm là bao nhiêu?</p>
+
+        <p><strong>Bài 4:</strong> Bếp chùa làm $40$ chiếc bánh chưng chay. Trong lúc luộc bánh, do lửa hơi to nên có $2$ chiếc bánh bị bục lạt. Hỏi số bánh bị bục lạt chiếm bao nhiêu phần trăm tổng số bánh đã nấu?</p>
+    </div>
+
+    <h2>III. Lời giải chi tiết (Làm nháp cẩn thận rồi mới xem nhé!)</h2>
+    <div class="solution-box">
+        <p><strong>Bài 1: Luyện tập cơ bản</strong></p>
+        <div class="math-step">
+            a) Tỉ số phần trăm của $15$ và $40$ là:<br>
+            $15 : 40 = 0,375 = \mathbf{37,5\%}$
+        </div>
+        <div class="math-step">
+            b) Tỉ số phần trăm của $1,2$ và $2,5$ là:<br>
+            $1,2 : 2,5 = 0,48 = \mathbf{48\%}$
+        </div>
+
+        <p><strong>Bài 2: Bài toán số chú tiểu</strong></p>
+        <div class="math-step">
+            <em>Bài giải:</em><br>
+            Tỉ số phần trăm của số chú tiểu so với tổng số người xuất gia là:<br>
+            $$ 12 : 25 = 0,48 = 48\% $$<br>
+            <strong>Đáp số:</strong> $48\%$.
+        </div>
+
+        <p><strong>Bài 3: Bài toán gieo hạt sen</strong></p>
+        <div class="math-step">
+            <em>Bài giải:</em><br>
+            Tỉ số phần trăm hạt sen nảy mầm là:<br>
+            $$ 42 : 50 = 0,84 = 84\% $$<br>
+            <strong>Đáp số:</strong> $84\%$.
+        </div>
+
+        <p><strong>Bài 4: Bài toán luộc bánh chưng</strong></p>
+        <div class="math-step">
+            <em>Bài giải:</em><br>
+            Tỉ số phần trăm của số bánh bị bục lạt so với tổng số bánh là:<br>
+            $$ 2 : 40 = 0,05 = 5\% $$<br>
+            <strong>Đáp số:</strong> $5\%$.
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>

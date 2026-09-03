@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-width=1.0">
+    <title>Bài 16: Các đơn vị đo diện tích - Toán Lớp 5</title>
+    <!-- Cấu hình MathJax để render công thức toán học -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+      window.MathJax = {
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']],
+          displayMath: [['$$', '$$'], ['\\[', '\\]']]
+        }
+      };
+    </script>
+    <style>
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            background-color: #f4f9f4; 
+            color: #333; 
+            line-height: 1.6; 
+            padding: 20px; 
+            margin: 0;
+        }
+        .container { 
+            max-width: 800px; 
+            margin: 0 auto; 
+            background: #fff; 
+            padding: 30px; 
+            border-radius: 12px; 
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1); 
+        }
+        h1 { color: #2e7d32; text-align: center; border-bottom: 2px solid #a5d6a7; padding-bottom: 10px; }
+        h2 { color: #1565c0; margin-top: 30px; }
+        h3 { color: #d84315; }
+        .theory-box { 
+            background: #e3f2fd; 
+            padding: 15px; 
+            border-left: 5px solid #1976d2; 
+            border-radius: 5px; 
+            margin-bottom: 20px; 
+        }
+        .exercise-box { 
+            background: #fff3e0; 
+            padding: 15px; 
+            border-left: 5px solid #ff9800; 
+            border-radius: 5px; 
+            margin-bottom: 20px; 
+        }
+        .solution-box { 
+            background: #e8f5e9; 
+            padding: 15px; 
+            border-left: 5px solid #43a047; 
+            border-radius: 5px; 
+            margin-top: 30px; 
+        }
+        ul { margin-top: 5px; }
+        .math-step { margin-left: 20px; margin-bottom: 15px; }
+        table { width: 100%; border-collapse: collapse; margin: 15px 0; background: #fff; }
+        th, td { border: 1px solid #ccc; padding: 10px; text-align: center; }
+        th { background-color: #bbdefb; color: #0d47a1; }
+        .highlight { font-weight: bold; color: #d32f2f; }
+        .tip-box { background-color: #fff9c4; padding: 10px; border-radius: 5px; border-left: 4px solid #fbc02d; font-weight: bold; margin-top: 10px; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Bài 16: Các đơn vị đo diện tích</h1>
+    <p style="text-align: center; font-style: italic;">"Mỗi một mét vuông sân chùa đều in dấu những bước chân chánh niệm. Hôm nay chúng ta cùng lập ra một bảng hệ thống để đo lường không gian xung quanh mình nhé!"</p>
+
+    <h2>I. Kiến thức cần nhớ</h2>
+    <div class="theory-box">
+        <h3>1. Bảng đơn vị đo diện tích</h3>
+        <p>Các đơn vị đo diện tích được sắp xếp từ lớn đến bé như sau:</p>
+        <table>
+            <tr>
+                <th>Lớn hơn $m^2$</th>
+                <th>Mét vuông</th>
+                <th>Bé hơn $m^2$</th>
+            </tr>
+            <tr>
+                <td>$\mathbf{km^2} \quad \mathbf{hm^2} \text{ (ha)} \quad \mathbf{dam^2}$</td>
+                <td>$\mathbf{m^2}$</td>
+                <td>$\mathbf{dm^2} \quad \mathbf{cm^2} \quad \mathbf{mm^2}$</td>
+            </tr>
+        </table>
+
+        <h3>2. Quy luật chuyển đổi</h3>
+        <p>Khác với đo độ dài (cách nhau 10 lần), trong bảng đơn vị đo diện tích:</p>
+        <ul>
+            <li>Hai đơn vị liền kề nhau gấp hoặc kém nhau <strong>100 lần</strong>.</li>
+            <li><strong>Đổi từ LỚN sang bé:</strong> Ta nhân với $100$ (thêm 2 chữ số 0).</li>
+            <li><strong>Đổi từ BÉ sang lớn:</strong> Ta chia cho $100$ (bớt 2 chữ số 0, hoặc viết dưới dạng phân số/số thập phân).</li>
+        </ul>
+
+        <div class="tip-box">
+            Mẹo nhỏ dễ nhớ cho các con:<br>
+            Đơn vị đo diện tích luôn có số <strong>$2$</strong> nhỏ xíu ở trên đầu ($m^{\mathbf{2}}, cm^{\mathbf{2}}$...). Các con cứ nhớ số <strong>$2$</strong> đó tượng trưng cho <strong>$2$ chữ số $0$</strong> nhé. Mỗi lần nhảy sang đơn vị bên cạnh là phải thêm hoặc bớt <strong>$2$ chữ số $0$</strong>!
+        </div>
+    </div>
+
+    <h2>II. Bài tập tự luyện</h2>
+    <div class="exercise-box">
+        <p><strong>Bài 1:</strong> Điền số thích hợp vào chỗ chấm (Đổi từ đơn vị lớn sang bé):</p>
+        <ul>
+            <li>a) $4 \text{ m}^2 = \dots \text{ dm}^2$</li>
+            <li>b) $7 \text{ dm}^2 = \dots \text{ cm}^2$</li>
+            <li>c) $3 \text{ m}^2 15 \text{ dm}^2 = \dots \text{ dm}^2$</li>
+        </ul>
+        
+        <p><strong>Bài 2:</strong> Điền số thích hợp vào chỗ chấm (Đổi từ đơn vị bé sang lớn):</p>
+        <ul>
+            <li>a) $600 \text{ dm}^2 = \dots \text{ m}^2$</li>
+            <li>b) $50 \ 000 \text{ cm}^2 = \dots \text{ m}^2$</li>
+        </ul>
+
+        <p><strong>Bài 3:</strong> Viết dưới dạng phân số thập phân:</p>
+        <ul>
+            <li>a) $1 \text{ dm}^2 = \dots \text{ m}^2$</li>
+            <li>b) $9 \text{ cm}^2 = \dots \text{ dm}^2$</li>
+        </ul>
+
+        <p><strong>Bài 4:</strong> Sư phụ muốn lát lại nền gạch cho Thiền đường. Thiền đường có hình chữ nhật với chiều dài $10 \text{ m}$, chiều rộng $5 \text{ m}$. Sư phụ chọn loại gạch men hình vuông có cạnh dài $5 \text{ dm}$. Hỏi sư phụ cần mua bao nhiêu viên gạch để lát kín nền Thiền đường đó? (Biết phần mạch vữa là không đáng kể).</p>
+    </div>
+
+    <h2>III. Lời giải chi tiết (Nhớ tự nhẩm trước rồi mới xem đáp án các con nhé!)</h2>
+    <div class="solution-box">
+        <p><strong>Bài 1: Đổi sang đơn vị bé hơn</strong></p>
+        <div class="math-step">
+            a) Từ $\text{m}^2$ sang $\text{dm}^2$ cách nhau 1 bước, thêm 2 số 0:<br>
+            $4 \text{ m}^2 = \mathbf{400 \text{ dm}^2}$
+        </div>
+        <div class="math-step">
+            b) Từ $\text{dm}^2$ sang $\text{cm}^2$ cách nhau 1 bước, thêm 2 số 0:<br>
+            $7 \text{ dm}^2 = \mathbf{700 \text{ cm}^2}$
+        </div>
+        <div class="math-step">
+            c) Ta có $3 \text{ m}^2 = 300 \text{ dm}^2$.<br>
+            Vậy: $3 \text{ m}^2 15 \text{ dm}^2 = 300 + 15 = \mathbf{315 \text{ dm}^2}$
+        </div>
+
+        <p><strong>Bài 2: Đổi sang đơn vị lớn hơn</strong></p>
+        <div class="math-step">
+            a) Từ $\text{dm}^2$ lên $\text{m}^2$ cách nhau 1 bước, bớt 2 số 0:<br>
+            $600 \text{ dm}^2 = \mathbf{6 \text{ m}^2}$
+        </div>
+        <div class="math-step">
+            b) Từ $\text{cm}^2$ lên $\text{m}^2$ cách nhau 2 bước (qua $\text{dm}^2$), ta bớt 4 số 0:<br>
+            $50 \ 000 \text{ cm}^2 = \mathbf{5 \text{ m}^2}$
+        </div>
+
+        <p><strong>Bài 3: Viết dưới dạng phân số</strong></p>
+        <div class="math-step">
+            a) $1 \text{ m}^2 = 100 \text{ dm}^2$, nên ngược lại:<br>
+            $1 \text{ dm}^2 = \mathbf{\frac{1}{100} \text{ m}^2}$
+        </div>
+        <div class="math-step">
+            b) $1 \text{ dm}^2 = 100 \text{ cm}^2$, nên ngược lại:<br>
+            $9 \text{ cm}^2 = \mathbf{\frac{9}{100} \text{ dm}^2}$
+        </div>
+
+        <p><strong>Bài 4: Giải bài toán lát nền</strong></p>
+        <div class="math-step">
+            <em>Bài giải:</em><br>
+            Bước 1: Tính diện tích Thiền đường.<br>
+            Diện tích nền Thiền đường là:<br>
+            $10 \times 5 = 50 \text{ (m}^2)$<br><br>
+            Bước 2: Tính diện tích 1 viên gạch.<br>
+            Diện tích của một viên gạch hình vuông là:<br>
+            $5 \times 5 = 25 \text{ (dm}^2)$<br><br>
+            Bước 3: Đưa về cùng một đơn vị đo để tính toán.<br>
+            Đổi: $50 \text{ m}^2 = 5000 \text{ dm}^2$<br><br>
+            Bước 4: Tính số viên gạch cần dùng.<br>
+            Số viên gạch sư phụ cần dùng để lát nền là:<br>
+            $5000 : 25 = 200 \text{ (viên)}$<br><br>
+            <strong>Đáp số:</strong> $200$ viên gạch.
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-width=1.0">
+    <title>Bài 13: Làm tròn số thập phân - Toán Lớp 5</title>
+    <!-- Cấu hình MathJax để render công thức toán học -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+      window.MathJax = {
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']],
+          displayMath: [['$$', '$$'], ['\\[', '\\]']]
+        }
+      };
+    </script>
+    <style>
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            background-color: #f4f9f4; 
+            color: #333; 
+            line-height: 1.6; 
+            padding: 20px; 
+            margin: 0;
+        }
+        .container { 
+            max-width: 800px; 
+            margin: 0 auto; 
+            background: #fff; 
+            padding: 30px; 
+            border-radius: 12px; 
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1); 
+        }
+        h1 { color: #2e7d32; text-align: center; border-bottom: 2px solid #a5d6a7; padding-bottom: 10px; }
+        h2 { color: #1565c0; margin-top: 30px; }
+        h3 { color: #d84315; }
+        .theory-box { 
+            background: #e3f2fd; 
+            padding: 15px; 
+            border-left: 5px solid #1976d2; 
+            border-radius: 5px; 
+            margin-bottom: 20px; 
+        }
+        .exercise-box { 
+            background: #fff3e0; 
+            padding: 15px; 
+            border-left: 5px solid #ff9800; 
+            border-radius: 5px; 
+            margin-bottom: 20px; 
+        }
+        .solution-box { 
+            background: #e8f5e9; 
+            padding: 15px; 
+            border-left: 5px solid #43a047; 
+            border-radius: 5px; 
+            margin-top: 30px; 
+        }
+        ul { margin-top: 5px; }
+        .math-step { margin-left: 20px; margin-bottom: 15px; }
+        .highlight { font-weight: bold; color: #d32f2f; }
+        .rule-box { background-color: #fff9c4; padding: 10px; border-radius: 5px; border-left: 4px solid #fbc02d; font-weight: bold; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Bài 13: Làm tròn số thập phân</h1>
+    <p style="text-align: center; font-style: italic;">"Làm tròn số cũng giống như sự buông xả trong tu tập. Đôi khi ta cần bỏ qua những phần nhỏ nhặt phía sau để thấy được sự trọn vẹn và nhẹ nhàng hơn!"</p>
+
+    <h2>I. Kiến thức cần nhớ</h2>
+    <div class="theory-box">
+        <p>Để cho các con số thập phân bớt dài dòng và dễ nhớ hơn, ta sử dụng quy tắc <strong>làm tròn số</strong>. Tùy theo yêu cầu, ta có thể làm tròn đến hàng đơn vị, hàng phần mười, hoặc hàng phần trăm...</p>
+        
+        <div class="rule-box">
+            Quy tắc làm tròn: Quan sát chữ số đứng ngay bên phải của hàng cần làm tròn.
+            <ul>
+                <li>Nếu chữ số đó <strong>từ 5 trở lên ($5, 6, 7, 8, 9$)</strong>: Ta <strong>cộng thêm 1</strong> vào hàng cần làm tròn, rồi bỏ đi các chữ số phía sau.</li>
+                <li>Nếu chữ số đó <strong>nhỏ hơn 5 ($0, 1, 2, 3, 4$)</strong>: Ta <strong>giữ nguyên</strong> hàng cần làm tròn, rồi bỏ đi các chữ số phía sau.</li>
+            </ul>
+        </div>
+
+        <h3>1. Làm tròn đến hàng đơn vị (phần nguyên)</h3>
+        <p>Ta nhìn vào chữ số hàng <strong>phần mười</strong> (chữ số đầu tiên sau dấu phẩy).</p>
+        <ul>
+            <li>$4,\mathbf{7}2$ làm tròn đến hàng đơn vị thành $\mathbf{5}$ (Vì $7$ lớn hơn $5$, nên cộng thêm $1$ vào $4$).</li>
+            <li>$12,\mathbf{3}8$ làm tròn đến hàng đơn vị thành $\mathbf{12}$ (Vì $3$ nhỏ hơn $5$, nên giữ nguyên $12$).</li>
+        </ul>
+
+        <h3>2. Làm tròn đến hàng phần mười (1 chữ số sau dấu phẩy)</h3>
+        <p>Ta nhìn vào chữ số hàng <strong>phần trăm</strong> (chữ số thứ hai sau dấu phẩy).</p>
+        <ul>
+            <li>$8,2\mathbf{6}$ làm tròn đến hàng phần mười thành $\mathbf{8,3}$ (Vì $6$ lớn hơn $5$).</li>
+            <li>$0,5\mathbf{1}9$ làm tròn đến hàng phần mười thành $\mathbf{0,5}$ (Vì $1$ nhỏ hơn $5$).</li>
+        </ul>
+    </div>
+
+    <h2>II. Bài tập tự luyện</h2>
+    <div class="exercise-box">
+        <p><strong>Bài 1:</strong> Làm tròn các số thập phân sau đến <strong>hàng đơn vị</strong>:</p>
+        <ul>
+            <li>a) $9,65$</li>
+            <li>b) $24,18$</li>
+            <li>c) $0,82$</li>
+        </ul>
+        
+        <p><strong>Bài 2:</strong> Làm tròn các số thập phân sau đến <strong>hàng phần mười</strong>:</p>
+        <ul>
+            <li>a) $3,45$</li>
+            <li>b) $15,82$</li>
+            <li>c) $7,09$</li>
+        </ul>
+
+        <p><strong>Bài 3:</strong> Làm tròn các số thập phân sau đến <strong>hàng phần trăm</strong>:</p>
+        <ul>
+            <li>a) $2,134$</li>
+            <li>b) $9,996$</li>
+        </ul>
+
+        <p><strong>Bài 4:</strong> Hôm nay có Phật tử cúng dường gạo cho chùa. Khi sư phụ đặt bao gạo lên chiếc cân điện tử, mặt cân hiện con số $45,75 \text{ kg}$. Để dễ ghi chép vào sổ tay nhà bếp, sư phụ muốn làm tròn số gạo này đến <strong>hàng phần mười</strong>. Con hãy giúp sư phụ viết con số đã làm tròn nhé!</p>
+    </div>
+
+    <h2>III. Lời giải chi tiết (Làm xong mới được xem nha!)</h2>
+    <div class="solution-box">
+        <p><strong>Bài 1: Làm tròn đến hàng đơn vị</strong></p>
+        <div class="math-step">
+            a) $9,\mathbf{6}5 \rightarrow \mathbf{10}$ (Chữ số phần mười là $6 \ge 5$, ta cộng $1$ vào $9$ thành $10$).
+        </div>
+        <div class="math-step">
+            b) $24,\mathbf{1}8 \rightarrow \mathbf{24}$ (Chữ số phần mười là $1 < 5$, ta giữ nguyên phần nguyên là $24$).
+        </div>
+        <div class="math-step">
+            c) $0,\mathbf{8}2 \rightarrow \mathbf{1}$ (Chữ số phần mười là $8 \ge 5$, ta cộng $1$ vào $0$ thành $1$).
+        </div>
+
+        <p><strong>Bài 2: Làm tròn đến hàng phần mười</strong></p>
+        <div class="math-step">
+            a) $3,4\mathbf{5} \rightarrow \mathbf{3,5}$ (Chữ số phần trăm là $5 \ge 5$, ta cộng $1$ vào $4$ thành $5$).
+        </div>
+        <div class="math-step">
+            b) $15,8\mathbf{2} \rightarrow \mathbf{15,8}$ (Chữ số phần trăm là $2 < 5$, ta giữ nguyên số $8$).
+        </div>
+        <div class="math-step">
+            c) $7,0\mathbf{9} \rightarrow \mathbf{7,1}$ (Chữ số phần trăm là $9 \ge 5$, ta cộng $1$ vào $0$ thành $1$).
+        </div>
+
+        <p><strong>Bài 3: Làm tròn đến hàng phần trăm</strong></p>
+        <div class="math-step">
+            a) $2,13\mathbf{4} \rightarrow \mathbf{2,13}$ (Ta xét chữ số hàng phần nghìn là $4 < 5$, nên giữ nguyên số $3$).
+        </div>
+        <div class="math-step">
+            b) $9,99\mathbf{6} \rightarrow \mathbf{10,00}$ (Xét hàng phần nghìn là $6 \ge 5$, ta cộng $1$ vào $9$ hàng phần trăm thành $10$, nhớ $1$ lên hàng phần mười, lại tiếp tục nhớ $1$ lên hàng đơn vị, kết quả là $10,00$).
+        </div>
+
+        <p><strong>Bài 4: Giải bài toán ứng dụng</strong></p>
+        <div class="math-step">
+            <em>Bài giải:</em><br>
+            Cân nặng bao gạo là $45,75 \text{ kg}$.<br>
+            Sư phụ muốn làm tròn đến <strong>hàng phần mười</strong>. Ta nhìn vào chữ số hàng phần trăm là số $\mathbf{5}$.<br>
+            Theo quy tắc, vì chữ số đó là $5$ (từ $5$ trở lên) nên ta cộng thêm $1$ vào hàng phần mười (số $7$ cộng $1$ thành $8$).<br>
+            Vậy $45,75 \text{ kg}$ làm tròn đến hàng phần mười sẽ thành $\mathbf{45,8 \text{ kg}}$.<br>
+            <strong>Đáp số:</strong> $45,8 \text{ kg}$.
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>

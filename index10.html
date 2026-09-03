@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-width=1.0">
+    <title>Bài 10: Khái niệm số thập phân - Toán Lớp 5</title>
+    <!-- Cấu hình MathJax để render công thức toán học -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+      window.MathJax = {
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']],
+          displayMath: [['$$', '$$'], ['\\[', '\\]']]
+        }
+      };
+    </script>
+    <style>
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            background-color: #f4f9f4; 
+            color: #333; 
+            line-height: 1.6; 
+            padding: 20px; 
+            margin: 0;
+        }
+        .container { 
+            max-width: 800px; 
+            margin: 0 auto; 
+            background: #fff; 
+            padding: 30px; 
+            border-radius: 12px; 
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1); 
+        }
+        h1 { color: #2e7d32; text-align: center; border-bottom: 2px solid #a5d6a7; padding-bottom: 10px; }
+        h2 { color: #1565c0; margin-top: 30px; }
+        h3 { color: #d84315; }
+        .theory-box { 
+            background: #e3f2fd; 
+            padding: 15px; 
+            border-left: 5px solid #1976d2; 
+            border-radius: 5px; 
+            margin-bottom: 20px; 
+        }
+        .exercise-box { 
+            background: #fff3e0; 
+            padding: 15px; 
+            border-left: 5px solid #ff9800; 
+            border-radius: 5px; 
+            margin-bottom: 20px; 
+        }
+        .solution-box { 
+            background: #e8f5e9; 
+            padding: 15px; 
+            border-left: 5px solid #43a047; 
+            border-radius: 5px; 
+            margin-top: 30px; 
+        }
+        ul { margin-top: 5px; }
+        .math-step { margin-left: 20px; margin-bottom: 15px; }
+        table { width: 100%; border-collapse: collapse; margin: 15px 0; background: #fff; }
+        th, td { border: 1px solid #ccc; padding: 10px; text-align: center; }
+        th { background-color: #bbdefb; color: #0d47a1; }
+        .highlight { font-weight: bold; color: #d32f2f; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Bài 10: Khái niệm số thập phân</h1>
+    <p style="text-align: center; font-style: italic;">"Chào mừng các con đến với một thế giới số hoàn toàn mới. Nếu phân số hơi cồng kềnh, thì số thập phân sẽ giúp chúng ta viết mọi thứ thật gọn gàng và thanh thoát!"</p>
+
+    <h2>I. Kiến thức cần nhớ</h2>
+    <div class="theory-box">
+        <h3>1. Số thập phân từ đâu mà có?</h3>
+        <p>Các phân số thập phân có mẫu số là $10, 100, 1000 \dots$ có thể được viết dưới một dạng mới, rất gọn gàng gọi là <strong>số thập phân</strong>.</p>
+        <ul>
+            <li>$\frac{1}{10}$ được viết thành $0,1$ (đọc là: không phẩy một).</li>
+            <li>$\frac{1}{100}$ được viết thành $0,01$ (đọc là: không phẩy không một).</li>
+            <li>$\frac{1}{1000}$ được viết thành $0,001$ (đọc là: không phẩy không không một).</li>
+        </ul>
+
+        <h3>2. Cấu tạo của một số thập phân</h3>
+        <p>Mỗi số thập phân gồm hai phần được ngăn cách nhau bởi <strong>dấu phẩy</strong> $(,)$ :</p>
+        <ul>
+            <li><strong>Phần nguyên:</strong> Nằm bên TRÁI dấu phẩy.</li>
+            <li><strong>Phần thập phân:</strong> Nằm bên PHẢI dấu phẩy.</li>
+        </ul>
+        
+        <table>
+            <tr>
+                <th>Số thập phân</th>
+                <th>Phần nguyên</th>
+                <th>Dấu phẩy</th>
+                <th>Phần thập phân</th>
+            </tr>
+            <tr>
+                <td>$5,12$</td>
+                <td>$5$</td>
+                <td>,</td>
+                <td>$12$</td>
+            </tr>
+            <tr>
+                <td>$0,08$</td>
+                <td>$0$</td>
+                <td>,</td>
+                <td>$08$</td>
+            </tr>
+        </table>
+        
+        <h3>3. Mẹo nhỏ chuyển đổi:</h3>
+        <p>Phân số thập phân có mẫu số bao nhiêu chữ số $0$ thì phần thập phân (sau dấu phẩy) của số đó có bấy nhiêu chữ số.</p>
+        <p><em>Ví dụ:</em> $\frac{15}{100}$ (mẫu số $100$ có $2$ chữ số $0$) nên viết thành $0,15$ (sau dấu phẩy có $2$ chữ số).</p>
+    </div>
+
+    <h2>II. Bài tập tự luyện</h2>
+    <div class="exercise-box">
+        <p><strong>Bài 1:</strong> Viết các phân số thập phân sau dưới dạng số thập phân:</p>
+        <ul>
+            <li>a) $\frac{7}{10}$</li>
+            <li>b) $\frac{45}{100}$</li>
+            <li>c) $\frac{8}{1000}$</li>
+        </ul>
+        
+        <p><strong>Bài 2:</strong> Viết các hỗn số sau dưới dạng số thập phân:</p>
+        <ul>
+            <li>a) $3 \frac{5}{10}$</li>
+            <li>b) $12 \frac{75}{100}$</li>
+        </ul>
+
+        <p><strong>Bài 3:</strong> Đọc các số thập phân sau và chỉ ra phần nguyên, phần thập phân của chúng:</p>
+        <ul>
+            <li>a) $14,25$</li>
+            <li>b) $0,007$</li>
+        </ul>
+
+        <p><strong>Bài 4:</strong> Sư phụ may một chiếc áo tràng mới cho chú Tiểu cần dùng $\frac{25}{10}$ mét vải. Con hãy giúp sư phụ viết số đo chiều dài tấm vải dưới dạng số thập phân để tiện ghi chép vào sổ nhà chùa nhé!</p>
+    </div>
+
+    <h2>III. Lời giải chi tiết (Các con làm nháp xong rồi mới xem nhé!)</h2>
+    <div class="solution-box">
+        <p><strong>Bài 1: Chuyển phân số thập phân thành số thập phân</strong></p>
+        <div class="math-step">
+            a) $\frac{7}{10} = \mathbf{0,7}$ (Vì mẫu số $10$ có 1 số $0$, nên sau dấu phẩy có 1 chữ số).
+        </div>
+        <div class="math-step">
+            b) $\frac{45}{100} = \mathbf{0,45}$ (Vì mẫu số $100$ có 2 số $0$, nên sau dấu phẩy có 2 chữ số).
+        </div>
+        <div class="math-step">
+            c) $\frac{8}{1000} = \mathbf{0,008}$ (Vì mẫu số $1000$ có 3 số $0$, nên sau dấu phẩy phải có đủ 3 chữ số, ta phải thêm hai chữ số $0$ vào trước số $8$).
+        </div>
+
+        <p><strong>Bài 2: Chuyển hỗn số thành số thập phân</strong></p>
+        <div class="math-step">
+            a) Hỗn số $3 \frac{5}{10}$ có phần nguyên là $3$, phần phân số là $\frac{5}{10}$.<br>
+            Viết thành số thập phân là: $\mathbf{3,5}$.
+        </div>
+        <div class="math-step">
+            b) Hỗn số $12 \frac{75}{100}$ có phần nguyên là $12$, phần phân số là $\frac{75}{100}$.<br>
+            Viết thành số thập phân là: $\mathbf{12,75}$.
+        </div>
+
+        <p><strong>Bài 3: Đọc và phân tích số thập phân</strong></p>
+        <div class="math-step">
+            a) $14,25$ đọc là: <strong>Mười bốn phẩy hai mươi lăm</strong>.<br>
+            Phần nguyên là $14$; phần thập phân là $25$.
+        </div>
+        <div class="math-step">
+            b) $0,007$ đọc là: <strong>Không phẩy không không bảy</strong>.<br>
+            Phần nguyên là $0$; phần thập phân là $007$.
+        </div>
+
+        <p><strong>Bài 4: Giải bài toán ứng dụng</strong></p>
+        <div class="math-step">
+            <em>Bài giải:</em><br>
+            Cách 1: Ta đổi phân số $\frac{25}{10}$ thành hỗn số: $\frac{25}{10} = 2 \frac{5}{10}$.<br>
+            Từ hỗn số $2 \frac{5}{10}$, ta viết thành số thập phân là $\mathbf{2,5}$.<br>
+            <br>
+            Cách 2: Tử số là $25$, mẫu số là $10$ (có 1 chữ số $0$). Nên ta đặt dấu phẩy ở tử số sao cho bên phải dấu phẩy có 1 chữ số. Ta được $\mathbf{2,5}$.<br>
+            <strong>Đáp số:</strong> $\mathbf{2,5}$ mét vải.
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>

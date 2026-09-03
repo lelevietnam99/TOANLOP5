@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-width=1.0">
+    <title>Bài 6: Cộng, trừ hai phân số khác mẫu số - Toán Lớp 5</title>
+    <!-- Cấu hình MathJax để render công thức toán học -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+      window.MathJax = {
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']],
+          displayMath: [['$$', '$$'], ['\\[', '\\]']]
+        }
+      };
+    </script>
+    <style>
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            background-color: #f4f9f4; 
+            color: #333; 
+            line-height: 1.6; 
+            padding: 20px; 
+            margin: 0;
+        }
+        .container { 
+            max-width: 800px; 
+            margin: 0 auto; 
+            background: #fff; 
+            padding: 30px; 
+            border-radius: 12px; 
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1); 
+        }
+        h1 { color: #2e7d32; text-align: center; border-bottom: 2px solid #a5d6a7; padding-bottom: 10px; }
+        h2 { color: #1565c0; margin-top: 30px; }
+        h3 { color: #d84315; }
+        .theory-box { 
+            background: #e3f2fd; 
+            padding: 15px; 
+            border-left: 5px solid #1976d2; 
+            border-radius: 5px; 
+            margin-bottom: 20px; 
+        }
+        .exercise-box { 
+            background: #fff3e0; 
+            padding: 15px; 
+            border-left: 5px solid #ff9800; 
+            border-radius: 5px; 
+            margin-bottom: 20px; 
+        }
+        .solution-box { 
+            background: #e8f5e9; 
+            padding: 15px; 
+            border-left: 5px solid #43a047; 
+            border-radius: 5px; 
+            margin-top: 30px; 
+        }
+        ul { margin-top: 5px; }
+        .math-step { margin-left: 20px; margin-bottom: 15px; }
+        .highlight { font-weight: bold; color: #d32f2f; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Bài 6: Cộng, trừ hai phân số khác mẫu số</h1>
+    <p style="text-align: center; font-style: italic;">"Như những giọt nước khác nguồn cùng chảy về một biển lớn. Để cộng trừ các phân số khác nhau, các con hãy tìm cho chúng một điểm chung nhé!"</p>
+
+    <h2>I. Kiến thức cần nhớ</h2>
+    <div class="theory-box">
+        <h3>Các bước thực hiện</h3>
+        <p>Muốn cộng hoặc trừ hai phân số khác mẫu số, ta phải thực hiện <strong>3 bước</strong> sau:</p>
+        <ul>
+            <li><strong>Bước 1: Quy đồng mẫu số.</strong> (Tìm một mẫu số chung để hai phân số có cùng mẫu số).</li>
+            <li><strong>Bước 2: Thực hiện phép tính.</strong> Cộng (hoặc trừ) hai tử số mới với nhau và <strong>giữ nguyên mẫu số chung</strong>.</li>
+            <li><strong>Bước 3: Rút gọn.</strong> Rút gọn kết quả vừa tìm được thành phân số tối giản (nếu có thể).</li>
+        </ul>
+        
+        <h3>Mẹo nhỏ cho các con:</h3>
+        <ul>
+            <li>Nếu mẫu số của phân số này chia hết cho mẫu số của phân số kia, ta lấy mẫu số lớn làm mẫu số chung để tính toán nhanh hơn.</li>
+            <li>Mọi số tự nhiên đều có thể coi là phân số có mẫu số là $1$. Ví dụ: $2 = \frac{2}{1}$.</li>
+        </ul>
+    </div>
+
+    <h2>II. Bài tập tự luyện</h2>
+    <div class="exercise-box">
+        <p><strong>Bài 1:</strong> Tính:</p>
+        <ul>
+            <li>a) $\frac{1}{2} + \frac{1}{3}$</li>
+            <li>b) $\frac{3}{4} - \frac{2}{5}$</li>
+        </ul>
+        
+        <p><strong>Bài 2:</strong> Tính (Quan sát kỹ để tìm mẫu số chung nhỏ nhất nhé):</p>
+        <ul>
+            <li>a) $\frac{5}{6} + \frac{1}{12}$</li>
+            <li>b) $\frac{7}{8} - \frac{1}{4}$</li>
+        </ul>
+
+        <p><strong>Bài 3:</strong> Tính (Kết hợp với số tự nhiên):</p>
+        <ul>
+            <li>a) $2 + \frac{3}{5}$</li>
+            <li>b) $3 - \frac{4}{7}$</li>
+        </ul>
+
+        <p><strong>Bài 4:</strong> Sư phụ sai chú tiểu nhặt lá Bồ Đề rụng trên sân chùa. Buổi sáng chú nhặt được $\frac{1}{4}$ sân, buổi chiều chú nhặt thêm được $\frac{1}{3}$ sân. Hỏi chú tiểu còn phải nhặt bao nhiêu phần sân nữa thì mới sạch toàn bộ sân? <br><em>(Gợi ý: Toàn bộ sân chùa được coi là $1$ đơn vị).</em></p>
+    </div>
+
+    <h2>III. Lời giải chi tiết (Làm xong rồi mới xem để đối chiếu nhé!)</h2>
+    <div class="solution-box">
+        <p><strong>Bài 1: Cộng, trừ cơ bản</strong></p>
+        <div class="math-step">
+            a) $\frac{1}{2} + \frac{1}{3}$<br>
+            Quy đồng mẫu số chung là $2 \times 3 = 6$:<br>
+            $\frac{1 \times 3}{2 \times 3} + \frac{1 \times 2}{3 \times 2} = \frac{3}{6} + \frac{2}{6} = \mathbf{\frac{5}{6}}$
+        </div>
+        <div class="math-step">
+            b) $\frac{3}{4} - \frac{2}{5}$<br>
+            Quy đồng mẫu số chung là $4 \times 5 = 20$:<br>
+            $\frac{3 \times 5}{4 \times 5} - \frac{2 \times 4}{5 \times 4} = \frac{15}{20} - \frac{8}{20} = \mathbf{\frac{7}{20}}$
+        </div>
+
+        <p><strong>Bài 2: Mẫu số này chia hết cho mẫu số kia</strong></p>
+        <div class="math-step">
+            a) $\frac{5}{6} + \frac{1}{12}$<br>
+            Ta thấy $12$ chia hết cho $6$, nên chọn mẫu số chung là $12$. Ta chỉ cần quy đồng phân số đầu tiên:<br>
+            $\frac{5 \times 2}{6 \times 2} + \frac{1}{12} = \frac{10}{12} + \frac{1}{12} = \frac{11}{12}$<br>
+            Kết quả: $\mathbf{\frac{11}{12}}$
+        </div>
+        <div class="math-step">
+            b) $\frac{7}{8} - \frac{1}{4}$<br>
+            Ta thấy $8$ chia hết cho $4$, nên chọn mẫu số chung là $8$.<br>
+            $\frac{7}{8} - \frac{1 \times 2}{4 \times 2} = \frac{7}{8} - \frac{2}{8} = \mathbf{\frac{5}{8}}$
+        </div>
+
+        <p><strong>Bài 3: Tính với số tự nhiên</strong></p>
+        <div class="math-step">
+            a) $2 + \frac{3}{5}$<br>
+            Viết $2$ thành phân số $\frac{2}{1}$, sau đó quy đồng mẫu số chung là $5$:<br>
+            $\frac{2 \times 5}{1 \times 5} + \frac{3}{5} = \frac{10}{5} + \frac{3}{5} = \mathbf{\frac{13}{5}}$
+        </div>
+        <div class="math-step">
+            b) $3 - \frac{4}{7}$<br>
+            Viết $3$ thành phân số $\frac{3}{1}$, sau đó quy đồng mẫu số chung là $7$:<br>
+            $\frac{3 \times 7}{1 \times 7} - \frac{4}{7} = \frac{21}{7} - \frac{4}{7} = \mathbf{\frac{17}{7}}$
+        </div>
+
+        <p><strong>Bài 4: Giải bài toán có lời văn</strong></p>
+        <div class="math-step">
+            <em>Bài giải:</em><br>
+            Tổng số phần sân mà chú tiểu đã nhặt được trong buổi sáng và buổi chiều là:<br>
+            $$ \frac{1}{4} + \frac{1}{3} $$
+            Quy đồng mẫu số chung là $12$:<br>
+            $$ = \frac{3}{12} + \frac{4}{12} = \frac{7}{12} \text{ (sân)} $$
+            Coi toàn bộ sân chùa là $1$. Số phần sân chú tiểu còn phải nhặt nữa là:<br>
+            $$ 1 - \frac{7}{12} $$
+            Đổi $1$ thành $\frac{12}{12}$ để trừ:<br>
+            $$ = \frac{12}{12} - \frac{7}{12} = \frac{5}{12} \text{ (sân)} $$
+            <strong>Đáp số:</strong> $\mathbf{\frac{5}{12}}$ sân.
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>

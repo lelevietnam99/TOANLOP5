@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-width=1.0">
+    <title>Bài 19: Phép cộng số thập phân - Toán Lớp 5</title>
+    <!-- Cấu hình MathJax để render công thức toán học -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+      window.MathJax = {
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']],
+          displayMath: [['$$', '$$'], ['\\[', '\\]']]
+        }
+      };
+    </script>
+    <style>
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            background-color: #f4f9f4; 
+            color: #333; 
+            line-height: 1.6; 
+            padding: 20px; 
+            margin: 0;
+        }
+        .container { 
+            max-width: 800px; 
+            margin: 0 auto; 
+            background: #fff; 
+            padding: 30px; 
+            border-radius: 12px; 
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1); 
+        }
+        h1 { color: #2e7d32; text-align: center; border-bottom: 2px solid #a5d6a7; padding-bottom: 10px; }
+        h2 { color: #1565c0; margin-top: 30px; }
+        h3 { color: #d84315; }
+        .theory-box { 
+            background: #e3f2fd; 
+            padding: 15px; 
+            border-left: 5px solid #1976d2; 
+            border-radius: 5px; 
+            margin-bottom: 20px; 
+        }
+        .exercise-box { 
+            background: #fff3e0; 
+            padding: 15px; 
+            border-left: 5px solid #ff9800; 
+            border-radius: 5px; 
+            margin-bottom: 20px; 
+        }
+        .solution-box { 
+            background: #e8f5e9; 
+            padding: 15px; 
+            border-left: 5px solid #43a047; 
+            border-radius: 5px; 
+            margin-top: 30px; 
+        }
+        ul { margin-top: 5px; }
+        .math-step { margin-left: 20px; margin-bottom: 15px; }
+        .highlight { font-weight: bold; color: #d32f2f; }
+        .rule-box { background-color: #fff9c4; padding: 10px; border-radius: 5px; border-left: 4px solid #fbc02d; font-weight: bold; margin-top: 10px; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Bài 19: Phép cộng số thập phân</h1>
+    <p style="text-align: center; font-style: italic;">"Từng giọt nước nhỏ gom lại thành sông lớn. Phép cộng số thập phân cũng chỉ là ghép những phần nhỏ bé lại với nhau một cách thật ngay ngắn và tỉ mỉ!"</p>
+
+    <h2>I. Kiến thức cần nhớ</h2>
+    <div class="theory-box">
+        <p>Để cộng hai số thập phân, các con hãy làm theo <strong>3 bước</strong> sau đây:</p>
+        
+        <div class="rule-box">
+            <ul>
+                <li><strong>Bước 1: Đặt tính.</strong> Viết số hạng này dưới số hạng kia sao cho các chữ số ở cùng một hàng đặt thẳng cột với nhau. <em>(Đặc biệt quan trọng: <strong>Dấu phẩy phải thẳng cột với dấu phẩy</strong>).</em></li>
+                <li><strong>Bước 2: Cộng.</strong> Thực hiện phép cộng như cộng các số tự nhiên (cộng từ phải sang trái).</li>
+                <li><strong>Bước 3: Đặt dấu phẩy.</strong> Viết dấu phẩy ở tổng thẳng cột với các dấu phẩy của các số hạng.</li>
+            </ul>
+        </div>
+
+        <h3>Ví dụ mẫu: Tính $15,7 + 8,42$</h3>
+        <p>Ta đặt tính sao cho dấu phẩy thẳng hàng. Số $15,7$ có thể hiểu là $15,70$ để dễ cộng với $8,42$:</p>
+        <p style="font-family: monospace; font-size: 18px; margin-left: 40px;">
+            &nbsp;15,7<br>
+            +<br>
+            &nbsp;&nbsp;8,42<br>
+            -------<br>
+            &nbsp;24,12
+        </p>
+    </div>
+
+    <h2>II. Bài tập tự luyện</h2>
+    <div class="exercise-box">
+        <p><strong>Bài 1:</strong> Đặt tính rồi tính (Nhớ gióng thẳng dấu phẩy các con nhé!):</p>
+        <ul>
+            <li>a) $4,5 + 2,3$</li>
+            <li>b) $12,65 + 7,18$</li>
+            <li>c) $0,75 + 1,4$</li>
+        </ul>
+        
+        <p><strong>Bài 2:</strong> Tính nhẩm (Ghép các số lại để tạo thành số tự nhiên tròn trịa):</p>
+        <ul>
+            <li>a) $2,5 + 3,5$</li>
+            <li>b) $0,4 + 0,6$</li>
+        </ul>
+
+        <p><strong>Bài 3:</strong> Tìm $x$, biết:</p>
+        <ul>
+            <li>a) $x - 3,2 = 4,5$</li>
+        </ul>
+
+        <p><strong>Bài 4:</strong> Hôm nay nhà bếp nấu món chay thết đãi Phật tử. Sư cô mua một quả bí đỏ nặng $2,45 \text{ kg}$ và một củ khoai môn nặng $1,6 \text{ kg}$. Hỏi tổng cân nặng của bí đỏ và khoai môn là bao nhiêu ki-lô-gam?</p>
+    </div>
+
+    <h2>III. Lời giải chi tiết (Làm nháp xong mới xem nhé!)</h2>
+    <div class="solution-box">
+        <p><strong>Bài 1: Đặt tính rồi tính</strong></p>
+        <div class="math-step">
+            a) $4,5 + 2,3 = \mathbf{6,8}$<br>
+            <em>(Hàng phần mười: $5 + 3 = 8$. Hàng đơn vị: $4 + 2 = 6$).</em>
+        </div>
+        <div class="math-step">
+            b) $12,65 + 7,18 = \mathbf{19,83}$<br>
+            <em>(Nhớ gióng thẳng dấu phẩy: phần nguyên $12$ thẳng với $7$, phần thập phân $65$ thẳng với $18$).</em>
+        </div>
+        <div class="math-step">
+            c) $0,75 + 1,4 = \mathbf{2,15}$<br>
+            <em>(Coi $1,4$ là $1,40$. Lấy $75 + 40 = 115$, viết $15$ nhớ $1$ lên hàng đơn vị: $0 + 1 + 1 (\text{nhớ}) = 2$).</em>
+        </div>
+
+        <p><strong>Bài 2: Tính nhẩm</strong></p>
+        <div class="math-step">
+            a) $2,5 + 3,5 = \mathbf{6}$ (Vì $5$ phần mười cộng $5$ phần mười bằng $1$. Lấy $2 + 3 + 1 = 6$).
+        </div>
+        <div class="math-step">
+            b) $0,4 + 0,6 = \mathbf{1}$
+        </div>
+
+        <p><strong>Bài 3: Tìm $x$</strong></p>
+        <div class="math-step">
+            a) $x - 3,2 = 4,5$<br>
+            $x$ là số bị trừ. Muốn tìm số bị trừ, ta lấy hiệu cộng với số trừ:<br>
+            $x = 4,5 + 3,2$<br>
+            $x = \mathbf{7,7}$
+        </div>
+
+        <p><strong>Bài 4: Giải bài toán ứng dụng</strong></p>
+        <div class="math-step">
+            <em>Bài giải:</em><br>
+            Tổng cân nặng của quả bí đỏ và củ khoai môn là:<br>
+            $$ 2,45 + 1,6 = 4,05 \text{ (kg)} $$<br>
+            <em>(Giải thích cách cộng: Gióng thẳng dấu phẩy, $2,45 + 1,60 = 4,05$).</em><br>
+            <strong>Đáp số:</strong> $4,05 \text{ kg}$.
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-width=1.0">
+    <title>Bài 26: Luyện tập chung - Toán Lớp 5</title>
+    <!-- Cấu hình MathJax để render công thức toán học -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+      window.MathJax = {
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']],
+          displayMath: [['$$', '$$'], ['\\[', '\\]']]
+        }
+      };
+    </script>
+    <style>
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            background-color: #f4f9f4; 
+            color: #333; 
+            line-height: 1.6; 
+            padding: 20px; 
+            margin: 0;
+        }
+        .container { 
+            max-width: 800px; 
+            margin: 0 auto; 
+            background: #fff; 
+            padding: 30px; 
+            border-radius: 12px; 
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1); 
+        }
+        h1 { color: #2e7d32; text-align: center; border-bottom: 2px solid #a5d6a7; padding-bottom: 10px; }
+        h2 { color: #1565c0; margin-top: 30px; }
+        h3 { color: #d84315; }
+        .theory-box { 
+            background: #e3f2fd; 
+            padding: 15px; 
+            border-left: 5px solid #1976d2; 
+            border-radius: 5px; 
+            margin-bottom: 20px; 
+        }
+        .exercise-box { 
+            background: #fff3e0; 
+            padding: 15px; 
+            border-left: 5px solid #ff9800; 
+            border-radius: 5px; 
+            margin-bottom: 20px; 
+        }
+        .solution-box { 
+            background: #e8f5e9; 
+            padding: 15px; 
+            border-left: 5px solid #43a047; 
+            border-radius: 5px; 
+            margin-top: 30px; 
+        }
+        ul { margin-top: 5px; }
+        .math-step { margin-left: 20px; margin-bottom: 15px; }
+        .highlight { font-weight: bold; color: #d32f2f; }
+        .rule-box { background-color: #fff9c4; padding: 10px; border-radius: 5px; border-left: 4px solid #fbc02d; font-weight: bold; margin-top: 10px; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Bài 26: Luyện tập chung (4 phép tính)</h1>
+    <p style="text-align: center; font-style: italic;">"Cộng, Trừ, Nhân, Chia cũng giống như Tứ vô lượng tâm: Từ, Bi, Hỷ, Xả. Chỉ cần con cẩn thận và thấu đáo, phép toán nào cũng sẽ tròn vẹn!"</p>
+
+    <h2>I. Nhìn lại những gì đã học</h2>
+    <div class="theory-box">
+        <p>Chúng ta cùng ôn lại 4 thần chú khi làm việc với số thập phân nhé:</p>
+        <ul>
+            <li><strong>Phép Cộng & Phép Trừ:</strong> Đặt tính sao cho <strong>dấu phẩy thẳng cột</strong>. Nếu thiếu chữ số thì cứ mạnh dạn thêm số $0$ vào bên phải phần thập phân.</li>
+            <li><strong>Phép Nhân:</strong> Đặt tính và nhân như số tự nhiên. Đếm xem cả hai thừa số có tổng cộng <strong>bao nhiêu chữ số sau dấu phẩy</strong> thì tách ở tích ra bấy nhiêu chữ số từ phải sang trái.</li>
+            <li><strong>Phép Chia cho số thập phân:</strong> Tuyệt đối không để số chia có dấu phẩy. Hãy <strong>dịch chuyển dấu phẩy</strong> của số bị chia sang phải để gạch bỏ dấu phẩy ở số chia rồi mới tính!</li>
+        </ul>
+        
+        <div class="rule-box">
+            <strong>Ghi nhớ thứ tự thực hiện phép tính:</strong>
+            <p>Trong một biểu thức, ta phải tính trong ngoặc đơn $()$ trước. Nếu không có ngoặc, ta ưu tiên <strong>Nhân / Chia trước, Cộng / Trừ sau</strong>.</p>
+        </div>
+    </div>
+
+    <h2>II. Bài tập tự luyện</h2>
+    <div class="exercise-box">
+        <p><strong>Bài 1:</strong> Đặt tính rồi tính (Cộng và Trừ):</p>
+        <ul>
+            <li>a) $14,56 + 9,8$</li>
+            <li>b) $30 - 4,25$</li>
+        </ul>
+        
+        <p><strong>Bài 2:</strong> Đặt tính rồi tính (Nhân và Chia):</p>
+        <ul>
+            <li>a) $7,4 \times 3,5$</li>
+            <li>b) $18,75 : 1,5$</li>
+        </ul>
+
+        <p><strong>Bài 3:</strong> Tính giá trị của biểu thức (Cẩn thận thứ tự thực hiện phép tính nhé):</p>
+        <ul>
+            <li>a) $(2,5 + 3,8) \times 1,2$</li>
+            <li>b) $15,6 - 8,4 : 2,4$</li>
+        </ul>
+
+        <p><strong>Bài 4:</strong> Chùa đang chuẩn bị các phần quà cho trẻ em nghèo trong xóm. Trong kho có $35,5 \text{ kg}$ gạo. Sư cô lấy ra $8,5 \text{ kg}$ để nấu cơm chiều cho chùa. Số gạo còn lại, sư cô chia đều vào các túi nhỏ, mỗi túi chứa đúng $1,5 \text{ kg}$. Hỏi sư cô đã chia được tất cả bao nhiêu túi gạo?</p>
+    </div>
+
+    <h2>III. Lời giải chi tiết (Làm xong hết mới được dò đáp án nha!)</h2>
+    <div class="solution-box">
+        <p><strong>Bài 1: Phép Cộng và Trừ</strong></p>
+        <div class="math-step">
+            a) $14,56 + 9,8 = \mathbf{24,36}$<br>
+            <em>(Cách tính: Coi $9,8$ là $9,80$. Hạ $6$. $5+8=13$ viết $3$ nhớ $1$. $4+9+1=14$ viết $4$ nhớ $1$. $1+1=2$).</em>
+        </div>
+        <div class="math-step">
+            b) $30 - 4,25 = \mathbf{25,75}$<br>
+            <em>(Cách tính: Viết $30$ thành $30,00$. Lấy $10-5=5$ nhớ $1$. $10-3=7$ nhớ $1$. $10-5=5$ nhớ $1$. $3-1=2$).</em>
+        </div>
+
+        <p><strong>Bài 2: Phép Nhân và Chia</strong></p>
+        <div class="math-step">
+            a) $7,4 \times 3,5 = \mathbf{25,9}$<br>
+            <em>(Cách tính: Lấy $74 \times 35 = 2590$. Tổng cộng có 2 chữ số sau phẩy. Ta tách thành $25,90$ và viết gọn là $25,9$).</em>
+        </div>
+        <div class="math-step">
+            b) $18,75 : 1,5 = \mathbf{12,5}$<br>
+            <em>(Cách tính: Dịch phẩy 1 bước sang phải thành $187,5 : 15$. Lấy $18:15=1$ dư $3$. Hạ $7$ được $37:15=2$ dư $7$. Viết phẩy ở thương. Hạ $5$ được $75:15=5$).</em>
+        </div>
+
+        <p><strong>Bài 3: Tính giá trị biểu thức</strong></p>
+        <div class="math-step">
+            a) $(2,5 + 3,8) \times 1,2$<br>
+            Tính trong ngoặc trước: $2,5 + 3,8 = 6,3$<br>
+            Sau đó tính nhân: $6,3 \times 1,2 = \mathbf{7,56}$
+        </div>
+        <div class="math-step">
+            b) $15,6 - 8,4 : 2,4$<br>
+            Ưu tiên làm phép chia trước: $8,4 : 2,4 = 84 : 24 = 3,5$<br>
+            Sau đó thực hiện phép trừ: $15,6 - 3,5 = \mathbf{12,1}$
+        </div>
+
+        <p><strong>Bài 4: Giải bài toán ứng dụng</strong></p>
+        <div class="math-step">
+            <em>Bài giải:</em><br>
+            Số ki-lô-gam gạo còn lại sau khi sư cô nấu cơm chiều là:<br>
+            $$ 35,5 - 8,5 = 27 \text{ (kg)} $$<br>
+            Số túi gạo sư cô đã chia được là:<br>
+            $$ 27 : 1,5 = 18 \text{ (túi)} $$<br>
+            <em>(Nhẩm: Thêm số 0 vào 27 thành 270, bỏ phẩy ở 1,5 thành 15. Lấy 270 : 15 = 18).</em><br>
+            <strong>Đáp số:</strong> $18$ túi gạo.
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>

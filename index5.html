@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-width=1.0">
+    <title>Bài 5: Ôn tập các phép tính với phân số - Toán Lớp 5</title>
+    <!-- Cấu hình MathJax để render công thức toán học -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+      window.MathJax = {
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']],
+          displayMath: [['$$', '$$'], ['\\[', '\\]']]
+        }
+      };
+    </script>
+    <style>
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            background-color: #f4f9f4; 
+            color: #333; 
+            line-height: 1.6; 
+            padding: 20px; 
+            margin: 0;
+        }
+        .container { 
+            max-width: 800px; 
+            margin: 0 auto; 
+            background: #fff; 
+            padding: 30px; 
+            border-radius: 12px; 
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1); 
+        }
+        h1 { color: #2e7d32; text-align: center; border-bottom: 2px solid #a5d6a7; padding-bottom: 10px; }
+        h2 { color: #1565c0; margin-top: 30px; }
+        h3 { color: #d84315; }
+        .theory-box { 
+            background: #e3f2fd; 
+            padding: 15px; 
+            border-left: 5px solid #1976d2; 
+            border-radius: 5px; 
+            margin-bottom: 20px; 
+        }
+        .exercise-box { 
+            background: #fff3e0; 
+            padding: 15px; 
+            border-left: 5px solid #ff9800; 
+            border-radius: 5px; 
+            margin-bottom: 20px; 
+        }
+        .solution-box { 
+            background: #e8f5e9; 
+            padding: 15px; 
+            border-left: 5px solid #43a047; 
+            border-radius: 5px; 
+            margin-top: 30px;
+        }
+        ul { margin-top: 5px; }
+        .math-step { margin-left: 20px; margin-bottom: 15px; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Bài 5: Ôn tập các phép tính với phân số</h1>
+    <p style="text-align: center; font-style: italic;">"Làm toán cũng như tu tập, kiên nhẫn từng bước, các con sẽ thấu hiểu được mọi đạo lý!"</p>
+
+    <h2>I. Kiến thức cần nhớ</h2>
+    <div class="theory-box">
+        <h3>1. Phép cộng và phép trừ phân số</h3>
+        <ul>
+            <li><strong>Cùng mẫu số:</strong> Ta chỉ việc cộng (hoặc trừ) các tử số với nhau và giữ nguyên mẫu số.<br>
+            <em>Ví dụ:</em> $\frac{2}{7} + \frac{3}{7} = \frac{5}{7}$</li>
+            <li><strong>Khác mẫu số:</strong> Ta phải <strong>quy đồng mẫu số</strong> hai phân số đó, rồi mới cộng (hoặc trừ) hai tử số.</li>
+        </ul>
+
+        <h3>2. Phép nhân phân số</h3>
+        <ul>
+            <li>Muốn nhân hai phân số, ta lấy <strong>tử số nhân với tử số</strong>, <strong>mẫu số nhân với mẫu số</strong>.<br>
+            <em>Ví dụ:</em> $\frac{2}{3} \times \frac{4}{5} = \frac{2 \times 4}{3 \times 5} = \frac{8}{15}$</li>
+        </ul>
+
+        <h3>3. Phép chia phân số</h3>
+        <ul>
+            <li>Muốn chia một phân số cho một phân số, ta lấy phân số thứ nhất <strong>nhân với phân số thứ hai đảo ngược</strong>.<br>
+            <em>Ví dụ:</em> $\frac{3}{4} : \frac{2}{5} = \frac{3}{4} \times \frac{5}{2} = \frac{15}{8}$</li>
+        </ul>
+    </div>
+
+    <h2>II. Bài tập tự luyện</h2>
+    <div class="exercise-box">
+        <p><strong>Bài 1:</strong> Tính:</p>
+        <ul>
+            <li>a) $\frac{3}{5} + \frac{1}{4}$</li>
+            <li>b) $\frac{7}{8} - \frac{5}{16}$</li>
+        </ul>
+        
+        <p><strong>Bài 2:</strong> Tính:</p>
+        <ul>
+            <li>a) $\frac{4}{7} \times \frac{5}{9}$</li>
+            <li>b) $\frac{5}{6} : \frac{2}{3}$</li>
+        </ul>
+
+        <p><strong>Bài 3:</strong> Tính (nhớ rút gọn kết quả nếu có thể nhé):</p>
+        <ul>
+            <li>a) $3 \times \frac{2}{5}$</li>
+            <li>b) $\frac{4}{9} : 2$</li>
+        </ul>
+
+        <p><strong>Bài 4:</strong> Nhà bếp chùa chuẩn bị $\frac{3}{4}$ tạ gạo để nấu cơm chay đãi khách thập phương. Sau buổi trưa, các sư cô đã dùng hết $\frac{1}{2}$ tạ gạo. Hỏi nhà bếp còn lại bao nhiêu phần tạ gạo?</p>
+    </div>
+
+    <h2>III. Lời giải chi tiết (Làm xong mới được xem các con nhé!)</h2>
+    <div class="solution-box">
+        <p><strong>Bài 1: Phép cộng và trừ phân số</strong></p>
+        <div class="math-step">
+            a) $\frac{3}{5} + \frac{1}{4}$<br>
+            Quy đồng mẫu số (mẫu chung là $20$):<br>
+            $\frac{3 \times 4}{5 \times 4} + \frac{1 \times 5}{4 \times 5} = \frac{12}{20} + \frac{5}{20} = \mathbf{\frac{17}{20}}$
+        </div>
+        <div class="math-step">
+            b) $\frac{7}{8} - \frac{5}{16}$<br>
+            Nhận thấy $16$ chia hết cho $8$, ta chọn mẫu chung là $16$. Quy đồng phân số đầu tiên:<br>
+            $\frac{7 \times 2}{8 \times 2} - \frac{5}{16} = \frac{14}{16} - \frac{5}{16} = \mathbf{\frac{9}{16}}$
+        </div>
+
+        <p><strong>Bài 2: Phép nhân và chia phân số</strong></p>
+        <div class="math-step">
+            a) $\frac{4}{7} \times \frac{5}{9} = \frac{4 \times 5}{7 \times 9} = \mathbf{\frac{20}{63}}$
+        </div>
+        <div class="math-step">
+            b) $\frac{5}{6} : \frac{2}{3}$<br>
+            Giữ nguyên phân số đầu, nhân đảo ngược phân số sau:<br>
+            $= \frac{5}{6} \times \frac{3}{2} = \frac{15}{12}$<br>
+            Rút gọn (chia cả tử và mẫu cho $3$):<br>
+            $= \mathbf{\frac{5}{4}}$
+        </div>
+
+        <p><strong>Bài 3: Phép tính với số tự nhiên</strong></p>
+        <div class="math-step">
+            a) $3 \times \frac{2}{5}$<br>
+            Số tự nhiên nhân với phân số, ta lấy số tự nhiên nhân với tử số, giữ nguyên mẫu số:<br>
+            $= \frac{3 \times 2}{5} = \mathbf{\frac{6}{5}}$
+        </div>
+        <div class="math-step">
+            b) $\frac{4}{9} : 2$<br>
+            Chia cho một số tự nhiên tức là nhân với phân số đảo ngược của nó (đảo ngược của $2$ hay $\frac{2}{1}$ là $\frac{1}{2}$):<br>
+            $= \frac{4}{9} \times \frac{1}{2} = \frac{4}{18}$<br>
+            Rút gọn (chia cho $2$):<br>
+            $= \mathbf{\frac{2}{9}}$
+        </div>
+
+        <p><strong>Bài 4: Giải bài toán có lời văn</strong></p>
+        <div class="math-step">
+            <em>Bài giải:</em><br>
+            Số gạo còn lại trong nhà bếp chùa là:<br>
+            $$ \frac{3}{4} - \frac{1}{2} $$
+            Quy đồng mẫu số (chọn mẫu số chung là $4$):<br>
+            $$ = \frac{3}{4} - \frac{1 \times 2}{2 \times 2} = \frac{3}{4} - \frac{2}{4} = \frac{1}{4} \text{ (tạ gạo)} $$
+            <strong>Đáp số:</strong> $\mathbf{\frac{1}{4}}$ tạ gạo.
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>

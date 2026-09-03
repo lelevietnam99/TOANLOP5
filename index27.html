@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-width=1.0">
+    <title>Bài 27: Tỉ số phần trăm - Toán Lớp 5</title>
+    <!-- Cấu hình MathJax để render công thức toán học -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+      window.MathJax = {
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']],
+          displayMath: [['$$', '$$'], ['\\[', '\\]']]
+        }
+      };
+    </script>
+    <style>
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            background-color: #f4f9f4; 
+            color: #333; 
+            line-height: 1.6; 
+            padding: 20px; 
+            margin: 0;
+        }
+        .container { 
+            max-width: 800px; 
+            margin: 0 auto; 
+            background: #fff; 
+            padding: 30px; 
+            border-radius: 12px; 
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1); 
+        }
+        h1 { color: #2e7d32; text-align: center; border-bottom: 2px solid #a5d6a7; padding-bottom: 10px; }
+        h2 { color: #1565c0; margin-top: 30px; }
+        h3 { color: #d84315; }
+        .theory-box { 
+            background: #e3f2fd; 
+            padding: 15px; 
+            border-left: 5px solid #1976d2; 
+            border-radius: 5px; 
+            margin-bottom: 20px; 
+        }
+        .exercise-box { 
+            background: #fff3e0; 
+            padding: 15px; 
+            border-left: 5px solid #ff9800; 
+            border-radius: 5px; 
+            margin-bottom: 20px; 
+        }
+        .solution-box { 
+            background: #e8f5e9; 
+            padding: 15px; 
+            border-left: 5px solid #43a047; 
+            border-radius: 5px; 
+            margin-top: 30px; 
+        }
+        ul { margin-top: 5px; }
+        .math-step { margin-left: 20px; margin-bottom: 15px; }
+        .highlight { font-weight: bold; color: #d32f2f; }
+        .rule-box { background-color: #fff9c4; padding: 10px; border-radius: 5px; border-left: 4px solid #fbc02d; font-weight: bold; margin-top: 10px; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Bài 27: Tỉ số phần trăm</h1>
+    <p style="text-align: center; font-style: italic;">"Trong một chuỗi trăm hạt bồ đề, mỗi hạt đều mang một mầm thiện. Tỉ số phần trăm sẽ giúp ta thấy rõ từng phần nhỏ bé trong một tổng thể trọn vẹn!"</p>
+
+    <h2>I. Kiến thức cần nhớ</h2>
+    <div class="theory-box">
+        <h3>1. Khái niệm Tỉ số phần trăm</h3>
+        <p>Nếu ta chia một cái bánh, hoặc một khu vườn, hoặc một bầy chim... thành đúng <strong>$100$ phần bằng nhau</strong>, thì mỗi phần nhỏ đó được gọi là một phần trăm.</p>
+        <p>Thay vì viết phân số có mẫu số là $100$, người ta dùng ký hiệu phần trăm là: <strong>$\%$</strong></p>
+        <ul>
+            <li>$\frac{15}{100}$ được viết là <strong>$15\%$</strong> (Đọc là: mười lăm phần trăm).</li>
+            <li>$\frac{7}{100}$ được viết là <strong>$7\%$</strong> (Đọc là: bảy phần trăm).</li>
+            <li>$\frac{100}{100}$ được viết là <strong>$100\%$</strong> (Nghĩa là sự trọn vẹn, toàn bộ).</li>
+        </ul>
+
+        <h3>2. Cách chuyển số thập phân thành Tỉ số phần trăm</h3>
+        <div class="rule-box">
+            Để viết một số thập phân dưới dạng tỉ số phần trăm, ta chỉ cần: 
+            <strong>Dịch dấu phẩy sang bên PHẢI $2$ chữ số</strong> và thêm ký hiệu <strong>$\%$</strong> vào cuối.
+        </div>
+        <ul>
+            <li>$0,45 = 45\%$</li>
+            <li>$0,08 = 8\%$</li>
+            <li>$1,2 = 120\%$ (Dịch phẩy sang phải 2 chữ số, thiếu thì thêm số $0$).</li>
+        </ul>
+
+        <h3>3. Cách chuyển phân số thành Tỉ số phần trăm</h3>
+        <p>Ta quy đồng (hoặc rút gọn) để mẫu số biến thành $100$.<br>
+        <em>Ví dụ:</em> $\frac{3}{4} = \frac{3 \times 25}{4 \times 25} = \frac{75}{100} = \mathbf{75\%}$</p>
+    </div>
+
+    <h2>II. Bài tập tự luyện</h2>
+    <div class="exercise-box">
+        <p><strong>Bài 1:</strong> Viết các phân số sau dưới dạng tỉ số phần trăm:</p>
+        <ul>
+            <li>a) $\frac{32}{100} = \dots$</li>
+            <li>b) $\frac{5}{100} = \dots$</li>
+            <li>c) $\frac{125}{100} = \dots$</li>
+        </ul>
+        
+        <p><strong>Bài 2:</strong> Viết các số thập phân sau dưới dạng tỉ số phần trăm:</p>
+        <ul>
+            <li>a) $0,75 = \dots$</li>
+            <li>b) $0,03 = \dots$</li>
+            <li>c) $0,9 = \dots$</li>
+        </ul>
+
+        <p><strong>Bài 3:</strong> Quy đồng mẫu số về $100$ rồi viết dưới dạng tỉ số phần trăm:</p>
+        <ul>
+            <li>a) $\frac{1}{2} = \dots$</li>
+            <li>b) $\frac{4}{5} = \dots$</li>
+        </ul>
+
+        <p><strong>Bài 4:</strong> Vườn hoa trước sân chánh điện có trồng tất cả đúng $100$ cây hoa cúc. Trong đó có $45$ cây cúc đại đóa (màu vàng), $20$ cây cúc họa mi (màu trắng), còn lại là cúc tím. Con hãy tìm xem:</p>
+        <ul>
+            <li>a) Số cây cúc đại đóa chiếm bao nhiêu phần trăm tổng số cây?</li>
+            <li>b) Số cây cúc họa mi chiếm bao nhiêu phần trăm tổng số cây?</li>
+            <li>c) Số cây cúc tím chiếm bao nhiêu phần trăm tổng số cây?</li>
+        </ul>
+    </div>
+
+    <h2>III. Lời giải chi tiết (Nhớ nhẩm thử trước khi xem đáp án các con nhé!)</h2>
+    <div class="solution-box">
+        <p><strong>Bài 1: Chuyển phân số có mẫu 100 thành tỉ số phần trăm</strong></p>
+        <div class="math-step">
+            a) $\frac{32}{100} = \mathbf{32\%}$ (Đọc là: ba mươi hai phần trăm).
+        </div>
+        <div class="math-step">
+            b) $\frac{5}{100} = \mathbf{5\%}$ (Đọc là: năm phần trăm).
+        </div>
+        <div class="math-step">
+            c) $\frac{125}{100} = \mathbf{125\%}$ (Đọc là: một trăm hai mươi lăm phần trăm).
+        </div>
+
+        <p><strong>Bài 2: Chuyển số thập phân thành tỉ số phần trăm</strong></p>
+        <div class="math-step">
+            a) $0,75 = \mathbf{75\%}$ (Dịch dấu phẩy sang phải 2 chữ số).
+        </div>
+        <div class="math-step">
+            b) $0,03 = \mathbf{3\%}$ (Dịch phẩy 2 chữ số, phần nguyên $0$ ở trước ta bỏ đi).
+        </div>
+        <div class="math-step">
+            c) $0,9 = 0,90 = \mathbf{90\%}$ (Dịch phẩy 2 chữ số, vì thiếu nên ta thêm số $0$).
+        </div>
+
+        <p><strong>Bài 3: Đưa phân số về mẫu 100</strong></p>
+        <div class="math-step">
+            a) $\frac{1}{2} = \frac{1 \times 50}{2 \times 50} = \frac{50}{100} = \mathbf{50\%}$
+        </div>
+        <div class="math-step">
+            b) $\frac{4}{5} = \frac{4 \times 20}{5 \times 20} = \frac{80}{100} = \mathbf{80\%}$
+        </div>
+
+        <p><strong>Bài 4: Bài toán ứng dụng</strong></p>
+        <div class="math-step">
+            <em>Bài giải:</em><br>
+            Cả khu vườn có $100$ cây, nên tổng số cây được coi là $100$ phần bằng nhau ($100\%$).<br><br>
+            a) Có $45$ cây cúc đại đóa trong tổng số $100$ cây, tức là phân số $\frac{45}{100}$.<br>
+            Vậy số cây cúc đại đóa chiếm $\mathbf{45\%}$ tổng số cây.<br><br>
+            b) Có $20$ cây cúc họa mi trong tổng số $100$ cây, tức là phân số $\frac{20}{100}$.<br>
+            Vậy số cây cúc họa mi chiếm $\mathbf{20\%}$ tổng số cây.<br><br>
+            c) Số cây cúc tím trong vườn là:<br>
+            $100 - 45 - 20 = 35 \text{ (cây)}$<br>
+            Vì có $35$ cây cúc tím trong $100$ cây, nên cúc tím chiếm $\mathbf{35\%}$ tổng số cây.<br>
+            <em>(Hoặc các con lấy tổng $100\% - 45\% - 20\% = 35\%$).</em>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-width=1.0">
+    <title>Bài 22: Phép chia một số thập phân cho một số tự nhiên - Toán Lớp 5</title>
+    <!-- Cấu hình MathJax để render công thức toán học -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+      window.MathJax = {
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']],
+          displayMath: [['$$', '$$'], ['\\[', '\\]']]
+        }
+      };
+    </script>
+    <style>
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            background-color: #f4f9f4; 
+            color: #333; 
+            line-height: 1.6; 
+            padding: 20px; 
+            margin: 0;
+        }
+        .container { 
+            max-width: 800px; 
+            margin: 0 auto; 
+            background: #fff; 
+            padding: 30px; 
+            border-radius: 12px; 
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1); 
+        }
+        h1 { color: #2e7d32; text-align: center; border-bottom: 2px solid #a5d6a7; padding-bottom: 10px; }
+        h2 { color: #1565c0; margin-top: 30px; }
+        h3 { color: #d84315; }
+        .theory-box { 
+            background: #e3f2fd; 
+            padding: 15px; 
+            border-left: 5px solid #1976d2; 
+            border-radius: 5px; 
+            margin-bottom: 20px; 
+        }
+        .exercise-box { 
+            background: #fff3e0; 
+            padding: 15px; 
+            border-left: 5px solid #ff9800; 
+            border-radius: 5px; 
+            margin-bottom: 20px; 
+        }
+        .solution-box { 
+            background: #e8f5e9; 
+            padding: 15px; 
+            border-left: 5px solid #43a047; 
+            border-radius: 5px; 
+            margin-top: 30px; 
+        }
+        ul { margin-top: 5px; }
+        .math-step { margin-left: 20px; margin-bottom: 15px; }
+        .highlight { font-weight: bold; color: #d32f2f; }
+        .rule-box { background-color: #fff9c4; padding: 10px; border-radius: 5px; border-left: 4px solid #fbc02d; font-weight: bold; margin-top: 10px; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Bài 22: Phép chia một số thập phân cho một số tự nhiên</h1>
+    <p style="text-align: center; font-style: italic;">"Phép chia dạy ta sự công bằng và sẻ chia. Khi chia một số thập phân, các con chỉ cần nhớ một quy tắc nhỏ về chiếc dấu phẩy là mọi việc sẽ vô cùng suôn sẻ!"</p>
+
+    <h2>I. Kiến thức cần nhớ</h2>
+    <div class="theory-box">
+        <p>Muốn chia một số thập phân cho một số tự nhiên, ta làm theo <strong>3 bước</strong> sau:</p>
+        
+        <div class="rule-box">
+            <ul>
+                <li><strong>Bước 1:</strong> Chia phần nguyên của số bị chia cho số chia.</li>
+                <li><strong>Bước 2:</strong> <strong>Viết dấu phẩy</strong> vào bên phải thương (kết quả vừa tìm được) ngay trước khi lấy chữ số đầu tiên của phần thập phân để chia tiếp.</li>
+                <li><strong>Bước 3:</strong> Tiếp tục chia với từng chữ số ở phần thập phân của số bị chia.</li>
+            </ul>
+        </div>
+
+        <h3>Ví dụ mẫu: Tính $15,6 : 3$</h3>
+        <ul>
+            <li>Ta lấy phần nguyên là $15$ chia cho $3$ được $5$. Viết $\mathbf{5}$.</li>
+            <li>Chuẩn bị hạ số $6$ (thuộc phần thập phân) xuống để chia tiếp. Trước khi hạ số $6$, ta phải viết <strong>dấu phẩy</strong> vào bên phải số $5$. Ta được $\mathbf{5,}$.</li>
+            <li>Hạ số $6$ xuống, lấy $6 : 3$ được $2$. Viết $2$.</li>
+            <li>Kết quả cuối cùng là $\mathbf{5,2}$.</li>
+        </ul>
+        <p><em>Mẹo nhỏ: Cứ chuẩn bị bước qua dấu phẩy của số bị chia, thì các con phải phẩy một cái vào kết quả nhé!</em></p>
+    </div>
+
+    <h2>II. Bài tập tự luyện</h2>
+    <div class="exercise-box">
+        <p><strong>Bài 1:</strong> Đặt tính rồi tính:</p>
+        <ul>
+            <li>a) $8,4 : 4$</li>
+            <li>b) $22,5 : 5$</li>
+            <li>c) $0,75 : 3$</li>
+        </ul>
+        
+        <p><strong>Bài 2:</strong> Tìm $x$, biết:</p>
+        <ul>
+            <li>a) $x \times 6 = 14,4$</li>
+            <li>b) $4 \times x = 12,8$</li>
+        </ul>
+
+        <p><strong>Bài 3:</strong> Sư phụ đi mua vải để may túi xách bằng vải lam tặng các Phật tử. Sư phụ mua một tấm vải dài $18,5 \text{ m}$ và muốn cắt ra thành $5$ mảnh dài bằng nhau. Hỏi mỗi mảnh vải dài bao nhiêu mét?</p>
+
+        <p><strong>Bài 4:</strong> Chú tiểu mang một rổ cam cân nặng $6,4 \text{ kg}$ chia đều vào $4$ đĩa để dâng lên bàn thờ Phật. Hỏi mỗi đĩa cam cân nặng bao nhiêu ki-lô-gam?</p>
+    </div>
+
+    <h2>III. Lời giải chi tiết (Làm nháp xong mới được xem nhé!)</h2>
+    <div class="solution-box">
+        <p><strong>Bài 1: Đặt tính rồi tính</strong></p>
+        <div class="math-step">
+            a) $8,4 : 4 = \mathbf{2,1}$<br>
+            <em>(Lấy $8 : 4 = 2$. Viết dấu phẩy vào thương. Hạ $4$ xuống, $4 : 4 = 1$).</em>
+        </div>
+        <div class="math-step">
+            b) $22,5 : 5 = \mathbf{4,5}$<br>
+            <em>(Lấy $22 : 5 = 4$ dư $2$. Viết dấu phẩy vào thương. Hạ $5$ xuống cạnh số $2$ thành $25$. $25 : 5 = 5$).</em>
+        </div>
+        <div class="math-step">
+            c) $0,75 : 3 = \mathbf{0,25}$<br>
+            <em>(Lấy phần nguyên $0 : 3 = 0$. Viết dấu phẩy vào thương. Hạ $7$ xuống, $7 : 3 = 2$ dư $1$. Hạ $5$ xuống thành $15$. $15 : 3 = 5$).</em>
+        </div>
+
+        <p><strong>Bài 2: Tìm $x$</strong></p>
+        <div class="math-step">
+            a) $x \times 6 = 14,4$<br>
+            $x$ là thừa số chưa biết. Ta lấy tích chia cho thừa số đã biết:<br>
+            $x = 14,4 : 6$<br>
+            $x = \mathbf{2,4}$
+        </div>
+        <div class="math-step">
+            b) $4 \times x = 12,8$<br>
+            $x = 12,8 : 4$<br>
+            $x = \mathbf{3,2}$
+        </div>
+
+        <p><strong>Bài 3: Bài toán cắt vải</strong></p>
+        <div class="math-step">
+            <em>Bài giải:</em><br>
+            Mỗi mảnh vải cắt ra có chiều dài là:<br>
+            $$ 18,5 : 5 = 3,7 \text{ (m)} $$<br>
+            <em>(Giải thích cách chia: $18 : 5 = 3$ dư $3$. Viết phẩy vào thương. Hạ $5$ thành $35$. $35 : 5 = 7$).</em><br>
+            <strong>Đáp số:</strong> $3,7 \text{ m}$.
+        </div>
+
+        <p><strong>Bài 4: Bài toán chia đều quả cam</strong></p>
+        <div class="math-step">
+            <em>Bài giải:</em><br>
+            Cân nặng của mỗi đĩa cam là:<br>
+            $$ 6,4 : 4 = 1,6 \text{ (kg)} $$<br>
+            <em>(Giải thích: $6 : 4 = 1$ dư $2$. Viết phẩy vào thương. Hạ $4$ thành $24$. $24 : 4 = 6$).</em><br>
+            <strong>Đáp số:</strong> $1,6 \text{ kg}$.
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>

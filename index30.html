@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-width=1.0">
+    <title>Bài 30: Giải toán về tỉ số phần trăm (Dạng 3) - Toán Lớp 5</title>
+    <!-- Cấu hình MathJax để render công thức toán học -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+      window.MathJax = {
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']],
+          displayMath: [['$$', '$$'], ['\\[', '\\]']]
+        }
+      };
+    </script>
+    <style>
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            background-color: #f4f9f4; 
+            color: #333; 
+            line-height: 1.6; 
+            padding: 20px; 
+            margin: 0;
+        }
+        .container { 
+            max-width: 800px; 
+            margin: 0 auto; 
+            background: #fff; 
+            padding: 30px; 
+            border-radius: 12px; 
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1); 
+        }
+        h1 { color: #2e7d32; text-align: center; border-bottom: 2px solid #a5d6a7; padding-bottom: 10px; }
+        h2 { color: #1565c0; margin-top: 30px; }
+        h3 { color: #d84315; }
+        .theory-box { 
+            background: #e3f2fd; 
+            padding: 15px; 
+            border-left: 5px solid #1976d2; 
+            border-radius: 5px; 
+            margin-bottom: 20px; 
+        }
+        .exercise-box { 
+            background: #fff3e0; 
+            padding: 15px; 
+            border-left: 5px solid #ff9800; 
+            border-radius: 5px; 
+            margin-bottom: 20px; 
+        }
+        .solution-box { 
+            background: #e8f5e9; 
+            padding: 15px; 
+            border-left: 5px solid #43a047; 
+            border-radius: 5px; 
+            margin-top: 30px; 
+        }
+        ul { margin-top: 5px; }
+        .math-step { margin-left: 20px; margin-bottom: 15px; }
+        .highlight { font-weight: bold; color: #d32f2f; }
+        .rule-box { background-color: #fff9c4; padding: 10px; border-radius: 5px; border-left: 4px solid #fbc02d; font-weight: bold; margin-top: 10px; }
+        .tip-box { background-color: #e8eaf6; padding: 10px; border-radius: 5px; border-left: 4px solid #3f51b5; font-style: italic; margin-top: 15px; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Bài 30: Giải toán về tỉ số phần trăm (Dạng 3)</h1>
+    <h3 style="text-align: center; color: #388e3c;">Tìm một số khi biết giá trị phần trăm của số đó</h3>
+    <p style="text-align: center; font-style: italic;">"Người trí tuệ chỉ cần nếm một giọt nước biển cũng biết vị mặn của cả đại dương. Từ một phần nhỏ bé, ta hoàn toàn có thể tính ra được cả một tổng thể rộng lớn!"</p>
+
+    <h2>I. Kiến thức cần nhớ</h2>
+    <div class="theory-box">
+        <p>Ở bài trước (Dạng 2), các con đã có TỔNG THỂ và đi tìm một PHẦN NHỎ. Hôm nay, đề bài sẽ cho các con biết trước một <strong>PHẦN NHỎ</strong>, và yêu cầu các con tìm ngược lại cái <strong>TỔNG THỂ ($100\%$)</strong> ban đầu.</p>
+        
+        <div class="rule-box">
+            Muốn tìm một số khi biết $a\%$ của số đó là $X$, ta có 2 cách làm:
+            <ul>
+                <li><strong>Cách 1:</strong> Lấy $X$ chia cho $a$ rồi nhân với $100$.<br><em>(Ý nghĩa: Chia cho $a$ để tìm ra $1\%$ là bao nhiêu, rồi nhân với $100$ để tìm trọn vẹn $100\%$).</em></li>
+                <li><strong>Cách 2:</strong> Lấy $X$ nhân với $100$ rồi chia cho $a$.</li>
+            </ul>
+        </div>
+
+        <h3>Ví dụ mẫu:</h3>
+        <p>Biết $20\%$ số gạo trong kho là $40 \text{ kg}$. Hỏi trong kho có tất cả bao nhiêu ki-lô-gam gạo?</p>
+        <ul>
+            <li><em>Cách 1:</em> Ta tính: $40 : 20 \times 100 = 2 \times 100 = \mathbf{200} \text{ (kg)}$.</li>
+            <li><em>Cách 2:</em> Ta tính: $40 \times 100 : 20 = 4000 : 20 = \mathbf{200} \text{ (kg)}$.</li>
+        </ul>
+
+        <div class="tip-box">
+            <strong>Mẹo tránh nhầm lẫn:</strong><br>
+            - Nếu đề cho tổng thể, bảo tìm $20\%$ của nó $\rightarrow$ Chia $100$ rồi nhân $20$.<br>
+            - Nếu đề cho $20\%$ là từng này, bảo tìm tổng thể $\rightarrow$ <strong>Chia $20$ rồi nhân $100$</strong> (hoặc Nhân $100$ rồi chia $20$).
+        </div>
+    </div>
+
+    <h2>II. Bài tập tự luyện</h2>
+    <div class="exercise-box">
+        <p><strong>Bài 1:</strong> Tìm một số, biết:</p>
+        <ul>
+            <li>a) $15\%$ của số đó là $60$.</li>
+            <li>b) $25\%$ của số đó là $150 \text{ m}$.</li>
+            <li>c) $40\%$ của số đó là $32 \text{ kg}$.</li>
+        </ul>
+        
+        <p><strong>Bài 2:</strong> Sáng nay, chú tiểu Hỉ quét dọn được $45 \text{ m}^2$ sân chánh điện. Sư phụ khen và nói: "Con đã quét được $15\%$ diện tích của toàn bộ sân rồi đấy!". Hỏi toàn bộ sân chánh điện của chùa có diện tích là bao nhiêu mét vuông?</p>
+
+        <p><strong>Bài 3:</strong> Cuối năm, một đạo tràng Phật tử góp quỹ để sửa sang lại tượng Phật. Họ đã quyên góp được $12 \ 000 \ 000 \text{ đồng}$. Vị trưởng tràng thông báo số tiền này vừa đúng bằng $30\%$ tổng số tiền cần thiết để hoàn thành công trình. Hỏi tổng số tiền cần thiết để sửa tượng Phật là bao nhiêu?</p>
+
+        <p><strong>Bài 4:</strong> Chú tiểu đang học thuộc lòng một quyển kinh. Chú đã thuộc được $48$ trang. Tính ra, chú đã học thuộc được $20\%$ số trang của cả quyển kinh. Hỏi quyển kinh đó dày tất cả bao nhiêu trang?</p>
+    </div>
+
+    <h2>III. Lời giải chi tiết (Tự tĩnh tâm làm nháp rồi mới xem nhé)</h2>
+    <div class="solution-box">
+        <p><strong>Bài 1: Luyện tập cơ bản</strong></p>
+        <div class="math-step">
+            a) Số đó là:<br>
+            $60 : 15 \times 100 = 4 \times 100 = \mathbf{400}$
+        </div>
+        <div class="math-step">
+            b) Số đó là:<br>
+            $150 : 25 \times 100 = 6 \times 100 = \mathbf{600 \text{ (m)}}$
+        </div>
+        <div class="math-step">
+            c) Số đó là:<br>
+            $32 : 40 \times 100 = 0,8 \times 100 = \mathbf{80 \text{ (kg)}}$<br>
+            <em>(Hoặc: $32 \times 100 : 40 = 3200 : 40 = 80$).</em>
+        </div>
+
+        <p><strong>Bài 2: Bài toán quét sân</strong></p>
+        <div class="math-step">
+            <em>Bài giải:</em><br>
+            Diện tích toàn bộ sân chánh điện là:<br>
+            $$ 45 : 15 \times 100 = 300 \text{ (m}^2) $$<br>
+            <strong>Đáp số:</strong> $300 \text{ m}^2$.
+        </div>
+
+        <p><strong>Bài 3: Bài toán quỹ sửa tượng Phật</strong></p>
+        <div class="math-step">
+            <em>Bài giải:</em><br>
+            Tổng số tiền cần thiết để sửa tượng Phật là:<br>
+            $$ 12 \ 000 \ 000 : 30 \times 100 = 400 \ 000 \times 100 = 40 \ 000 \ 000 \text{ (đồng)} $$<br>
+            <strong>Đáp số:</strong> $40 \ 000 \ 000$ đồng.
+        </div>
+
+        <p><strong>Bài 4: Bài toán quyển kinh</strong></p>
+        <div class="math-step">
+            <em>Bài giải:</em><br>
+            Quyển kinh đó dày tổng cộng số trang là:<br>
+            $$ 48 : 20 \times 100 = 2,4 \times 100 = 240 \text{ (trang)} $$<br>
+            <em>(Hoặc các con nhẩm theo Cách 2: $48 \times 100 : 20 = 4800 : 20 = 240$).</em><br>
+            <strong>Đáp số:</strong> $240$ trang.
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>

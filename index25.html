@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-width=1.0">
+    <title>Bài 25: Chia số thập phân cho số thập phân - Toán Lớp 5</title>
+    <!-- Cấu hình MathJax để render công thức toán học -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+      window.MathJax = {
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']],
+          displayMath: [['$$', '$$'], ['\\[', '\\]']]
+        }
+      };
+    </script>
+    <style>
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            background-color: #f4f9f4; 
+            color: #333; 
+            line-height: 1.6; 
+            padding: 20px; 
+            margin: 0;
+        }
+        .container { 
+            max-width: 800px; 
+            margin: 0 auto; 
+            background: #fff; 
+            padding: 30px; 
+            border-radius: 12px; 
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1); 
+        }
+        h1 { color: #2e7d32; text-align: center; border-bottom: 2px solid #a5d6a7; padding-bottom: 10px; }
+        h2 { color: #1565c0; margin-top: 30px; }
+        h3 { color: #d84315; }
+        .theory-box { 
+            background: #e3f2fd; 
+            padding: 15px; 
+            border-left: 5px solid #1976d2; 
+            border-radius: 5px; 
+            margin-bottom: 20px; 
+        }
+        .exercise-box { 
+            background: #fff3e0; 
+            padding: 15px; 
+            border-left: 5px solid #ff9800; 
+            border-radius: 5px; 
+            margin-bottom: 20px; 
+        }
+        .solution-box { 
+            background: #e8f5e9; 
+            padding: 15px; 
+            border-left: 5px solid #43a047; 
+            border-radius: 5px; 
+            margin-top: 30px; 
+        }
+        ul { margin-top: 5px; }
+        .math-step { margin-left: 20px; margin-bottom: 15px; }
+        .highlight { font-weight: bold; color: #d32f2f; }
+        .rule-box { background-color: #fff9c4; padding: 10px; border-radius: 5px; border-left: 4px solid #fbc02d; font-weight: bold; margin-top: 10px; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Bài 25: Chia một số thập phân cho một số thập phân</h1>
+    <p style="text-align: center; font-style: italic;">"Dời một dấu phẩy đôi khi cũng giống như thay đổi một góc nhìn, mọi khúc mắc sẽ trở nên dễ dàng giải quyết. Hôm nay chúng ta cùng học phép thuật 'dịch chuyển' này nhé!"</p>
+
+    <h2>I. Kiến thức cần nhớ</h2>
+    <div class="theory-box">
+        <p>Như các con đã biết ở bài trước, ta không thể chia ngay nếu số chia (bên phải) đang vướng dấu phẩy. Ta phải làm mất dấu phẩy ở số chia bằng 3 bước sau:</p>
+        
+        <div class="rule-box">
+            <ul>
+                <li><strong>Bước 1: Đếm.</strong> Xem phần thập phân của <strong>số chia</strong> có bao nhiêu chữ số.</li>
+                <li><strong>Bước 2: Dịch chuyển.</strong> Chuyển dấu phẩy của <strong>số bị chia</strong> sang bên phải bấy nhiêu chữ số.</li>
+                <li><strong>Bước 3: Bỏ dấu phẩy.</strong> Gạch bỏ dấu phẩy ở số chia, rồi thực hiện phép chia như bình thường.</li>
+            </ul>
+        </div>
+
+        <h3>Ví dụ mẫu: Tính $23,56 : 6,2$</h3>
+        <ul>
+            <li>Bước 1: Số chia là $6,2$ có <strong>1 chữ số</strong> ở phần thập phân.</li>
+            <li>Bước 2: Dịch dấu phẩy của số bị chia ($23,56$) sang phải 1 chữ số, ta được $\mathbf{235,6}$.</li>
+            <li>Bước 3: Bỏ dấu phẩy ở số chia đi, ta được $62$.</li>
+            <li>Lúc này bài toán biến thành: $\mathbf{235,6 : 62}$. Đây là dạng chia số thập phân cho số tự nhiên các con đã học ở Bài 22 rồi đó! (Kết quả là $\mathbf{3,8}$).</li>
+        </ul>
+
+        <p><em>*Lưu ý nhỏ: Nếu dịch chuyển dấu phẩy mà số bị chia bị "thiếu" chữ số, ta cứ việc thêm số $0$ vào bên phải nhé! (Ví dụ: $12,5 : 0,25 \rightarrow 1250 : 25$).</em></p>
+    </div>
+
+    <h2>II. Bài tập tự luyện</h2>
+    <div class="exercise-box">
+        <p><strong>Bài 1:</strong> Đặt tính rồi tính (Nhớ dịch chuyển dấu phẩy cẩn thận nhé):</p>
+        <ul>
+            <li>a) $19,72 : 5,8$</li>
+            <li>b) $8,216 : 5,2$</li>
+        </ul>
+        
+        <p><strong>Bài 2:</strong> Đặt tính rồi tính (Trường hợp phải thêm số $0$):</p>
+        <ul>
+            <li>a) $12,5 : 0,25$</li>
+            <li>b) $4,2 : 0,15$</li>
+        </ul>
+
+        <p><strong>Bài 3:</strong> Sư phụ mua một cuộn vải lam dài $15,6 \text{ m}$ để may tọa cụ (đệm ngồi thiền) cho các chú tiểu. Biết để may một chiếc tọa cụ cần dùng $1,2 \text{ m}$ vải. Hỏi sư phụ có thể may được bao nhiêu chiếc tọa cụ?</p>
+
+        <p><strong>Bài 4:</strong> Bếp chùa đang có một can lớn đựng $10,5 \text{ lít}$ dầu đậu phộng. Sư cô muốn chiết số dầu này sang các chai nhỏ, mỗi chai chứa $0,75 \text{ lít}$ để tiện sử dụng hằng ngày. Hỏi sư cô chiết được bao nhiêu chai dầu?</p>
+    </div>
+
+    <h2>III. Lời giải chi tiết (Làm nháp xong mới được xem nhé!)</h2>
+    <div class="solution-box">
+        <p><strong>Bài 1: Phép chia tiêu chuẩn</strong></p>
+        <div class="math-step">
+            a) $19,72 : 5,8$<br>
+            <em>Cách làm:</em> Số chia $5,8$ có 1 chữ số ở phần thập phân. Ta dời dấu phẩy của $19,72$ sang phải 1 bước thành $197,2$. Bỏ phẩy ở $5,8$ thành $58$.<br>
+            Thực hiện phép chia: $197,2 : 58 = \mathbf{3,4}$.<br>
+            <em>(Nhẩm: $197 : 58 = 3$ dư $23$. Viết phẩy ở thương. Hạ $2$ thành $232$. $232 : 58 = 4$).</em>
+        </div>
+        <div class="math-step">
+            b) $8,216 : 5,2$<br>
+            <em>Cách làm:</em> Dời dấu phẩy sang phải 1 bước. Phép chia trở thành: $82,16 : 52$.<br>
+            Thực hiện phép chia: $82,16 : 52 = \mathbf{1,58}$.<br>
+            <em>(Nhẩm: $82 : 52 = 1$ dư $30$. Viết phẩy ở thương. Hạ $1$ thành $301$. $301 : 52 = 5$ dư $41$. Hạ $6$ thành $416$. $416 : 52 = 8$).</em>
+        </div>
+
+        <p><strong>Bài 2: Phép chia phải thêm số 0</strong></p>
+        <div class="math-step">
+            a) $12,5 : 0,25$<br>
+            <em>Cách làm:</em> Số $0,25$ có 2 chữ số ở phần thập phân. Số $12,5$ chỉ có 1 chữ số. Ta thêm $0$ để dịch đủ 2 bước, thành $1250$. Bỏ phẩy ở $0,25$ thành $25$.<br>
+            Thực hiện phép chia: $1250 : 25 = \mathbf{50}$.
+        </div>
+        <div class="math-step">
+            b) $4,2 : 0,15$<br>
+            <em>Cách làm:</em> Tương tự, dời phẩy 2 bước ta biến đổi thành: $420 : 15$.<br>
+            Thực hiện phép chia: $420 : 15 = \mathbf{28}$.
+        </div>
+
+        <p><strong>Bài 3: Bài toán may tọa cụ</strong></p>
+        <div class="math-step">
+            <em>Bài giải:</em><br>
+            Số chiếc tọa cụ sư phụ có thể may được là:<br>
+            $$ 15,6 : 1,2 = 13 \text{ (chiếc)} $$<br>
+            <em>(Cách tính: Dời phẩy 1 bước ở cả 2 số, ta chia $156 : 12 = 13$).</em><br>
+            <strong>Đáp số:</strong> $13$ chiếc.
+        </div>
+
+        <p><strong>Bài 4: Bài toán chiết dầu</strong></p>
+        <div class="math-step">
+            <em>Bài giải:</em><br>
+            Số chai dầu đậu phộng sư cô chiết được là:<br>
+            $$ 10,5 : 0,75 = 14 \text{ (chai)} $$<br>
+            <em>(Cách tính: Số chia có 2 chữ số phần thập phân. Ta thêm 1 số $0$ vào $10,5$ rồi dời phẩy, phép tính trở thành $1050 : 75 = 14$).</em><br>
+            <strong>Đáp số:</strong> $14$ chai.
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-width=1.0">
+    <title>Bài 2: Ôn tập các phép tính với số tự nhiên - Toán Lớp 5</title>
+    <!-- Cấu hình MathJax để render công thức toán học -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+      window.MathJax = {
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']],
+          displayMath: [['$$', '$$'], ['\\[', '\\]']]
+        }
+      };
+    </script>
+    <style>
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            background-color: #f4f9f4; 
+            color: #333; 
+            line-height: 1.6; 
+            padding: 20px; 
+            margin: 0;
+        }
+        .container { 
+            max-width: 800px; 
+            margin: 0 auto; 
+            background: #fff; 
+            padding: 30px; 
+            border-radius: 12px; 
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1); 
+        }
+        h1 { color: #2e7d32; text-align: center; border-bottom: 2px solid #a5d6a7; padding-bottom: 10px; }
+        h2 { color: #1565c0; margin-top: 30px; }
+        h3 { color: #d84315; }
+        .theory-box { 
+            background: #e3f2fd; 
+            padding: 15px; 
+            border-left: 5px solid #1976d2; 
+            border-radius: 5px; 
+            margin-bottom: 20px; 
+        }
+        .exercise-box { 
+            background: #fff3e0; 
+            padding: 15px; 
+            border-left: 5px solid #ff9800; 
+            border-radius: 5px; 
+            margin-bottom: 20px; 
+        }
+        .solution-box { 
+            background: #e8f5e9; 
+            padding: 15px; 
+            border-left: 5px solid #43a047; 
+            border-radius: 5px; 
+            margin-top: 30px;
+        }
+        ul { margin-top: 5px; }
+        .math-step { margin-left: 20px; margin-bottom: 10px; }
+        .highlight { font-weight: bold; color: #d32f2f; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Bài 2: Ôn tập các phép tính với số tự nhiên</h1>
+    <p style="text-align: center; font-style: italic;">"Cẩn thận từng con số, giữ tâm trí tĩnh lặng, các con sẽ giải được mọi bài toán!"</p>
+
+    <h2>I. Kiến thức cần nhớ</h2>
+    <div class="theory-box">
+        <h3>1. Phép cộng và Phép trừ</h3>
+        <ul>
+            <li><strong>Phép cộng:</strong> $a + b = c$ (Số hạng + Số hạng = Tổng).
+                <br><em>Tính chất:</em> Giao hoán ($a + b = b + a$) và Kết hợp ($(a + b) + c = a + (b + c)$).
+            </li>
+            <li><strong>Phép trừ:</strong> $a - b = c$ (Số bị trừ - Số trừ = Hiệu).
+                <br><em>Lưu ý:</em> Phép trừ chỉ thực hiện được trong tập số tự nhiên khi $a \ge b$.
+            </li>
+        </ul>
+
+        <h3>2. Phép nhân và Phép chia</h3>
+        <ul>
+            <li><strong>Phép nhân:</strong> $a \times b = c$ (Thừa số $\times$ Thừa số = Tích).
+                <br><em>Tính chất đặc biệt:</em> Nhân một số với một tổng: $a \times (b + c) = a \times b + a \times c$.
+            </li>
+            <li><strong>Phép chia:</strong> $a : b = c$ (Số bị chia $:$ Số chia = Thương).
+                <br><em>Lưu ý:</em> Không có phép chia cho số $0$. Nếu phép chia có dư: $a = b \times c + r$ (số dư $r$ luôn nhỏ hơn số chia $b$).
+            </li>
+        </ul>
+    </div>
+
+    <h2>II. Bài tập tự luyện</h2>
+    <div class="exercise-box">
+        <p><strong>Bài 1:</strong> Đặt tính rồi tính:</p>
+        <ul>
+            <li>a) $39 \ 275 + 3 \ 069$</li>
+            <li>b) $84 \ 513 - 12 \ 045$</li>
+            <li>c) $324 \times 25$</li>
+            <li>d) $1 \ 245 : 15$</li>
+        </ul>
+        
+        <p><strong>Bài 2:</strong> Tính bằng cách thuận tiện nhất (nhẩm nhanh):</p>
+        <ul>
+            <li>a) $25 \times 13 \times 4$</li>
+            <li>b) $145 \times 99 + 145$</li>
+        </ul>
+
+        <p><strong>Bài 3:</strong> Tìm $x$, biết:</p>
+        <ul>
+            <li>a) $x - 125 = 300$</li>
+            <li>b) $x \times 12 = 144$</li>
+        </ul>
+
+        <p><strong>Bài 4:</strong> Giải bài toán sau:</p>
+        <p>Nhà chùa đang chuẩn bị trồng thêm cây xanh. Khu vườn phía trước đã trồng được $150$ cây bạch đàn. Khu vườn phía sau rộng hơn nên sư phụ dự định trồng số cây <strong>gấp 4 lần</strong> số cây ở khu vườn phía trước. Hỏi tổng cộng cả hai khu vườn sẽ có bao nhiêu cây bạch đàn?</p>
+    </div>
+
+    <h2>III. Lời giải chi tiết (Làm xong mới được đối chiếu nhé!)</h2>
+    <div class="solution-box">
+        <p><strong>Bài 1: Đặt tính rồi tính</strong></p>
+        <ul>
+            <li>a) $39 \ 275 + 3 \ 069 = \mathbf{42 \ 344}$ (Nhớ cộng cẩn thận các số có nhớ sang hàng bên cạnh).</li>
+            <li>b) $84 \ 513 - 12 \ 045 = \mathbf{72 \ 468}$</li>
+            <li>c) $324 \times 25 = \mathbf{8 \ 100}$</li>
+            <li>d) $1 \ 245 : 15 = \mathbf{83}$ (Lấy $124 : 15 = 8$ dư $4$, hạ $5$ xuống được $45$, $45 : 15 = 3$).</li>
+        </ul>
+
+        <p><strong>Bài 2: Tính bằng cách thuận tiện nhất</strong></p>
+        <div class="math-step">
+            <strong>a) $25 \times 13 \times 4$</strong><br>
+            Ta nhóm số $25$ và số $4$ lại với nhau để tạo thành số tròn trăm:<br>
+            $= (25 \times 4) \times 13$<br>
+            $= 100 \times 13$<br>
+            $= \mathbf{1 \ 300}$
+        </div>
+        <div class="math-step">
+            <strong>b) $145 \times 99 + 145$</strong><br>
+            Số $145$ đứng một mình thực chất là $145 \times 1$. Ta đặt thừa số chung:<br>
+            $= 145 \times 99 + 145 \times 1$<br>
+            $= 145 \times (99 + 1)$<br>
+            $= 145 \times 100$<br>
+            $= \mathbf{14 \ 500}$
+        </div>
+
+        <p><strong>Bài 3: Tìm $x$</strong></p>
+        <div class="math-step">
+            <strong>a) $x - 125 = 300$</strong><br>
+            $x$ là <em>số bị trừ</em>. Muốn tìm số bị trừ, ta lấy hiệu cộng với số trừ:<br>
+            $x = 300 + 125$<br>
+            $x = \mathbf{425}$
+        </div>
+        <div class="math-step">
+            <strong>b) $x \times 12 = 144$</strong><br>
+            $x$ là <em>thừa số chưa biết</em>. Muốn tìm thừa số, ta lấy tích chia cho thừa số kia:<br>
+            $x = 144 : 12$<br>
+            $x = \mathbf{12}$
+        </div>
+
+        <p><strong>Bài 4: Giải bài toán có lời văn</strong></p>
+        <div class="math-step">
+            <em>Bài giải:</em><br>
+            Số cây bạch đàn dự định trồng ở khu vườn phía sau là:<br>
+            $150 \times 4 = 600$ (cây)<br>
+            Tổng số cây bạch đàn ở cả hai khu vườn là:<br>
+            $150 + 600 = 750$ (cây)<br>
+            <strong>Đáp số:</strong> $750$ cây bạch đàn.
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>

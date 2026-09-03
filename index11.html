@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-width=1.0">
+    <title>Bài 11: So sánh các số thập phân - Toán Lớp 5</title>
+    <!-- Cấu hình MathJax để render công thức toán học -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+      window.MathJax = {
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']],
+          displayMath: [['$$', '$$'], ['\\[', '\\]']]
+        }
+      };
+    </script>
+    <style>
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            background-color: #f4f9f4; 
+            color: #333; 
+            line-height: 1.6; 
+            padding: 20px; 
+            margin: 0;
+        }
+        .container { 
+            max-width: 800px; 
+            margin: 0 auto; 
+            background: #fff; 
+            padding: 30px; 
+            border-radius: 12px; 
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1); 
+        }
+        h1 { color: #2e7d32; text-align: center; border-bottom: 2px solid #a5d6a7; padding-bottom: 10px; }
+        h2 { color: #1565c0; margin-top: 30px; }
+        h3 { color: #d84315; }
+        .theory-box { 
+            background: #e3f2fd; 
+            padding: 15px; 
+            border-left: 5px solid #1976d2; 
+            border-radius: 5px; 
+            margin-bottom: 20px; 
+        }
+        .exercise-box { 
+            background: #fff3e0; 
+            padding: 15px; 
+            border-left: 5px solid #ff9800; 
+            border-radius: 5px; 
+            margin-bottom: 20px; 
+        }
+        .solution-box { 
+            background: #e8f5e9; 
+            padding: 15px; 
+            border-left: 5px solid #43a047; 
+            border-radius: 5px; 
+            margin-top: 30px; 
+        }
+        ul { margin-top: 5px; }
+        .math-step { margin-left: 20px; margin-bottom: 15px; }
+        .highlight { font-weight: bold; color: #d32f2f; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Bài 11: So sánh các số thập phân</h1>
+    <p style="text-align: center; font-style: italic;">"Mọi sự vật trên đời tuy khác nhau nhưng đều bình đẳng. Hôm nay chúng ta cùng học cách so sánh các con số để hiểu rõ hơn về sự phong phú của toán học nhé!"</p>
+
+    <h2>I. Kiến thức cần nhớ</h2>
+    <div class="theory-box">
+        <p>Để so sánh hai số thập phân, các con hãy làm lần lượt theo các bước sau như việc quét từng bậc tam cấp nhé:</p>
+        
+        <h3>Bước 1: So sánh phần nguyên trước</h3>
+        <ul>
+            <li>Số thập phân nào có <strong>phần nguyên lớn hơn</strong> thì số đó <strong>lớn hơn</strong>.</li>
+            <li><em>Ví dụ:</em> $14,5 > 9,85$ (Vì phần nguyên $14 > 9$).</li>
+        </ul>
+
+        <h3>Bước 2: So sánh phần thập phân (nếu phần nguyên bằng nhau)</h3>
+        <ul>
+            <li>Nếu phần nguyên bằng nhau, ta so sánh phần thập phân, lần lượt từ <strong>hàng phần mười, hàng phần trăm, hàng phần nghìn...</strong></li>
+            <li>Đến cùng một hàng nào đó, số nào có chữ số lớn hơn thì số đó lớn hơn.</li>
+            <li><em>Ví dụ:</em> $2,8 > 2,35$ (Phần nguyên đều là 2. Nhưng hàng phần mười thì $8 > 3$).</li>
+        </ul>
+
+        <h3>Điều đặc biệt cực kỳ quan trọng!</h3>
+        <p>Nếu ta viết thêm chữ số $0$ vào tận cùng bên phải phần thập phân của một số, thì <strong>giá trị của số đó không thay đổi</strong>.</p>
+        <p><em>Ví dụ:</em> $0,5 = 0,50 = 0,500$</p>
+        <p>Mẹo nhỏ: Khi so sánh, các con có thể thêm các số $0$ vào cuối để hai số có số lượng chữ số phần thập phân bằng nhau cho dễ nhìn nhé!</p>
+    </div>
+
+    <h2>II. Bài tập tự luyện</h2>
+    <div class="exercise-box">
+        <p><strong>Bài 1:</strong> Điền dấu ($>, <, =$) thích hợp vào chỗ chấm:</p>
+        <ul>
+            <li>a) $7,8 \dots 6,9$</li>
+            <li>b) $4,3 \dots 4,30$</li>
+            <li>c) $12,45 \dots 12,5$</li>
+            <li>d) $0,089 \dots 0,1$</li>
+        </ul>
+        
+        <p><strong>Bài 2:</strong> Sắp xếp các số thập phân sau theo thứ tự <strong>từ bé đến lớn</strong>:</p>
+        <p>$$ 4,5 \ ; \quad 4,05 \ ; \quad 3,98 \ ; \quad 4,2 $$</p>
+
+        <p><strong>Bài 3:</strong> Tìm chữ số $x$, biết:</p>
+        <p>$$ 8,x5 > 8,85 $$</p>
+
+        <p><strong>Bài 4:</strong> Hôm nay các chú tiểu ra vườn thu hoạch bí ngô để nấu canh chay. Quả bí thứ nhất cân nặng $3,45 \text{ kg}$. Quả bí thứ hai cân nặng $3,5 \text{ kg}$. Hỏi quả bí ngô nào nặng hơn?</p>
+    </div>
+
+    <h2>III. Lời giải chi tiết (Các con nhớ tĩnh tâm tự giải trước khi xem nhé)</h2>
+    <div class="solution-box">
+        <p><strong>Bài 1: So sánh cơ bản</strong></p>
+        <div class="math-step">
+            a) $7,8 \mathbf{>} 6,9$ <br>
+            <em>Giải thích:</em> Vì phần nguyên $7 > 6$.
+        </div>
+        <div class="math-step">
+            b) $4,3 \mathbf{=} 4,30$ <br>
+            <em>Giải thích:</em> Thêm số $0$ vào tận cùng bên phải phần thập phân thì giá trị không đổi ($4,30 = 4,3$).
+        </div>
+        <div class="math-step">
+            c) $12,45 \mathbf{<} 12,5$ <br>
+            <em>Giải thích:</em> Phần nguyên đều bằng $12$. Hàng phần mười có $4 < 5$. (Hoặc ta thêm số $0$ vào để so sánh: $12,45 < 12,50$).
+        </div>
+        <div class="math-step">
+            d) $0,089 \mathbf{<} 0,1$ <br>
+            <em>Giải thích:</em> Phần nguyên bằng $0$. Hàng phần mười có $0 < 1$.
+        </div>
+
+        <p><strong>Bài 2: Sắp xếp số thập phân</strong></p>
+        <div class="math-step">
+            - Nhìn vào phần nguyên, ta thấy $3,98$ có phần nguyên là $3$ (bé nhất).<br>
+            - Các số còn lại đều có phần nguyên là $4$: $4,5 \ ; \ 4,05 \ ; \ 4,2$.<br>
+            - Để dễ so sánh, ta thêm số $0$ cho có cùng 2 chữ số thập phân: $4,50 \ ; \ 4,05 \ ; \ 4,20$.<br>
+            - So sánh phần thập phân: $05 < 20 < 50$. Do đó: $4,05 < 4,2 < 4,5$.<br>
+            <strong>Thứ tự từ bé đến lớn là:</strong> $\mathbf{3,98 \ ; \ 4,05 \ ; \ 4,2 \ ; \ 4,5}$.
+        </div>
+
+        <p><strong>Bài 3: Tìm chữ số x</strong></p>
+        <div class="math-step">
+            Ta có: $8,x5 > 8,85$.<br>
+            - Phần nguyên hai bên đều là $8$.<br>
+            - Hàng phần trăm hai bên đều là $5$.<br>
+            - Do đó, để số bên trái lớn hơn số bên phải, thì chữ số hàng phần mười của nó phải lớn hơn $8$. Tức là $x > 8$.<br>
+            - Vì $x$ là một chữ số (từ $0$ đến $9$), nên suy ra $\mathbf{x = 9}$.
+        </div>
+
+        <p><strong>Bài 4: Giải bài toán có lời văn</strong></p>
+        <div class="math-step">
+            <em>Bài giải:</em><br>
+            Ta cần so sánh cân nặng của hai quả bí ngô là $3,45$ và $3,5$.<br>
+            - Ta có thể viết $3,5$ thành $3,50$ cho dễ nhìn.<br>
+            - So sánh $3,45$ và $3,50$: Phần nguyên giống nhau (đều là $3$). Hàng phần mười ta có $4 < 5$.<br>
+            - Nên $3,45 < 3,50$.<br>
+            <strong>Đáp số:</strong> Quả bí ngô thứ hai nặng hơn quả bí ngô thứ nhất.
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>

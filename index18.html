@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-width=1.0">
+    <title>Bài 18: Luyện tập chung - Toán Lớp 5</title>
+    <!-- Cấu hình MathJax để render công thức toán học -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+      window.MathJax = {
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']],
+          displayMath: [['$$', '$$'], ['\\[', '\\]']]
+        }
+      };
+    </script>
+    <style>
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            background-color: #f4f9f4; 
+            color: #333; 
+            line-height: 1.6; 
+            padding: 20px; 
+            margin: 0;
+        }
+        .container { 
+            max-width: 800px; 
+            margin: 0 auto; 
+            background: #fff; 
+            padding: 30px; 
+            border-radius: 12px; 
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1); 
+        }
+        h1 { color: #2e7d32; text-align: center; border-bottom: 2px solid #a5d6a7; padding-bottom: 10px; }
+        h2 { color: #1565c0; margin-top: 30px; }
+        h3 { color: #d84315; }
+        .theory-box { 
+            background: #e3f2fd; 
+            padding: 15px; 
+            border-left: 5px solid #1976d2; 
+            border-radius: 5px; 
+            margin-bottom: 20px; 
+        }
+        .exercise-box { 
+            background: #fff3e0; 
+            padding: 15px; 
+            border-left: 5px solid #ff9800; 
+            border-radius: 5px; 
+            margin-bottom: 20px; 
+        }
+        .solution-box { 
+            background: #e8f5e9; 
+            padding: 15px; 
+            border-left: 5px solid #43a047; 
+            border-radius: 5px; 
+            margin-top: 30px; 
+        }
+        ul { margin-top: 5px; }
+        .math-step { margin-left: 20px; margin-bottom: 15px; }
+        .highlight { font-weight: bold; color: #d32f2f; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Bài 18: Luyện tập chung</h1>
+    <p style="text-align: center; font-style: italic;">"Củng cố nền móng thật vững chắc thì tòa tháp mới vươn cao. Các con hãy cùng nhau ôn tập lại cách đo lường những khoảng không gian rộng lớn nhé!"</p>
+
+    <h2>I. Nhìn lại những gì đã học</h2>
+    <div class="theory-box">
+        <p>Trong Chủ đề 3, chúng ta đã học cách đo diện tích. Các con cần ghi nhớ thật kỹ 3 quy tắc quan trọng sau:</p>
+        <ul>
+            <li><strong>Bảng đơn vị đo diện tích:</strong> $\text{km}^2 \rightarrow \text{ha} \rightarrow \text{dam}^2 \rightarrow \text{m}^2 \rightarrow \text{dm}^2 \rightarrow \text{cm}^2 \rightarrow \text{mm}^2$.</li>
+            <li>Hai đơn vị diện tích liền kề nhau sẽ hơn kém nhau <strong>$100$ lần</strong> (thêm hoặc bớt 2 chữ số 0).</li>
+            <li><strong>Hai con số mốc quan trọng nhất:</strong>
+                <br>+ $1 \text{ ha} = 10 \ 000 \text{ m}^2$
+                <br>+ $1 \text{ km}^2 = 100 \text{ ha}$
+            </li>
+        </ul>
+    </div>
+
+    <h2>II. Bài tập tự luyện</h2>
+    <div class="exercise-box">
+        <p><strong>Bài 1:</strong> Điền số thích hợp vào chỗ chấm:</p>
+        <ul>
+            <li>a) $7 \text{ ha} = \dots \text{ m}^2$</li>
+            <li>b) $15 \text{ km}^2 = \dots \text{ ha}$</li>
+            <li>c) $600 \text{ dm}^2 = \dots \text{ m}^2$</li>
+            <li>d) $80 \ 000 \text{ m}^2 = \dots \text{ ha}$</li>
+        </ul>
+        
+        <p><strong>Bài 2:</strong> Điền dấu ($>, <, =$) thích hợp vào chỗ chấm:</p>
+        <ul>
+            <li>a) $3 \text{ m}^2 \ 5 \text{ dm}^2 \dots 35 \text{ dm}^2$</li>
+            <li>b) $2 \text{ ha} \dots 20 \ 000 \text{ m}^2$</li>
+        </ul>
+
+        <p><strong>Bài 3:</strong> Hồ sen trước cổng chùa có hình chữ nhật với chiều dài $40 \text{ m}$, chiều rộng $25 \text{ m}$. Hỏi diện tích hồ sen là bao nhiêu mét vuông?</p>
+
+        <p><strong>Bài 4:</strong> Nhà chùa có một đồi chè rộng $2 \text{ ha}$. Sư phụ cho biết, trung bình cứ $1 \text{ ha}$ đồi chè thì thu hoạch được $3$ tấn chè búp tươi mỗi năm.</p>
+        <ul>
+            <li>a) Hỏi mỗi năm nhà chùa thu hoạch được bao nhiêu tấn chè búp tươi?</li>
+            <li>b) Đổi số lượng chè búp tươi đó ra đơn vị <strong>ki-lô-gam</strong>.</li>
+        </ul>
+    </div>
+
+    <h2>III. Lời giải chi tiết (Làm bài cẩn thận rồi mới xem đáp án nhé!)</h2>
+    <div class="solution-box">
+        <p><strong>Bài 1: Đổi đơn vị đo diện tích</strong></p>
+        <div class="math-step">
+            a) Từ $\text{ha}$ sang $\text{m}^2$ nhân với $10 \ 000$:<br>
+            $7 \text{ ha} = \mathbf{70 \ 000 \text{ m}^2}$
+        </div>
+        <div class="math-step">
+            b) Từ $\text{km}^2$ sang $\text{ha}$ nhân với $100$:<br>
+            $15 \text{ km}^2 = \mathbf{1 \ 500 \text{ ha}}$
+        </div>
+        <div class="math-step">
+            c) Từ $\text{dm}^2$ sang $\text{m}^2$ chia cho $100$:<br>
+            $600 \text{ dm}^2 = \mathbf{6 \text{ m}^2}$
+        </div>
+        <div class="math-step">
+            d) Từ $\text{m}^2$ sang $\text{ha}$ chia cho $10 \ 000$ (bớt 4 số 0):<br>
+            $80 \ 000 \text{ m}^2 = \mathbf{8 \text{ ha}}$
+        </div>
+
+        <p><strong>Bài 2: So sánh diện tích</strong></p>
+        <div class="math-step">
+            a) Đổi $3 \text{ m}^2 \ 5 \text{ dm}^2$ ra $\text{dm}^2$:<br>
+            $3 \text{ m}^2 = 300 \text{ dm}^2$. Vậy $3 \text{ m}^2 \ 5 \text{ dm}^2 = 300 + 5 = 305 \text{ dm}^2$.<br>
+            Vì $305 > 35$ nên: $\mathbf{3 \text{ m}^2 \ 5 \text{ dm}^2 > 35 \text{ dm}^2}$.
+        </div>
+        <div class="math-step">
+            b) Đổi $2 \text{ ha}$ ra $\text{m}^2$:<br>
+            $2 \text{ ha} = 20 \ 000 \text{ m}^2$.<br>
+            Vậy: $\mathbf{2 \text{ ha} = 20 \ 000 \text{ m}^2}$.
+        </div>
+
+        <p><strong>Bài 3: Tính diện tích hồ sen</strong></p>
+        <div class="math-step">
+            <em>Bài giải:</em><br>
+            Diện tích của hồ sen hình chữ nhật là:<br>
+            $40 \times 25 = 1000 \text{ (m}^2)$<br>
+            <strong>Đáp số:</strong> $1000 \text{ m}^2$.
+        </div>
+
+        <p><strong>Bài 4: Bài toán thu hoạch chè</strong></p>
+        <div class="math-step">
+            <em>Bài giải:</em><br>
+            a) Cứ $1 \text{ ha}$ thu hoạch được $3$ tấn, vậy $2 \text{ ha}$ thu hoạch được:<br>
+            $2 \times 3 = 6$ (tấn chè)<br><br>
+            b) Ta biết $1$ tấn $= 1000 \text{ kg}$. Đổi số chè ra ki-lô-gam:<br>
+            $6 \text{ tấn} = 6000 \text{ (kg)}$<br><br>
+            <strong>Đáp số:</strong> a) $6$ tấn; b) $6000 \text{ kg}$.
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>

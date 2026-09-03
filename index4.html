@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-width=1.0">
+    <title>Bài 4: Phân số thập phân - Toán Lớp 5</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+      window.MathJax = {
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']],
+          displayMath: [['$$', '$$'], ['\\[', '\\]']]
+        }
+      };
+    </script>
+    <style>
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            background-color: #f4f9f4; 
+            color: #333; 
+            line-height: 1.6; 
+            padding: 20px; 
+            margin: 0;
+        }
+        .container { 
+            max-width: 800px; 
+            margin: 0 auto; 
+            background: #fff; 
+            padding: 30px; 
+            border-radius: 12px; 
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1); 
+        }
+        h1 { color: #2e7d32; text-align: center; border-bottom: 2px solid #a5d6a7; padding-bottom: 10px; }
+        h2 { color: #1565c0; margin-top: 30px; }
+        h3 { color: #d84315; }
+        .theory-box { 
+            background: #e3f2fd; 
+            padding: 15px; 
+            border-left: 5px solid #1976d2; 
+            border-radius: 5px; 
+            margin-bottom: 20px; 
+        }
+        .exercise-box { 
+            background: #fff3e0; 
+            padding: 15px; 
+            border-left: 5px solid #ff9800; 
+            border-radius: 5px; 
+            margin-bottom: 20px; 
+        }
+        .solution-box { 
+            background: #e8f5e9; 
+            padding: 15px; 
+            border-left: 5px solid #43a047; 
+            border-radius: 5px; 
+            margin-top: 30px;
+        }
+        ul { margin-top: 5px; }
+        .math-step { margin-left: 20px; margin-bottom: 15px; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Bài 4: Phân số thập phân</h1>
+    <p style="text-align: center; font-style: italic;">"Từng hạt nếp làm nên bát cơm, từng số 0 làm nên sự tròn đầy. Hôm nay chúng ta cùng học về những phân số rất tròn trịa nhé!"</p>
+
+    <h2>I. Kiến thức cần nhớ</h2>
+    <div class="theory-box">
+        <h3>1. Thế nào là phân số thập phân?</h3>
+        <p>Các phân số có mẫu số là $10, 100, 1 \ 000, \dots$ được gọi là <strong>phân số thập phân</strong>.</p>
+        <p><em>Ví dụ:</em> $\frac{3}{10}$, $\frac{17}{100}$, $\frac{123}{1 \ 000}$ là các phân số thập phân.</p>
+
+        <h3>2. Cách tạo ra phân số thập phân</h3>
+        <p>Một số phân số bình thường có thể biến đổi thành phân số thập phân bằng cách nhân (hoặc chia) cả tử số và mẫu số với cùng một số tự nhiên.</p>
+        <ul>
+            <li><strong>Cách nhân lên:</strong> Tìm một số nhân với mẫu số hiện tại để ra được $10, 100$ hoặc $1000$.<br>
+            <em>Ví dụ:</em> $\frac{3}{5} = \frac{3 \times 2}{5 \times 2} = \frac{6}{10}$</li>
+            <li><strong>Cách chia xuống:</strong> Rút gọn để mẫu số trở về $10, 100$ hoặc $1000$.<br>
+            <em>Ví dụ:</em> $\frac{24}{200} = \frac{24 : 2}{200 : 2} = \frac{12}{100}$</li>
+        </ul>
+        <p><em>Mẹo nhỏ cho các con:</em> Hãy ghi nhớ các cặp số bạn thân hay đi cùng nhau để tạo ra số tròn: $2 \times 5 = 10$, $4 \times 25 = 100$, $8 \times 125 = 1 \ 000$.</p>
+    </div>
+
+    <h2>II. Bài tập tự luyện</h2>
+    <div class="exercise-box">
+        <p><strong>Bài 1:</strong> Trong các phân số dưới đây, phân số nào là phân số thập phân?</p>
+        <p>$$ \frac{4}{7}; \quad \frac{9}{10}; \quad \frac{21}{100}; \quad \frac{5}{20}; \quad \frac{345}{1 \ 000} $$</p>
+        
+        <p><strong>Bài 2:</strong> Chuyển các phân số sau thành phân số thập phân (bằng cách nhân lên):</p>
+        <ul>
+            <li>a) $\frac{1}{2}$</li>
+            <li>b) $\frac{4}{5}$</li>
+            <li>c) $\frac{7}{25}$</li>
+        </ul>
+
+        <p><strong>Bài 3:</strong> Chuyển các phân số sau thành phân số thập phân (bằng cách chia xuống):</p>
+        <ul>
+            <li>a) $\frac{16}{40}$</li>
+            <li>b) $\frac{15}{300}$</li>
+        </ul>
+
+        <p><strong>Bài 4:</strong> Chú tiểu Cần Mẫn được giao quét dọn chiếc sân gạch trước chánh điện. Buổi sáng chú quét được $\frac{2}{5}$ sân, buổi chiều mát trời chú quét thêm được $\frac{1}{2}$ sân nữa. Hỏi cả ngày chú đã quét được bao nhiêu phần của sân chùa? (Các con hãy viết kết quả cuối cùng dưới dạng phân số thập phân nhé!).</p>
+    </div>
+
+    <h2>III. Lời giải chi tiết (Nhớ tự làm trước khi xem đáp án nhé!)</h2>
+    <div class="solution-box">
+        <p><strong>Bài 1: Nhận diện phân số thập phân</strong></p>
+        <div class="math-step">
+            Các phân số thập phân là: $\mathbf{\frac{9}{10}}$; $\mathbf{\frac{21}{100}}$; $\mathbf{\frac{345}{1 \ 000}}$.<br>
+            <em>Giải thích:</em> Vì các phân số này có mẫu số lần lượt là $10$, $100$ và $1 \ 000$.
+        </div>
+
+        <p><strong>Bài 2: Chuyển thành phân số thập phân (nhân)</strong></p>
+        <div class="math-step">
+            a) Ta thấy $2 \times 5 = 10$, nên ta nhân cả tử và mẫu với $5$:<br>
+            $\frac{1}{2} = \frac{1 \times 5}{2 \times 5} = \mathbf{\frac{5}{10}}$
+        </div>
+        <div class="math-step">
+            b) Ta thấy $5 \times 2 = 10$, nên ta nhân cả tử và mẫu với $2$:<br>
+            $\frac{4}{5} = \frac{4 \times 2}{5 \times 2} = \mathbf{\frac{8}{10}}$
+        </div>
+        <div class="math-step">
+            c) Ta thấy $25 \times 4 = 100$, nên ta nhân cả tử và mẫu với $4$:<br>
+            $\frac{7}{25} = \frac{7 \times 4}{25 \times 4} = \mathbf{\frac{28}{100}}$
+        </div>
+
+        <p><strong>Bài 3: Chuyển thành phân số thập phân (chia)</strong></p>
+        <div class="math-step">
+            a) Để mẫu số $40$ trở thành $10$, ta chia cho $4$. Ta thấy tử số $16$ cũng chia hết cho $4$:<br>
+            $\frac{16}{40} = \frac{16 : 4}{40 : 4} = \mathbf{\frac{4}{10}}$
+        </div>
+        <div class="math-step">
+            b) Để mẫu số $300$ trở thành $100$, ta chia cho $3$. Tử số $15$ cũng chia hết cho $3$:<br>
+            $\frac{15}{300} = \frac{15 : 3}{300 : 3} = \mathbf{\frac{5}{100}}$
+        </div>
+
+        <p><strong>Bài 4: Giải bài toán có lời văn</strong></p>
+        <div class="math-step">
+            <em>Bài giải:</em><br>
+            Tổng số phần sân chùa mà chú tiểu Cần Mẫn đã quét được trong cả ngày là:<br>
+            $$ \frac{2}{5} + \frac{1}{2} $$
+            Ta quy đồng mẫu số (chọn mẫu số chung là $10$ luôn để ra phân số thập phân):<br>
+            Buổi sáng: $\frac{2}{5} = \frac{2 \times 2}{5 \times 2} = \frac{4}{10}$ (sân).<br>
+            Buổi chiều: $\frac{1}{2} = \frac{1 \times 5}{2 \times 5} = \frac{5}{10}$ (sân).<br>
+            Cộng lại ta được:<br>
+            $$ \frac{4}{10} + \frac{5}{10} = \frac{9}{10} \text{ (sân)} $$
+            <strong>Đáp số:</strong> $\mathbf{\frac{9}{10}}$ sân chùa.
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>

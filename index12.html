@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-width=1.0">
+    <title>Bài 12: Viết số đo đại lượng dưới dạng số thập phân - Toán Lớp 5</title>
+    <!-- Cấu hình MathJax để render công thức toán học -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+      window.MathJax = {
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']],
+          displayMath: [['$$', '$$'], ['\\[', '\\]']]
+        }
+      };
+    </script>
+    <style>
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            background-color: #f4f9f4; 
+            color: #333; 
+            line-height: 1.6; 
+            padding: 20px; 
+            margin: 0;
+        }
+        .container { 
+            max-width: 800px; 
+            margin: 0 auto; 
+            background: #fff; 
+            padding: 30px; 
+            border-radius: 12px; 
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1); 
+        }
+        h1 { color: #2e7d32; text-align: center; border-bottom: 2px solid #a5d6a7; padding-bottom: 10px; }
+        h2 { color: #1565c0; margin-top: 30px; }
+        h3 { color: #d84315; }
+        .theory-box { 
+            background: #e3f2fd; 
+            padding: 15px; 
+            border-left: 5px solid #1976d2; 
+            border-radius: 5px; 
+            margin-bottom: 20px; 
+        }
+        .exercise-box { 
+            background: #fff3e0; 
+            padding: 15px; 
+            border-left: 5px solid #ff9800; 
+            border-radius: 5px; 
+            margin-bottom: 20px; 
+        }
+        .solution-box { 
+            background: #e8f5e9; 
+            padding: 15px; 
+            border-left: 5px solid #43a047; 
+            border-radius: 5px; 
+            margin-top: 30px; 
+        }
+        ul { margin-top: 5px; }
+        .math-step { margin-left: 20px; margin-bottom: 15px; }
+        .highlight { font-weight: bold; color: #d32f2f; }
+        .warning { background-color: #ffebee; border-left: 5px solid #f44336; padding: 10px; margin-top: 10px; border-radius: 5px;}
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Bài 12: Viết số đo đại lượng dưới dạng số thập phân</h1>
+    <p style="text-align: center; font-style: italic;">"Mỗi bước chân chánh niệm dù ngắn hay dài đều đưa ta về bến giác. Hôm nay, chúng ta cùng học cách ghép những khoảng cách ngắn dài ấy lại thành một con số thập phân thật gọn gàng nhé!"</p>
+
+    <h2>I. Kiến thức cần nhớ</h2>
+    <div class="theory-box">
+        <p>Trong thực tế, ta thường gặp những số đo có hai đơn vị (như mét và xăng-ti-mét). Để thuận tiện tính toán, ta sẽ gom chúng lại thành <strong>một đơn vị duy nhất</strong> dưới dạng số thập phân.</p>
+        
+        <h3>Cách làm gồm 2 bước:</h3>
+        <ul>
+            <li><strong>Bước 1:</strong> Chuyển số đo có hai đơn vị thành <strong>hỗn số</strong> với đơn vị lớn hơn.</li>
+            <li><strong>Bước 2:</strong> Từ hỗn số đó, chuyển thành <strong>số thập phân</strong>.</li>
+        </ul>
+
+        <h3>Ví dụ mẫu:</h3>
+        <p>Viết $5 \text{ m } 4 \text{ dm}$ dưới dạng số thập phân có đơn vị là mét $(\text{m})$.</p>
+        <ul>
+            <li>Ta biết $1 \text{ m} = 10 \text{ dm}$, suy ra $1 \text{ dm} = \frac{1}{10} \text{ m}$.</li>
+            <li>Nên $4 \text{ dm} = \frac{4}{10} \text{ m}$.</li>
+            <li>Gộp lại thành hỗn số: $5 \text{ m } 4 \text{ dm} = 5 \frac{4}{10} \text{ m}$.</li>
+            <li>Chuyển thành số thập phân: $5 \frac{4}{10} \text{ m} = \mathbf{5,4 \text{ m}}$.</li>
+        </ul>
+
+        <div class="warning">
+            <strong style="color: #d32f2f;">Chú ý chỗ này rất dễ sai các con nhé!</strong>
+            <p>Viết $3 \text{ m } 5 \text{ cm}$ ra đơn vị mét:</p>
+            <p>Vì $1 \text{ m} = 100 \text{ cm}$, nên $5 \text{ cm} = \frac{5}{100} \text{ m}$.</p>
+            <p>Hỗn số là $3 \frac{5}{100} \text{ m}$. Số thập phân phải là $\mathbf{3,05 \text{ m}}$ <em>(chứ không phải $3,5 \text{ m}$ đâu nhé, $3,5 \text{ m}$ là $3 \text{ m } 50 \text{ cm}$ mất rồi!)</em>.</p>
+        </div>
+    </div>
+
+    <h2>II. Bài tập tự luyện</h2>
+    <div class="exercise-box">
+        <p><strong>Bài 1:</strong> Viết số thập phân thích hợp vào chỗ chấm (Đo độ dài):</p>
+        <ul>
+            <li>a) $8 \text{ m } 6 \text{ dm} = \dots \text{ m}$</li>
+            <li>b) $4 \text{ m } 25 \text{ cm} = \dots \text{ m}$</li>
+            <li>c) $7 \text{ m } 8 \text{ cm} = \dots \text{ m}$ (Cẩn thận số $0$ nhé!)</li>
+        </ul>
+        
+        <p><strong>Bài 2:</strong> Viết số thập phân thích hợp vào chỗ chấm (Đo khối lượng):</p>
+        <ul>
+            <li>a) $5 \text{ kg } 300 \text{ g} = \dots \text{ kg}$</li>
+            <li>b) $2 \text{ tấn } 45 \text{ kg} = \dots \text{ tấn}$</li>
+        </ul>
+
+        <p><strong>Bài 3:</strong> Tìm lỗi sai và sửa lại cho đúng:</p>
+        <p>Một chú tiểu viết: $6 \text{ m } 9 \text{ cm} = 6,9 \text{ m}$. Theo con, chú ấy viết đúng hay sai? Nếu sai, con hãy sửa lại cho đúng nhé.</p>
+
+        <p><strong>Bài 4:</strong> Sáng nay, sư phụ nhờ chú tiểu Hỉ mang $2 \text{ kg } 50 \text{ g}$ đậu nành ra sân phơi để chiều làm tương. Con hãy giúp chú Hỉ ghi lại số cân nặng đậu nành này vào sổ nhà chùa dưới dạng số thập phân (với đơn vị là ki-lô-gam) nhé!</p>
+    </div>
+
+    <h2>III. Lời giải chi tiết (Làm xong mới được xem nha!)</h2>
+    <div class="solution-box">
+        <p><strong>Bài 1: Đổi đơn vị độ dài</strong></p>
+        <div class="math-step">
+            a) $8 \text{ m } 6 \text{ dm} = 8 \frac{6}{10} \text{ m} = \mathbf{8,6 \text{ m}}$
+        </div>
+        <div class="math-step">
+            b) $4 \text{ m } 25 \text{ cm} = 4 \frac{25}{100} \text{ m} = \mathbf{4,25 \text{ m}}$
+        </div>
+        <div class="math-step">
+            c) $7 \text{ m } 8 \text{ cm} = 7 \frac{8}{100} \text{ m} = \mathbf{7,08 \text{ m}}$ (Nhớ phải có số $0$ vì mẫu số là $100$ nhé).
+        </div>
+
+        <p><strong>Bài 2: Đổi đơn vị khối lượng</strong></p>
+        <div class="math-step">
+            a) Ta biết $1 \text{ kg} = 1000 \text{ g}$. Nên $300 \text{ g} = \frac{300}{1000} \text{ kg}$.<br>
+            $5 \text{ kg } 300 \text{ g} = 5 \frac{300}{1000} \text{ kg} = 5,300 \text{ kg} = \mathbf{5,3 \text{ kg}}$ (Số $0$ tận cùng bên phải phần thập phân có thể bỏ đi cho gọn).
+        </div>
+        <div class="math-step">
+            b) Ta biết $1 \text{ tấn} = 1000 \text{ kg}$. Nên $45 \text{ kg} = \frac{45}{1000} \text{ tấn}$.<br>
+            $2 \text{ tấn } 45 \text{ kg} = 2 \frac{45}{1000} \text{ tấn} = \mathbf{2,045 \text{ tấn}}$.
+        </div>
+
+        <p><strong>Bài 3: Tìm lỗi sai</strong></p>
+        <div class="math-step">
+            <em>Trả lời:</em> Chú tiểu đã viết <strong>sai</strong>.<br>
+            <em>Giải thích:</em> Vì $1 \text{ m} = 100 \text{ cm}$ nên $9 \text{ cm} = \frac{9}{100} \text{ m}$. Hỗn số đúng phải là $6 \frac{9}{100} \text{ m}$.<br>
+            <em>Sửa lại cho đúng:</em> $6 \text{ m } 9 \text{ cm} = \mathbf{6,09 \text{ m}}$.
+        </div>
+
+        <p><strong>Bài 4: Giải bài toán ứng dụng</strong></p>
+        <div class="math-step">
+            <em>Bài giải:</em><br>
+            Để đổi $2 \text{ kg } 50 \text{ g}$ sang đơn vị $\text{kg}$, ta làm như sau:<br>
+            Vì $1 \text{ kg} = 1000 \text{ g}$, nên $50 \text{ g} = \frac{50}{1000} \text{ kg}$.<br>
+            Gộp lại thành hỗn số: $2 \text{ kg } 50 \text{ g} = 2 \frac{50}{1000} \text{ kg}$.<br>
+            Chuyển thành số thập phân: $2 \frac{50}{1000} = \mathbf{2,050}$ (hoặc viết gọn là $\mathbf{2,05}$).<br>
+            <strong>Đáp số:</strong> $2,05 \text{ kg}$ đậu nành.
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>

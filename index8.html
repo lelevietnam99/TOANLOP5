@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-width=1.0">
+    <title>Bài 8: Ôn tập hình học và đo lường - Toán Lớp 5</title>
+    <!-- Cấu hình MathJax để render công thức toán học -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+      window.MathJax = {
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']],
+          displayMath: [['$$', '$$'], ['\\[', '\\]']]
+        }
+      };
+    </script>
+    <style>
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            background-color: #f4f9f4; 
+            color: #333; 
+            line-height: 1.6; 
+            padding: 20px; 
+            margin: 0;
+        }
+        .container { 
+            max-width: 800px; 
+            margin: 0 auto; 
+            background: #fff; 
+            padding: 30px; 
+            border-radius: 12px; 
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1); 
+        }
+        h1 { color: #2e7d32; text-align: center; border-bottom: 2px solid #a5d6a7; padding-bottom: 10px; }
+        h2 { color: #1565c0; margin-top: 30px; }
+        h3 { color: #d84315; }
+        .theory-box { 
+            background: #e3f2fd; 
+            padding: 15px; 
+            border-left: 5px solid #1976d2; 
+            border-radius: 5px; 
+            margin-bottom: 20px; 
+        }
+        .exercise-box { 
+            background: #fff3e0; 
+            padding: 15px; 
+            border-left: 5px solid #ff9800; 
+            border-radius: 5px; 
+            margin-bottom: 20px; 
+        }
+        .solution-box { 
+            background: #e8f5e9; 
+            padding: 15px; 
+            border-left: 5px solid #43a047; 
+            border-radius: 5px; 
+            margin-top: 30px; 
+        }
+        ul { margin-top: 5px; }
+        .math-step { margin-left: 20px; margin-bottom: 15px; }
+        table { width: 100%; border-collapse: collapse; margin: 15px 0; }
+        th, td { border: 1px solid #ccc; padding: 10px; text-align: center; }
+        th { background-color: #a5d6a7; color: #1b5e20; }
+        .highlight { font-weight: bold; color: #d32f2f; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Bài 8: Ôn tập hình học và đo lường</h1>
+    <p style="text-align: center; font-style: italic;">"Vạn vật xung quanh đều có kích thước và hình dáng riêng. Hôm nay chúng ta hãy dùng thước đo để khám phá vẻ đẹp của không gian nhà chùa nhé!"</p>
+
+    <h2>I. Kiến thức cần nhớ</h2>
+    <div class="theory-box">
+        <h3>1. Bảng đơn vị đo độ dài và khối lượng</h3>
+        <p>Hai đơn vị liền kề nhau sẽ gấp hoặc kém nhau <strong>10 lần</strong>.</p>
+        <table>
+            <tr>
+                <th>Đo độ dài</th>
+                <td>km</td><td>hm</td><td>dam</td><td>m</td><td>dm</td><td>cm</td><td>mm</td>
+            </tr>
+            <tr>
+                <th>Đo khối lượng</th>
+                <td>tấn</td><td>tạ</td><td>yến</td><td>kg</td><td>hg</td><td>dag</td><td>g</td>
+            </tr>
+        </table>
+        <ul>
+            <li><em>Mẹo nhớ:</em> Đổi từ đơn vị LỚN sang nhỏ, ta <strong>nhân</strong> (thêm số 0). Đổi từ đơn vị NHỎ sang lớn, ta <strong>chia</strong> (bớt số 0).</li>
+            <li>$1 \text{ m} = 100 \text{ cm}$; $1 \text{ km} = 1000 \text{ m}$</li>
+            <li>$1 \text{ tấn} = 1000 \text{ kg}$; $1 \text{ tạ} = 100 \text{ kg}$</li>
+        </ul>
+
+        <h3>2. Chu vi và Diện tích các hình cơ bản</h3>
+        <ul>
+            <li><strong>Hình chữ nhật:</strong>
+                <br>- Chu vi: $P = (a + b) \times 2$ (Dài cộng rộng, rồi nhân 2).
+                <br>- Diện tích: $S = a \times b$ (Dài nhân rộng).
+            </li>
+            <li><strong>Hình vuông:</strong>
+                <br>- Chu vi: $P = a \times 4$ (Cạnh nhân 4).
+                <br>- Diện tích: $S = a \times a$ (Cạnh nhân cạnh).
+            </li>
+        </ul>
+        <p><em>(Chú ý: $a, b$ phải cùng chung một đơn vị đo các con nhé!)</em></p>
+    </div>
+
+    <h2>II. Bài tập tự luyện</h2>
+    <div class="exercise-box">
+        <p><strong>Bài 1:</strong> Điền số thích hợp vào chỗ chấm (Đổi đơn vị đo độ dài):</p>
+        <ul>
+            <li>a) $5 \text{ m} = \dots \text{ cm}$</li>
+            <li>b) $3 \text{ km} = \dots \text{ m}$</li>
+            <li>c) $400 \text{ dm} = \dots \text{ m}$</li>
+        </ul>
+        
+        <p><strong>Bài 2:</strong> Điền số thích hợp vào chỗ chấm (Đổi đơn vị đo khối lượng):</p>
+        <ul>
+            <li>a) $2 \text{ tấn} = \dots \text{ kg}$</li>
+            <li>b) $3 \text{ tạ} = \dots \text{ kg}$</li>
+            <li>c) $5000 \text{ g} = \dots \text{ kg}$</li>
+        </ul>
+
+        <p><strong>Bài 3:</strong> Vườn rau của chùa có hình chữ nhật với chiều dài $15 \text{ m}$, chiều rộng $10 \text{ m}$.
+        <br>a) Tính chu vi của vườn rau để sư phụ mua lưới vây quanh.
+        <br>b) Tính diện tích của vườn rau.</p>
+
+        <p><strong>Bài 4:</strong> Nền chánh điện là một hình vuông có cạnh dài $12 \text{ m}$. Tính chu vi và diện tích nền chánh điện đó.</p>
+    </div>
+
+    <h2>III. Lời giải chi tiết (Nhớ lấy giấy nháp ra tính trước khi xem nhé!)</h2>
+    <div class="solution-box">
+        <p><strong>Bài 1: Đổi đơn vị đo độ dài</strong></p>
+        <div class="math-step">
+            a) Từ $\text{m}$ sang $\text{cm}$ cách nhau 2 khoảng, ta nhân với $100$:<br>
+            $5 \text{ m} = \mathbf{500} \text{ cm}$
+        </div>
+        <div class="math-step">
+            b) Từ $\text{km}$ sang $\text{m}$ cách nhau 3 khoảng, ta nhân với $1000$:<br>
+            $3 \text{ km} = \mathbf{3000} \text{ m}$
+        </div>
+        <div class="math-step">
+            c) Từ $\text{dm}$ sang $\text{m}$ (từ nhỏ sang lớn) cách nhau 1 khoảng, ta chia cho $10$ (bớt đi 1 chữ số 0):<br>
+            $400 \text{ dm} = \mathbf{40} \text{ m}$
+        </div>
+
+        <p><strong>Bài 2: Đổi đơn vị đo khối lượng</strong></p>
+        <div class="math-step">
+            a) $1 \text{ tấn} = 1000 \text{ kg}$, nên $2 \text{ tấn} = \mathbf{2000} \text{ kg}$.
+        </div>
+        <div class="math-step">
+            b) $1 \text{ tạ} = 100 \text{ kg}$, nên $3 \text{ tạ} = \mathbf{300} \text{ kg}$.
+        </div>
+        <div class="math-step">
+            c) Đổi từ $\text{g}$ sang $\text{kg}$ ta chia cho $1000$ (bớt đi 3 chữ số 0):<br>
+            $5000 \text{ g} = \mathbf{5} \text{ kg}$.
+        </div>
+
+        <p><strong>Bài 3: Chu vi, diện tích hình chữ nhật</strong></p>
+        <div class="math-step">
+            <em>Bài giải:</em><br>
+            a) Chu vi vườn rau hình chữ nhật là:<br>
+            $(15 + 10) \times 2 = 50 \text{ (m)}$<br>
+            b) Diện tích vườn rau hình chữ nhật là:<br>
+            $15 \times 10 = 150 \text{ (m}^2)$<br>
+            <strong>Đáp số:</strong> a) $50 \text{ m}$; b) $150 \text{ m}^2$.
+        </div>
+
+        <p><strong>Bài 4: Chu vi, diện tích hình vuông</strong></p>
+        <div class="math-step">
+            <em>Bài giải:</em><br>
+            Chu vi nền chánh điện hình vuông là:<br>
+            $12 \times 4 = 48 \text{ (m)}$<br>
+            Diện tích nền chánh điện hình vuông là:<br>
+            $12 \times 12 = 144 \text{ (m}^2)$<br>
+            <strong>Đáp số:</strong> Chu vi: $48 \text{ m}$; Diện tích: $144 \text{ m}^2$.
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>

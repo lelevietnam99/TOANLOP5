@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-width=1.0">
+    <title>Bài 24: Chia số tự nhiên cho số thập phân - Toán Lớp 5</title>
+    <!-- Cấu hình MathJax để render công thức toán học -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+      window.MathJax = {
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']],
+          displayMath: [['$$', '$$'], ['\\[', '\\]']]
+        }
+      };
+    </script>
+    <style>
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            background-color: #f4f9f4; 
+            color: #333; 
+            line-height: 1.6; 
+            padding: 20px; 
+            margin: 0;
+        }
+        .container { 
+            max-width: 800px; 
+            margin: 0 auto; 
+            background: #fff; 
+            padding: 30px; 
+            border-radius: 12px; 
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1); 
+        }
+        h1 { color: #2e7d32; text-align: center; border-bottom: 2px solid #a5d6a7; padding-bottom: 10px; }
+        h2 { color: #1565c0; margin-top: 30px; }
+        h3 { color: #d84315; }
+        .theory-box { 
+            background: #e3f2fd; 
+            padding: 15px; 
+            border-left: 5px solid #1976d2; 
+            border-radius: 5px; 
+            margin-bottom: 20px; 
+        }
+        .exercise-box { 
+            background: #fff3e0; 
+            padding: 15px; 
+            border-left: 5px solid #ff9800; 
+            border-radius: 5px; 
+            margin-bottom: 20px; 
+        }
+        .solution-box { 
+            background: #e8f5e9; 
+            padding: 15px; 
+            border-left: 5px solid #43a047; 
+            border-radius: 5px; 
+            margin-top: 30px; 
+        }
+        ul { margin-top: 5px; }
+        .math-step { margin-left: 20px; margin-bottom: 15px; }
+        .highlight { font-weight: bold; color: #d32f2f; }
+        .rule-box { background-color: #fff9c4; padding: 10px; border-radius: 5px; border-left: 4px solid #fbc02d; font-weight: bold; margin-top: 10px; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Bài 24: Chia một số tự nhiên cho một số thập phân</h1>
+    <p style="text-align: center; font-style: italic;">"Để vượt qua chướng ngại vật mang tên 'dấu phẩy', chúng ta chỉ cần dùng phép nhiệm màu biến hóa thêm những số 0 tròn trịa..."</p>
+
+    <h2>I. Kiến thức cần nhớ</h2>
+    <div class="theory-box">
+        <p>Khi thực hiện phép chia, nếu số chia (số nằm bên phải) là một số thập phân, ta không thể chia ngay được. Ta phải tìm cách <strong>làm mất dấu phẩy</strong> ở số chia đi.</p>
+        
+        <div class="rule-box">
+            Muốn chia một số tự nhiên cho một số thập phân, ta làm như sau:
+            <ul>
+                <li><strong>Bước 1: Đếm.</strong> Xem phần thập phân của <strong>số chia</strong> có bao nhiêu chữ số.</li>
+                <li><strong>Bước 2: Thêm số 0.</strong> Viết thêm <strong>bấy nhiêu chữ số 0</strong> vào bên phải <strong>số bị chia</strong>.</li>
+                <li><strong>Bước 3: Bỏ dấu phẩy.</strong> Gạch bỏ dấu phẩy ở số chia. Lúc này bài toán trở về phép chia hai số tự nhiên bình thường!</li>
+            </ul>
+        </div>
+
+        <h3>Ví dụ mẫu: Tính $27 : 4,5$</h3>
+        <ul>
+            <li>Ta thấy phần thập phân của số chia ($4,5$) có <strong>1 chữ số</strong> (số $5$).</li>
+            <li>Ta viết thêm <strong>một chữ số 0</strong> vào bên phải số bị chia ($27$ thành $270$).</li>
+            <li>Bỏ dấu phẩy ở số $4,5$ (thành $45$).</li>
+            <li>Thực hiện phép chia: $\mathbf{270 : 45 = 6}$. Vậy $\mathbf{27 : 4,5 = 6}$.</li>
+        </ul>
+    </div>
+
+    <h2>II. Bài tập tự luyện</h2>
+    <div class="exercise-box">
+        <p><strong>Bài 1:</strong> Đặt tính rồi tính (Nhớ thêm chữ số $0$ và bỏ dấu phẩy nhé):</p>
+        <ul>
+            <li>a) $12 : 1,5$</li>
+            <li>b) $75 : 2,5$</li>
+        </ul>
+        
+        <p><strong>Bài 2:</strong> Đặt tính rồi tính (Phần thập phân có 2 chữ số thì thêm mấy số 0 nhỉ?):</p>
+        <ul>
+            <li>a) $9 : 0,25$</li>
+            <li>b) $18 : 0,24$</li>
+        </ul>
+
+        <p><strong>Bài 3:</strong> Sáng nay nhà bếp chùa nấu được $18 \text{ lít}$ sữa hạt sen rất thơm. Sư cô muốn rót đều số sữa này vào các chai nhỏ, mỗi chai chứa được $1,5 \text{ lít}$. Hỏi sư cô rót được tất cả bao nhiêu chai sữa hạt sen?</p>
+
+        <p><strong>Bài 4:</strong> Chuẩn bị cho lễ Vu Lan, chú tiểu Hỉ dùng $24 \text{ m}$ dây kẽm để uốn các khung lồng đèn hoa sen. Biết mỗi khung lồng đèn cần dùng $1,2 \text{ m}$ dây kẽm. Hỏi chú Hỉ có thể làm được bao nhiêu chiếc khung lồng đèn?</p>
+    </div>
+
+    <h2>III. Lời giải chi tiết (Làm bài cẩn thận rồi mới so kết quả nhé!)</h2>
+    <div class="solution-box">
+        <p><strong>Bài 1: Chia cơ bản (Phần thập phân có 1 chữ số)</strong></p>
+        <div class="math-step">
+            a) $12 : 1,5$<br>
+            <em>Cách làm:</em> Thêm $1$ chữ số $0$ vào $12$ thành $120$. Bỏ dấu phẩy ở $1,5$ thành $15$.<br>
+            Ta chia: $120 : 15 = \mathbf{8}$.
+        </div>
+        <div class="math-step">
+            b) $75 : 2,5$<br>
+            <em>Cách làm:</em> Thêm $1$ chữ số $0$ vào $75$ thành $750$. Bỏ phẩy ở $2,5$ thành $25$.<br>
+            Ta chia: $750 : 25 = \mathbf{30}$.
+        </div>
+
+        <p><strong>Bài 2: Chia nâng cao (Phần thập phân có 2 chữ số)</strong></p>
+        <div class="math-step">
+            a) $9 : 0,25$<br>
+            <em>Cách làm:</em> Số $0,25$ có $2$ chữ số thập phân. Ta thêm <strong>hai</strong> chữ số $0$ vào $9$ thành $900$. Bỏ phẩy ở $0,25$ thành $25$.<br>
+            Ta chia: $900 : 25 = \mathbf{36}$.
+        </div>
+        <div class="math-step">
+            b) $18 : 0,24$<br>
+            <em>Cách làm:</em> Thêm hai chữ số $0$ vào $18$ thành $1800$. Bỏ phẩy ở $0,24$ thành $24$.<br>
+            Ta chia: $1800 : 24 = \mathbf{75}$.
+        </div>
+
+        <p><strong>Bài 3: Bài toán rót sữa hạt sen</strong></p>
+        <div class="math-step">
+            <em>Bài giải:</em><br>
+            Số chai sữa hạt sen sư cô rót được là:<br>
+            $$ 18 : 1,5 = 12 \text{ (chai)} $$<br>
+            <em>(Cách chia: Biến đổi thành $180 : 15 = 12$).</em><br>
+            <strong>Đáp số:</strong> $12$ chai.
+        </div>
+
+        <p><strong>Bài 4: Bài toán làm khung lồng đèn</strong></p>
+        <div class="math-step">
+            <em>Bài giải:</em><br>
+            Số khung lồng đèn hoa sen chú Hỉ làm được là:<br>
+            $$ 24 : 1,2 = 20 \text{ (khung)} $$<br>
+            <em>(Cách chia: Biến đổi thành $240 : 12 = 20$).</em><br>
+            <strong>Đáp số:</strong> $20$ khung lồng đèn.
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>

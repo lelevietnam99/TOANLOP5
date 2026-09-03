@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-width=1.0">
+    <title>Bài 20: Phép trừ số thập phân - Toán Lớp 5</title>
+    <!-- Cấu hình MathJax để render công thức toán học -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+      window.MathJax = {
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']],
+          displayMath: [['$$', '$$'], ['\\[', '\\]']]
+        }
+      };
+    </script>
+    <style>
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            background-color: #f4f9f4; 
+            color: #333; 
+            line-height: 1.6; 
+            padding: 20px; 
+            margin: 0;
+        }
+        .container { 
+            max-width: 800px; 
+            margin: 0 auto; 
+            background: #fff; 
+            padding: 30px; 
+            border-radius: 12px; 
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1); 
+        }
+        h1 { color: #2e7d32; text-align: center; border-bottom: 2px solid #a5d6a7; padding-bottom: 10px; }
+        h2 { color: #1565c0; margin-top: 30px; }
+        h3 { color: #d84315; }
+        .theory-box { 
+            background: #e3f2fd; 
+            padding: 15px; 
+            border-left: 5px solid #1976d2; 
+            border-radius: 5px; 
+            margin-bottom: 20px; 
+        }
+        .exercise-box { 
+            background: #fff3e0; 
+            padding: 15px; 
+            border-left: 5px solid #ff9800; 
+            border-radius: 5px; 
+            margin-bottom: 20px; 
+        }
+        .solution-box { 
+            background: #e8f5e9; 
+            padding: 15px; 
+            border-left: 5px solid #43a047; 
+            border-radius: 5px; 
+            margin-top: 30px; 
+        }
+        ul { margin-top: 5px; }
+        .math-step { margin-left: 20px; margin-bottom: 15px; }
+        .highlight { font-weight: bold; color: #d32f2f; }
+        .rule-box { background-color: #fff9c4; padding: 10px; border-radius: 5px; border-left: 4px solid #fbc02d; font-weight: bold; margin-top: 10px; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Bài 20: Phép trừ số thập phân</h1>
+    <p style="text-align: center; font-style: italic;">"Phép trừ nhắc nhở ta về sự sẻ chia, cho đi để thấy lòng nhẹ nhàng hơn. Các con hãy cùng học cách tính toán thật cẩn thận để chia đều niềm vui nhé!"</p>
+
+    <h2>I. Kiến thức cần nhớ</h2>
+    <div class="theory-box">
+        <p>Phép trừ số thập phân cũng có các bước thực hiện giống y hệt như phép cộng, chỉ khác là chúng ta làm toán trừ thôi:</p>
+        
+        <div class="rule-box">
+            <ul>
+                <li><strong>Bước 1: Đặt tính.</strong> Viết số trừ dưới số bị trừ sao cho các chữ số ở cùng một hàng đặt thẳng cột với nhau. <em>(Đặc biệt: <strong>Dấu phẩy phải thẳng cột với dấu phẩy</strong>).</em></li>
+                <li><strong>Bước 2: Trừ.</strong> Thực hiện phép trừ như trừ các số tự nhiên.</li>
+                <li><strong>Bước 3: Đặt dấu phẩy.</strong> Viết dấu phẩy ở hiệu thẳng cột với các dấu phẩy ở trên.</li>
+            </ul>
+        </div>
+
+        <h3>Bí kíp rất quan trọng khi làm toán trừ:</h3>
+        <p>Nếu số chữ số ở phần thập phân của số bị trừ (số ở trên) <strong>ít hơn</strong> số trừ (số ở dưới), các con <strong>hãy viết thêm chữ số $0$</strong> vào bên phải phần thập phân của số ở trên rồi mới trừ cho dễ nhé!</p>
+        <p><em>Ví dụ: Khi tính $10 - 3,45$, con hãy viết thành $10,00 - 3,45$ rồi tính.</em></p>
+    </div>
+
+    <h2>II. Bài tập tự luyện</h2>
+    <div class="exercise-box">
+        <p><strong>Bài 1:</strong> Đặt tính rồi tính (Nhớ gióng thẳng dấu phẩy):</p>
+        <ul>
+            <li>a) $15,8 - 4,5$</li>
+            <li>b) $24,15 - 9,6$</li>
+        </ul>
+        
+        <p><strong>Bài 2:</strong> Đặt tính rồi tính (Sử dụng bí kíp thêm số $0$):</p>
+        <ul>
+            <li>a) $10 - 3,45$</li>
+            <li>b) $12,5 - 4,32$</li>
+        </ul>
+
+        <p><strong>Bài 3:</strong> Tìm $x$, biết:</p>
+        <ul>
+            <li>a) $x + 4,2 = 10,5$</li>
+        </ul>
+
+        <p><strong>Bài 4:</strong> Đầu tháng, sư phụ mua một bao gạo tẻ nặng $15,5 \text{ kg}$. Sau một tuần nấu cơm chay đãi khách, sư cô kiểm tra lại thì thấy đã dùng hết $8,25 \text{ kg}$ gạo. Hỏi trong bao lúc này còn lại bao nhiêu ki-lô-gam gạo?</p>
+    </div>
+
+    <h2>III. Lời giải chi tiết (Làm nháp xong mới được xem nhé!)</h2>
+    <div class="solution-box">
+        <p><strong>Bài 1: Đặt tính rồi tính cơ bản</strong></p>
+        <div class="math-step">
+            a) $15,8 - 4,5 = \mathbf{11,3}$<br>
+            <em>(Hàng phần mười: $8 - 5 = 3$. Hàng đơn vị: $5 - 4 = 1$. Hạ 1 xuống).</em>
+        </div>
+        <div class="math-step">
+            b) $24,15 - 9,6 = \mathbf{14,55}$<br>
+            <em>(Con coi số trừ là $9,60$. Lấy $5 - 0 = 5$. Lấy $11 - 6 = 5$ viết $5$ nhớ $1$. $14 - 10 = 4$ viết $4$ nhớ $1$. $2 - 1 = 1$. Kết quả $14,55$).</em>
+        </div>
+
+        <p><strong>Bài 2: Thêm số $0$ để trừ</strong></p>
+        <div class="math-step">
+            a) $10 - 3,45$<br>
+            Viết thành: $10,00 - 3,45$<br>
+            Thực hiện phép trừ có nhớ: $0$ không trừ được $5$, mượn $10$ trừ $5$ bằng $5$ nhớ $1$...<br>
+            Kết quả: $\mathbf{6,55}$.
+        </div>
+        <div class="math-step">
+            b) $12,5 - 4,32$<br>
+            Viết thành: $12,50 - 4,32$<br>
+            Thực hiện trừ: Lấy $10 - 2 = 8$ nhớ $1$; $5 - 4 = 1$; $12 - 4 = 8$.<br>
+            Kết quả: $\mathbf{8,18}$.
+        </div>
+
+        <p><strong>Bài 3: Tìm $x$</strong></p>
+        <div class="math-step">
+            a) $x + 4,2 = 10,5$<br>
+            $x$ là số hạng chưa biết. Muốn tìm số hạng chưa biết, ta lấy tổng trừ đi số hạng đã biết:<br>
+            $x = 10,5 - 4,2$<br>
+            $x = \mathbf{6,3}$
+        </div>
+
+        <p><strong>Bài 4: Giải bài toán ứng dụng</strong></p>
+        <div class="math-step">
+            <em>Bài giải:</em><br>
+            Số gạo còn lại trong bao là:<br>
+            $$ 15,5 - 8,25 = 7,25 \text{ (kg)} $$<br>
+            <em>(Giải thích: Đặt tính $15,50 - 8,25 = 7,25$).</em><br>
+            <strong>Đáp số:</strong> $7,25 \text{ kg}$.
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>

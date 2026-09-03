@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-width=1.0">
+    <title>Bài 7: Hỗn số - Toán Lớp 5</title>
+    <!-- Cấu hình MathJax để render công thức toán học -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+      window.MathJax = {
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']],
+          displayMath: [['$$', '$$'], ['\\[', '\\]']]
+        }
+      };
+    </script>
+    <style>
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            background-color: #f4f9f4; 
+            color: #333; 
+            line-height: 1.6; 
+            padding: 20px; 
+            margin: 0;
+        }
+        .container { 
+            max-width: 800px; 
+            margin: 0 auto; 
+            background: #fff; 
+            padding: 30px; 
+            border-radius: 12px; 
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1); 
+        }
+        h1 { color: #2e7d32; text-align: center; border-bottom: 2px solid #a5d6a7; padding-bottom: 10px; }
+        h2 { color: #1565c0; margin-top: 30px; }
+        h3 { color: #d84315; }
+        .theory-box { 
+            background: #e3f2fd; 
+            padding: 15px; 
+            border-left: 5px solid #1976d2; 
+            border-radius: 5px; 
+            margin-bottom: 20px; 
+        }
+        .exercise-box { 
+            background: #fff3e0; 
+            padding: 15px; 
+            border-left: 5px solid #ff9800; 
+            border-radius: 5px; 
+            margin-bottom: 20px; 
+        }
+        .solution-box { 
+            background: #e8f5e9; 
+            padding: 15px; 
+            border-left: 5px solid #43a047; 
+            border-radius: 5px; 
+            margin-top: 30px; 
+        }
+        ul { margin-top: 5px; }
+        .math-step { margin-left: 20px; margin-bottom: 15px; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Bài 7: Hỗn số</h1>
+    <p style="text-align: center; font-style: italic;">"Hỗn số là sự kết hợp tuyệt vời giữa sự nguyên vẹn và sự sẻ chia. Các con hãy cùng làm quen với người bạn mới này nhé!"</p>
+
+    <h2>I. Kiến thức cần nhớ</h2>
+    <div class="theory-box">
+        <h3>1. Khái niệm Hỗn số</h3>
+        <p>Hỗn số là sự kết hợp của hai phần: <strong>Phần nguyên</strong> và <strong>Phần phân số</strong>.</p>
+        <p>Ví dụ: $2 \frac{3}{4}$ (đọc là: <em>hai và ba phần tư</em>).</p>
+        <ul>
+            <li>Số $2$ là <strong>phần nguyên</strong>.</li>
+            <li>Phân số $\frac{3}{4}$ là <strong>phần phân số</strong>.</li>
+            <li><em>Chú ý quan trọng:</em> Phần phân số của hỗn số bao giờ cũng phải <strong>nhỏ hơn 1</strong> (tử số phải bé hơn mẫu số).</li>
+        </ul>
+
+        <h3>2. Cách chuyển Hỗn số thành Phân số</h3>
+        <p>Để tính toán dễ dàng, ta thường chuyển hỗn số thành phân số bằng cách:</p>
+        <ul>
+            <li><strong>Tử số mới:</strong> Lấy phần nguyên nhân với mẫu số rồi cộng với tử số ban đầu.</li>
+            <li><strong>Mẫu số mới:</strong> Giữ nguyên mẫu số của phần phân số.</li>
+        </ul>
+        <p><em>Ví dụ:</em> $2 \frac{3}{4} = \frac{2 \times 4 + 3}{4} = \frac{11}{4}$</p>
+
+        <h3>3. Các phép tính với Hỗn số</h3>
+        <p>Muốn cộng, trừ, nhân, chia hỗn số, bước đầu tiên và an toàn nhất là <strong>chuyển hỗn số đó thành phân số</strong>, sau đó thực hiện phép tính như bình thường.</p>
+    </div>
+
+    <h2>II. Bài tập tự luyện</h2>
+    <div class="exercise-box">
+        <p><strong>Bài 1:</strong> Chuyển các hỗn số sau thành phân số:</p>
+        <ul>
+            <li>a) $3 \frac{1}{2}$</li>
+            <li>b) $5 \frac{2}{5}$</li>
+            <li>c) $1 \frac{4}{7}$</li>
+        </ul>
+        
+        <p><strong>Bài 2:</strong> Tính (Chuyển hỗn số thành phân số rồi tính):</p>
+        <ul>
+            <li>a) $1 \frac{1}{3} + 2 \frac{1}{2}$</li>
+            <li>b) $3 \frac{2}{5} - 1 \frac{1}{5}$</li>
+        </ul>
+
+        <p><strong>Bài 3:</strong> Tính:</p>
+        <ul>
+            <li>a) $2 \frac{1}{4} \times 1 \frac{1}{3}$</li>
+        </ul>
+
+        <p><strong>Bài 4:</strong> Dịp lễ Vu Lan, Phật tử cúng dường cho chùa một số bánh in. Sau khi chia đều cho mọi người, trong mâm còn lại $4$ chiếc bánh nguyên và $\frac{1}{2}$ chiếc bánh. <br>a) Con hãy viết số bánh còn lại dưới dạng hỗn số. <br>b) Chuyển hỗn số vừa tìm được thành phân số.</p>
+    </div>
+
+    <h2>III. Lời giải chi tiết (Các con hãy suy nghĩ thật kỹ trước khi xem nhé!)</h2>
+    <div class="solution-box">
+        <p><strong>Bài 1: Chuyển hỗn số thành phân số</strong></p>
+        <div class="math-step">
+            a) $3 \frac{1}{2} = \frac{3 \times 2 + 1}{2} = \mathbf{\frac{7}{2}}$
+        </div>
+        <div class="math-step">
+            b) $5 \frac{2}{5} = \frac{5 \times 5 + 2}{5} = \mathbf{\frac{27}{5}}$
+        </div>
+        <div class="math-step">
+            c) $1 \frac{4}{7} = \frac{1 \times 7 + 4}{7} = \mathbf{\frac{11}{7}}$
+        </div>
+
+        <p><strong>Bài 2: Cộng, trừ hỗn số</strong></p>
+        <div class="math-step">
+            a) $1 \frac{1}{3} + 2 \frac{1}{2}$<br>
+            Bước 1: Chuyển thành phân số:<br>
+            $1 \frac{1}{3} = \frac{4}{3}$ và $2 \frac{1}{2} = \frac{5}{2}$<br>
+            Bước 2: Quy đồng và cộng (mẫu chung là $6$):<br>
+            $\frac{4}{3} + \frac{5}{2} = \frac{8}{6} + \frac{15}{6} = \mathbf{\frac{23}{6}}$
+        </div>
+        <div class="math-step">
+            b) $3 \frac{2}{5} - 1 \frac{1}{5}$<br>
+            Bước 1: Chuyển thành phân số:<br>
+            $3 \frac{2}{5} = \frac{17}{5}$ và $1 \frac{1}{5} = \frac{6}{5}$<br>
+            Bước 2: Thực hiện phép trừ (đã cùng mẫu số):<br>
+            $\frac{17}{5} - \frac{6}{5} = \mathbf{\frac{11}{5}}$
+        </div>
+
+        <p><strong>Bài 3: Nhân hỗn số</strong></p>
+        <div class="math-step">
+            a) $2 \frac{1}{4} \times 1 \frac{1}{3}$<br>
+            Bước 1: Chuyển thành phân số:<br>
+            $2 \frac{1}{4} = \frac{9}{4}$ và $1 \frac{1}{3} = \frac{4}{3}$<br>
+            Bước 2: Nhân phân số:<br>
+            $\frac{9}{4} \times \frac{4}{3} = \frac{36}{12}$<br>
+            Bước 3: Rút gọn:<br>
+            $\frac{36}{12} = \mathbf{3}$
+        </div>
+
+        <p><strong>Bài 4: Bài toán ứng dụng</strong></p>
+        <div class="math-step">
+            <em>Bài giải:</em><br>
+            a) Còn lại $4$ chiếc bánh nguyên (phần nguyên) và $\frac{1}{2}$ chiếc bánh (phần phân số).<br>
+            Viết dưới dạng hỗn số là: $\mathbf{4 \frac{1}{2}}$ (chiếc bánh).<br><br>
+            b) Chuyển hỗn số $4 \frac{1}{2}$ thành phân số:<br>
+            $4 \frac{1}{2} = \frac{4 \times 2 + 1}{2} = \mathbf{\frac{9}{2}}$ (chiếc bánh).
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
