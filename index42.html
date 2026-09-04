@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-width=1.0">
+    <title>Bài 42: Máy tính cầm tay - Toán Lớp 5</title>
+    <!-- Cấu hình MathJax để render công thức toán học -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+      window.MathJax = {
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']],
+          displayMath: [['$$', '$$'], ['\\[', '\\]']]
+        }
+      };
+    </script>
+    <style>
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            background-color: #f4f9f4; 
+            color: #333; 
+            line-height: 1.6; 
+            padding: 20px; 
+            margin: 0;
+        }
+        .container { 
+            max-width: 800px; 
+            margin: 0 auto; 
+            background: #fff; 
+            padding: 30px; 
+            border-radius: 12px; 
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1); 
+        }
+        h1 { color: #2e7d32; text-align: center; border-bottom: 2px solid #a5d6a7; padding-bottom: 10px; }
+        h2 { color: #1565c0; margin-top: 30px; }
+        h3 { color: #d84315; }
+        .theory-box { 
+            background: #e3f2fd; 
+            padding: 15px; 
+            border-left: 5px solid #1976d2; 
+            border-radius: 5px; 
+            margin-bottom: 20px; 
+        }
+        .exercise-box { 
+            background: #fff3e0; 
+            padding: 15px; 
+            border-left: 5px solid #ff9800; 
+            border-radius: 5px; 
+            margin-bottom: 20px; 
+        }
+        .solution-box { 
+            background: #e8f5e9; 
+            padding: 15px; 
+            border-left: 5px solid #43a047; 
+            border-radius: 5px; 
+            margin-top: 30px; 
+        }
+        ul { margin-top: 5px; }
+        .math-step { margin-left: 20px; margin-bottom: 15px; }
+        .highlight { font-weight: bold; color: #d32f2f; }
+        .rule-box { background-color: #fff9c4; padding: 10px; border-radius: 5px; border-left: 4px solid #fbc02d; font-weight: bold; margin-top: 10px; }
+        .tip-box { background-color: #e8eaf6; padding: 10px; border-radius: 5px; border-left: 4px solid #3f51b5; font-style: italic; margin-top: 15px; }
+        .key-btn { display: inline-block; background-color: #e0e0e0; border: 1px solid #9e9e9e; border-radius: 4px; padding: 2px 8px; font-weight: bold; margin: 0 2px; box-shadow: 1px 1px 2px rgba(0,0,0,0.2); }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Bài 42: Máy tính cầm tay</h1>
+    <p style="text-align: center; font-style: italic;">"Chuỗi tràng hạt giúp ta chuyên chú khi niệm Phật, còn máy tính cầm tay giúp ta tính toán bớt nhọc nhằn. Công cụ dẫu hay đến đâu, trí tuệ sáng suốt của con mới là người làm chủ!"</p>
+
+    <h2>I. Làm quen với người bạn mới</h2>
+    <div class="theory-box">
+        <p>Máy tính cầm tay là một công cụ rất hữu ích giúp ta thực hiện các phép tính cộng, trừ, nhân, chia một cách nhanh chóng và chính xác. Các con cần nhớ các phím quan trọng sau:</p>
+        
+        <div class="rule-box">
+            <ul>
+                <li><span class="key-btn">ON/C</span> hoặc <span class="key-btn">AC</span>: Bật máy lên, hoặc xóa sạch màn hình (như sự buông xả những phiền não để bắt đầu lại từ đầu).</li>
+                <li><span class="key-btn">OFF</span>: Tắt máy để tiết kiệm pin.</li>
+                <li><span class="key-btn">0</span> ... <span class="key-btn">9</span>: Các phím số.</li>
+                <li><span class="key-btn">+</span> <span class="key-btn">-</span> <span class="key-btn">×</span> <span class="key-btn">÷</span>: Các phím phép tính.</li>
+                <li><span class="key-btn">=</span>: Phím ra kết quả.</li>
+                <li><span class="key-btn">%</span>: Phím đặc biệt dùng để tính tỉ số phần trăm.</li>
+            </ul>
+        </div>
+        
+        <div class="tip-box">
+            <strong>Ví dụ cách bấm phím:</strong><br>
+            Để tính $25 + 18,5$, con lần lượt ấn các phím: <span class="key-btn">2</span> <span class="key-btn">5</span> <span class="key-btn">+</span> <span class="key-btn">1</span> <span class="key-btn">8</span> <span class="key-btn">.</span> <span class="key-btn">5</span> <span class="key-btn">=</span><br>
+            <em>(Chú ý: Dấu phẩy thập phân trên máy tính thường là dấu chấm <span class="key-btn">.</span>).</em>
+        </div>
+    </div>
+
+    <h2>II. Bài tập thực hành (Lấy máy tính ra cùng bấm nhé)</h2>
+    <div class="exercise-box">
+        <p><strong>Bài 1:</strong> Sử dụng máy tính cầm tay để tính các phép tính sau rồi ghi lại kết quả:</p>
+        <ul>
+            <li>a) $145,26 + 87,9$</li>
+            <li>b) $450 - 128,75$</li>
+            <li>c) $34,5 \times 12$</li>
+            <li>d) $184,5 : 15$</li>
+        </ul>
+        
+        <p><strong>Bài 2: Tính tỉ số phần trăm siêu tốc bằng máy tính.</strong></p>
+        <p><em>(Gợi ý: Để tính $35\%$ của $200$, con bấm: <span class="key-btn">2</span> <span class="key-btn">0</span> <span class="key-btn">0</span> <span class="key-btn">×</span> <span class="key-btn">3</span> <span class="key-btn">5</span> <span class="key-btn">%</span>)</em></p>
+        <ul>
+            <li>a) Tìm $25\%$ của $120$.</li>
+            <li>b) Tìm $40\%$ của $500$.</li>
+        </ul>
+
+        <p><strong>Bài 3: Ứng dụng thực tế.</strong></p>
+        <p>Nhà chùa vừa nhập về $15$ bao gạo, mỗi bao nặng $25,5 \text{ kg}$. Chú tiểu Hỉ muốn tính xem tổng cộng có bao nhiêu ki-lô-gam gạo. Con hãy giúp chú Hỉ sử dụng máy tính cầm tay để tìm ra kết quả nhanh nhất nhé!</p>
+    </div>
+
+    <h2>III. Kiểm tra lại màn hình máy tính</h2>
+    <div class="solution-box">
+        <p><strong>Bài 1: Thực hành 4 phép tính cơ bản</strong></p>
+        <div class="math-step">
+            a) Kết quả hiện trên màn hình là: <strong>$233.16$</strong> <em>(Tức là $233,16$)</em>
+        </div>
+        <div class="math-step">
+            b) Kết quả hiện trên màn hình là: <strong>$321.25$</strong> <em>(Tức là $321,25$)</em>
+        </div>
+        <div class="math-step">
+            c) Kết quả hiện trên màn hình là: <strong>$414$</strong>
+        </div>
+        <div class="math-step">
+            d) Kết quả hiện trên màn hình là: <strong>$12.3$</strong> <em>(Tức là $12,3$)</em>
+        </div>
+
+        <p><strong>Bài 2: Thực hành phím phần trăm</strong></p>
+        <div class="math-step">
+            a) Khi bấm <span class="key-btn">1</span><span class="key-btn">2</span><span class="key-btn">0</span> <span class="key-btn">×</span> <span class="key-btn">2</span><span class="key-btn">5</span> <span class="key-btn">%</span>, màn hình hiện: <strong>$30$</strong>.
+        </div>
+        <div class="math-step">
+            b) Khi bấm <span class="key-btn">5</span><span class="key-btn">0</span><span class="key-btn">0</span> <span class="key-btn">×</span> <span class="key-btn">4</span><span class="key-btn">0</span> <span class="key-btn">%</span>, màn hình hiện: <strong>$200$</strong>.
+        </div>
+
+        <p><strong>Bài 3: Bài toán bao gạo</strong></p>
+        <div class="math-step">
+            <em>Cách thực hành:</em><br>
+            Để tìm tổng số ki-lô-gam gạo, ta cần thực hiện phép nhân $15 \times 25,5$.<br>
+            Bấm các phím: <span class="key-btn">1</span> <span class="key-btn">5</span> <span class="key-btn">×</span> <span class="key-btn">2</span> <span class="key-btn">5</span> <span class="key-btn">.</span> <span class="key-btn">5</span> <span class="key-btn">=</span><br>
+            Kết quả trên màn hình là <strong>$382.5$</strong>.<br>
+            <strong>Đáp số:</strong> $382,5 \text{ kg}$.
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>

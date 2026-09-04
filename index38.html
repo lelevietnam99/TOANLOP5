@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-width=1.0">
+    <title>Bài 38: Chu vi hình tròn - Toán Lớp 5</title>
+    <!-- Cấu hình MathJax để render công thức toán học -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+      window.MathJax = {
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']],
+          displayMath: [['$$', '$$'], ['\\[', '\\]']]
+        }
+      };
+    </script>
+    <style>
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            background-color: #f4f9f4; 
+            color: #333; 
+            line-height: 1.6; 
+            padding: 20px; 
+            margin: 0;
+        }
+        .container { 
+            max-width: 800px; 
+            margin: 0 auto; 
+            background: #fff; 
+            padding: 30px; 
+            border-radius: 12px; 
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1); 
+        }
+        h1 { color: #2e7d32; text-align: center; border-bottom: 2px solid #a5d6a7; padding-bottom: 10px; }
+        h2 { color: #1565c0; margin-top: 30px; }
+        h3 { color: #d84315; }
+        .theory-box { 
+            background: #e3f2fd; 
+            padding: 15px; 
+            border-left: 5px solid #1976d2; 
+            border-radius: 5px; 
+            margin-bottom: 20px; 
+        }
+        .exercise-box { 
+            background: #fff3e0; 
+            padding: 15px; 
+            border-left: 5px solid #ff9800; 
+            border-radius: 5px; 
+            margin-bottom: 20px; 
+        }
+        .solution-box { 
+            background: #e8f5e9; 
+            padding: 15px; 
+            border-left: 5px solid #43a047; 
+            border-radius: 5px; 
+            margin-top: 30px; 
+        }
+        ul { margin-top: 5px; }
+        .math-step { margin-left: 20px; margin-bottom: 15px; }
+        .highlight { font-weight: bold; color: #d32f2f; }
+        .rule-box { background-color: #fff9c4; padding: 10px; border-radius: 5px; border-left: 4px solid #fbc02d; font-weight: bold; margin-top: 10px; }
+        .tip-box { background-color: #e8eaf6; padding: 10px; border-radius: 5px; border-left: 4px solid #3f51b5; font-style: italic; margin-top: 15px; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Bài 38: Chu vi hình tròn</h1>
+    <p style="text-align: center; font-style: italic;">"Đi kinh hành một vòng quanh bảo tháp, bước chân chánh niệm nối tiếp nhau thành một vòng khép kín. Chiều dài của vòng đi ấy chính là chu vi của hình tròn!"</p>
+
+    <h2>I. Kiến thức cần nhớ</h2>
+    <div class="theory-box">
+        <p>Chu vi hình tròn (kí hiệu là $C$) là độ dài của toàn bộ đường viền (đường tròn) bao quanh hình tròn đó.</p>
+        <p>Để tính chu vi hình tròn, từ hàng ngàn năm trước, các nhà toán học đã tìm ra một con số vô cùng màu nhiệm. Con số đó là <strong>$3,14$</strong>.</p>
+        
+        <div class="rule-box">
+            <ul>
+                <li><strong>Khi biết Đường kính ($d$):</strong><br>
+                Muốn tính chu vi hình tròn, ta lấy đường kính nhân với $3,14$.<br>
+                Công thức: <strong>$C = d \times 3,14$</strong></li>
+                <br>
+                <li><strong>Khi biết Bán kính ($r$):</strong><br>
+                Muốn tính chu vi hình tròn, ta lấy bán kính nhân $2$ rồi nhân với $3,14$.<br>
+                Công thức: <strong>$C = r \times 2 \times 3,14$</strong></li>
+            </ul>
+        </div>
+        
+        <div class="tip-box">
+            <strong>Bí kíp ghi nhớ:</strong><br>
+            Bán kính nhân $2$ thực chất chính là đi tìm Đường kính ($d = r \times 2$). Vậy nên, bản chất của việc tính chu vi lúc nào cũng là lấy <strong>Đường kính vắt ngang qua tâm đem nhân với con số nhiệm màu $3,14$</strong> các con nhé!
+        </div>
+    </div>
+
+    <h2>II. Bài tập tự luyện</h2>
+    <div class="exercise-box">
+        <p><strong>Bài 1:</strong> Tính chu vi hình tròn khi biết đường kính $d$:</p>
+        <ul>
+            <li>a) $d = 5 \text{ cm}$</li>
+            <li>b) $d = 1,2 \text{ dm}$</li>
+        </ul>
+        
+        <p><strong>Bài 2:</strong> Tính chu vi hình tròn khi biết bán kính $r$:</p>
+        <ul>
+            <li>a) $r = 3 \text{ cm}$</li>
+            <li>b) $r = 0,5 \text{ m}$</li>
+        </ul>
+
+        <p><strong>Bài 3:</strong> Sáng sớm, chú tiểu Hỉ đi kinh hành niệm Phật quanh một bảo tháp hình tròn. Biết bảo tháp có đường kính là $10 \text{ m}$. Hỏi nếu chú Hỉ đi đúng $1$ vòng quanh bảo tháp thì chú đã đi được quãng đường dài bao nhiêu mét?</p>
+
+        <p><strong>Bài 4: (Toán ứng dụng thực tế)</strong> Sư phụ hay đạp chiếc xe đạp cũ xuống núi khất thực. Bánh của chiếc xe đạp có bán kính là $0,3 \text{ m}$. Hỏi nếu bánh xe lăn đúng $10$ vòng trên mặt đất thì chiếc xe đạp đã đi được một quãng đường dài bao nhiêu mét?</p>
+    </div>
+
+    <h2>III. Lời giải chi tiết (Làm nháp xong mới được xem nhé!)</h2>
+    <div class="solution-box">
+        <p><strong>Bài 1: Tính chu vi khi biết đường kính</strong></p>
+        <div class="math-step">
+            a) Chu vi hình tròn là:<br>
+            $$ C = 5 \times 3,14 = \mathbf{15,7 \text{ (cm)}} $$
+        </div>
+        <div class="math-step">
+            b) Chu vi hình tròn là:<br>
+            $$ C = 1,2 \times 3,14 = \mathbf{3,768 \text{ (dm)}} $$
+        </div>
+
+        <p><strong>Bài 2: Tính chu vi khi biết bán kính</strong></p>
+        <div class="math-step">
+            a) Chu vi hình tròn là:<br>
+            $$ C = 3 \times 2 \times 3,14 = 6 \times 3,14 = \mathbf{18,84 \text{ (cm)}} $$
+        </div>
+        <div class="math-step">
+            b) Chu vi hình tròn là:<br>
+            $$ C = 0,5 \times 2 \times 3,14 = 1 \times 3,14 = \mathbf{3,14 \text{ (m)}} $$
+        </div>
+
+        <p><strong>Bài 3: Bài toán đi kinh hành quanh bảo tháp</strong></p>
+        <div class="math-step">
+            <em>Phân tích: Chiều dài 1 vòng đi quanh bảo tháp chính là chu vi của bảo tháp đó.</em><br>
+            <em>Bài giải:</em><br>
+            Quãng đường chú Hỉ đi được khi đi đúng 1 vòng quanh bảo tháp là:<br>
+            $$ 10 \times 3,14 = 31,4 \text{ (m)} $$<br>
+            <strong>Đáp số:</strong> $31,4 \text{ m}$.
+        </div>
+
+        <p><strong>Bài 4: Bài toán bánh xe lăn</strong></p>
+        <div class="math-step">
+            <em>Phân tích: Khi bánh xe lăn được đúng $1$ vòng trên mặt đất, quãng đường nó đi được bằng đúng chu vi của bánh xe đó!</em><br>
+            <em>Bài giải:</em><br>
+            Chu vi của bánh xe đạp (hay quãng đường xe đi được khi bánh lăn 1 vòng) là:<br>
+            $$ 0,3 \times 2 \times 3,14 = 0,6 \times 3,14 = 1,884 \text{ (m)} $$<br>
+            Quãng đường chiếc xe đạp đi được khi bánh lăn 10 vòng là:<br>
+            $$ 1,884 \times 10 = 18,84 \text{ (m)} $$<br>
+            <strong>Đáp số:</strong> $18,84 \text{ m}$.
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>

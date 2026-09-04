@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-width=1.0">
+    <title>Bài 33: Diện tích hình tam giác - Toán Lớp 5</title>
+    <!-- Cấu hình MathJax để render công thức toán học -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+      window.MathJax = {
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']],
+          displayMath: [['$$', '$$'], ['\\[', '\\]']]
+        }
+      };
+    </script>
+    <style>
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            background-color: #f4f9f4; 
+            color: #333; 
+            line-height: 1.6; 
+            padding: 20px; 
+            margin: 0;
+        }
+        .container { 
+            max-width: 800px; 
+            margin: 0 auto; 
+            background: #fff; 
+            padding: 30px; 
+            border-radius: 12px; 
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1); 
+        }
+        h1 { color: #2e7d32; text-align: center; border-bottom: 2px solid #a5d6a7; padding-bottom: 10px; }
+        h2 { color: #1565c0; margin-top: 30px; }
+        h3 { color: #d84315; }
+        .theory-box { 
+            background: #e3f2fd; 
+            padding: 15px; 
+            border-left: 5px solid #1976d2; 
+            border-radius: 5px; 
+            margin-bottom: 20px; 
+        }
+        .exercise-box { 
+            background: #fff3e0; 
+            padding: 15px; 
+            border-left: 5px solid #ff9800; 
+            border-radius: 5px; 
+            margin-bottom: 20px; 
+        }
+        .solution-box { 
+            background: #e8f5e9; 
+            padding: 15px; 
+            border-left: 5px solid #43a047; 
+            border-radius: 5px; 
+            margin-top: 30px; 
+        }
+        ul { margin-top: 5px; }
+        .math-step { margin-left: 20px; margin-bottom: 15px; }
+        .highlight { font-weight: bold; color: #d32f2f; }
+        .rule-box { background-color: #fff9c4; padding: 10px; border-radius: 5px; border-left: 4px solid #fbc02d; font-weight: bold; margin-top: 10px; }
+        .tip-box { background-color: #e8eaf6; padding: 10px; border-radius: 5px; border-left: 4px solid #3f51b5; font-style: italic; margin-top: 15px; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Bài 33: Diện tích hình tam giác</h1>
+    <p style="text-align: center; font-style: italic;">"Những lá cờ phướn tung bay trong ngày lễ Phật Đản thường mang dáng hình tam giác. Để biết cần bao nhiêu vải may cờ, chúng ta cùng học cách tính diện tích nhé!"</p>
+
+    <h2>I. Kiến thức cần nhớ</h2>
+    <div class="theory-box">
+        <p>Thực ra, một hình tam giác có diện tích bằng đúng <strong>một nửa</strong> diện tích của hình chữ nhật bao quanh nó. Vì vậy, ta có quy tắc rất dễ nhớ sau:</p>
+        
+        <div class="rule-box">
+            <strong>Quy tắc:</strong> Muốn tính diện tích hình tam giác, ta lấy <strong>độ dài đáy</strong> nhân với <strong>chiều cao</strong> (cùng một đơn vị đo) rồi <strong>chia cho $2$</strong>.
+            <br><br>
+            <strong>Công thức:</strong> 
+            $$ S = \frac{a \times h}{2} \quad \text{hoặc} \quad S = (a \times h) : 2 $$
+            <em>(Trong đó: $S$ là diện tích, $a$ là độ dài đáy, $h$ là chiều cao).</em>
+        </div>
+
+        <div class="tip-box">
+            <strong>Những cạm bẫy cần tránh:</strong><br>
+            1. Tuyệt đối không quên <strong>"chia cho 2"</strong> ở cuối phép tính.<br>
+            2. Phải kiểm tra xem đáy và chiều cao đã <strong>CÙNG MỘT ĐƠN VỊ ĐO</strong> chưa. Nếu một cái là mét ($\text{m}$), một cái là đề-xi-mét ($\text{dm}$) thì con phải đổi về cùng một loại trước khi nhân nhé!
+        </div>
+    </div>
+
+    <h2>II. Bài tập tự luyện</h2>
+    <div class="exercise-box">
+        <p><strong>Bài 1:</strong> Tính diện tích hình tam giác biết:</p>
+        <ul>
+            <li>a) Độ dài đáy là $8 \text{ cm}$ và chiều cao là $6 \text{ cm}$.</li>
+            <li>b) Độ dài đáy là $2,5 \text{ m}$ và chiều cao là $1,2 \text{ m}$.</li>
+        </ul>
+        
+        <p><strong>Bài 2: (Cẩn thận đơn vị đo nhé!)</strong> Tính diện tích hình tam giác có độ dài đáy là $5 \text{ m}$ và chiều cao là $24 \text{ dm}$.</p>
+
+        <p><strong>Bài 3:</strong> Chuẩn bị cho lễ hội, sư phụ hướng dẫn các chú tiểu may những lá cờ đuôi nheo hình tam giác. Mỗi lá cờ có độ dài đáy là $40 \text{ cm}$ và chiều cao là $60 \text{ cm}$. Tính diện tích vải cần dùng để may một lá cờ đó.</p>
+
+        <p><strong>Bài 4: (Nhớ lại bài cũ)</strong> Góc sân chánh điện có một bồn hoa hình tam giác vuông. Hai cạnh góc vuông có độ dài lần lượt là $3 \text{ m}$ và $4 \text{ m}$. Hỏi diện tích của bồn hoa đó là bao nhiêu mét vuông?</p>
+    </div>
+
+    <h2>III. Lời giải chi tiết (Làm xong đối chiếu để tự chấm điểm nha)</h2>
+    <div class="solution-box">
+        <p><strong>Bài 1: Tính toán cơ bản</strong></p>
+        <div class="math-step">
+            a) Diện tích hình tam giác là:<br>
+            $$ \frac{8 \times 6}{2} = \frac{48}{2} = \mathbf{24 \text{ (cm}^2)} $$
+        </div>
+        <div class="math-step">
+            b) Diện tích hình tam giác là:<br>
+            $$ (2,5 \times 1,2) : 2 = 3 : 2 = \mathbf{1,5 \text{ (m}^2)} $$
+        </div>
+
+        <p><strong>Bài 2: Đổi đơn vị trước khi tính</strong></p>
+        <div class="math-step">
+            <em>Phân tích: Đáy là $\text{m}$, chiều cao là $\text{dm}$. Ta cần đổi về cùng đơn vị. Đổi về $\text{dm}$ tính sẽ không bị lẻ số thập phân.</em><br>
+            Đổi: $5 \text{ m} = 50 \text{ dm}$.<br>
+            Diện tích hình tam giác là:<br>
+            $$ \frac{50 \times 24}{2} = \frac{1200}{2} = \mathbf{600 \text{ (dm}^2)} $$<br>
+            <em>(Hoặc các con đổi $24 \text{ dm} = 2,4 \text{ m}$, tính ra $6 \text{ m}^2$ cũng hoàn toàn chính xác nhé).</em>
+        </div>
+
+        <p><strong>Bài 3: Bài toán may cờ lễ hội</strong></p>
+        <div class="math-step">
+            <em>Bài giải:</em><br>
+            Diện tích mảnh vải để may một lá cờ là:<br>
+            $$ (40 \times 60) : 2 = 2400 : 2 = 1200 \text{ (cm}^2) $$<br>
+            <strong>Đáp số:</strong> $1200 \text{ cm}^2$.
+        </div>
+
+        <p><strong>Bài 4: Diện tích bồn hoa tam giác vuông</strong></p>
+        <div class="math-step">
+            <em>Phân tích: Ở Bài 32, ta đã học "Trong tam giác vuông, hai cạnh góc vuông chính là đáy và đường cao của nhau".</em><br>
+            <em>Bài giải:</em><br>
+            Diện tích của bồn hoa hình tam giác vuông là:<br>
+            $$ \frac{3 \times 4}{2} = \frac{12}{2} = 6 \text{ (m}^2) $$<br>
+            <strong>Đáp số:</strong> $6 \text{ m}^2$.
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html> 

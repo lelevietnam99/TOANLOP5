@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-width=1.0">
+    <title>Bài 45: Thể tích của một hình - Toán Lớp 5</title>
+    <!-- Cấu hình MathJax để render công thức toán học -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+      window.MathJax = {
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']],
+          displayMath: [['$$', '$$'], ['\\[', '\\]']]
+        }
+      };
+    </script>
+    <style>
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            background-color: #f4f9f4; 
+            color: #333; 
+            line-height: 1.6; 
+            padding: 20px; 
+            margin: 0;
+        }
+        .container { 
+            max-width: 800px; 
+            margin: 0 auto; 
+            background: #fff; 
+            padding: 30px; 
+            border-radius: 12px; 
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1); 
+        }
+        h1 { color: #2e7d32; text-align: center; border-bottom: 2px solid #a5d6a7; padding-bottom: 10px; }
+        h2 { color: #1565c0; margin-top: 30px; }
+        h3 { color: #d84315; }
+        .theory-box { 
+            background: #e3f2fd; 
+            padding: 15px; 
+            border-left: 5px solid #1976d2; 
+            border-radius: 5px; 
+            margin-bottom: 20px; 
+        }
+        .exercise-box { 
+            background: #fff3e0; 
+            padding: 15px; 
+            border-left: 5px solid #ff9800; 
+            border-radius: 5px; 
+            margin-bottom: 20px; 
+        }
+        .solution-box { 
+            background: #e8f5e9; 
+            padding: 15px; 
+            border-left: 5px solid #43a047; 
+            border-radius: 5px; 
+            margin-top: 30px; 
+        }
+        ul { margin-top: 5px; }
+        .math-step { margin-left: 20px; margin-bottom: 15px; }
+        .highlight { font-weight: bold; color: #d32f2f; }
+        .rule-box { background-color: #fff9c4; padding: 10px; border-radius: 5px; border-left: 4px solid #fbc02d; font-weight: bold; margin-top: 10px; }
+        .tip-box { background-color: #e8eaf6; padding: 10px; border-radius: 5px; border-left: 4px solid #3f51b5; font-style: italic; margin-top: 15px; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Bài 45: Thể tích của một hình</h1>
+    <p style="text-align: center; font-style: italic;">"Một chén trà nhỏ chứa được một lượng nước nhỏ, một chiếc lu lớn chứa được lượng nước lớn. Khoảng không gian mà vạn vật chiếm lấy chính là thể tích đó các con!"</p>
+
+    <h2>I. Kiến thức cần nhớ</h2>
+    <div class="theory-box">
+        <h3>1. Thể tích là gì?</h3>
+        <p>Nếu <strong>Diện tích</strong> là bề mặt phẳng (như mặt sàn chánh điện, mặt bàn), thì <strong>Thể tích</strong> là một khoảng không gian ba chiều mà vật đó chiếm chỗ (như cả một căn phòng, một bể nước, hay một cái hộp gỗ).</p>
+        
+        <h3>2. Cách so sánh thể tích của hai hình</h3>
+        <p>Để biết hình nào chiếm nhiều không gian hơn, ta có 2 cách quan sát:</p>
+        
+        <div class="rule-box">
+            <ul>
+                <li><strong>Cách 1: Đặt hình này vào trong hình kia.</strong><br>
+                Nếu Hình A có thể nằm trọn vẹn (lọt thỏm) bên trong Hình B, thì <em>thể tích Hình A bé hơn thể tích Hình B</em>.</li>
+                <li><strong>Cách 2: Đếm số khối gỗ nhỏ (khối lập phương).</strong><br>
+                Cùng sử dụng những viên gạch hình khối nhỏ bằng nhau để xếp. Hình nào xếp bởi nhiều viên gạch hơn thì hình đó có <em>thể tích lớn hơn</em>.</li>
+            </ul>
+        </div>
+        
+        <div class="tip-box">
+            <strong>Nguyên tắc tách ghép:</strong><br>
+            Nếu con đập vỡ một khối gỗ lớn thành hai khối nhỏ, thì tổng thể tích của hai khối nhỏ ghép lại vẫn vừa đúng bằng thể tích của khối gỗ lớn ban đầu. Không gian không tự sinh ra cũng không tự mất đi!
+        </div>
+    </div>
+
+    <h2>II. Bài tập tự luyện</h2>
+    <div class="exercise-box">
+        <p><strong>Bài 1: Quan sát và suy luận</strong></p>
+        <p>Sư phụ có một chiếc mõ bằng gỗ và một chiếc hộp kính đựng mõ. Mỗi buổi tụng kinh xong, sư phụ đều cất gọn chiếc mõ vào trong hộp kính rồi đóng nắp lại. Hỏi thể tích của chiếc mõ lớn hơn hay bé hơn thể tích của chiếc hộp kính?</p>
+        
+        <p><strong>Bài 2: Trò chơi xếp gỗ</strong></p>
+        <p>Chú tiểu Hỉ dùng các khối gỗ nhỏ bằng nhau xếp thành <strong>Hình A</strong> gồm $12$ khối gỗ. Chú tiểu Hoan xếp một <strong>Hình B</strong> gồm $15$ khối gỗ giống hệt vậy. Hỏi hình nào có thể tích lớn hơn? Tại sao?</p>
+
+        <p><strong>Bài 3: Bài toán bảo toàn thể tích</strong></p>
+        <p>Sư phụ mua một khối nến (sáp) lớn (gọi là Hình C) được đúc từ $24$ viên sáp nhỏ. Do khối nến quá to, sư phụ cắt khối nến này thành hai phần: Phần M và Phần N. Đếm thấy Phần M gồm $10$ viên sáp nhỏ. Hỏi:</p>
+        <ul>
+            <li>a) Phần N gồm bao nhiêu viên sáp nhỏ?</li>
+            <li>b) Thể tích của khối nến C có bằng tổng thể tích của Phần M và Phần N không?</li>
+        </ul>
+    </div>
+
+    <h2>III. Lời giải chi tiết</h2>
+    <div class="solution-box">
+        <p><strong>Bài 1: So sánh bằng cách đặt lọt vào nhau</strong></p>
+        <div class="math-step">
+            <em>Trả lời:</em><br>
+            Vì chiếc mõ có thể cất gọn gàng (nằm trọn vẹn) bên trong chiếc hộp kính, nên không gian mà chiếc mõ chiếm chỗ ít hơn không gian của chiếc hộp. <br>
+            Vậy, <strong>thể tích của chiếc mõ bé hơn thể tích của chiếc hộp kính</strong>.
+        </div>
+
+        <p><strong>Bài 2: So sánh bằng cách đếm khối</strong></p>
+        <div class="math-step">
+            <em>Trả lời:</em><br>
+            Hình A gồm $12$ khối gỗ, Hình B gồm $15$ khối gỗ.<br>
+            Vì $15 > 12$ nên <strong>thể tích Hình B lớn hơn thể tích Hình A</strong>. Hình B chiếm nhiều không gian hơn vì được tạo nên từ nhiều khối gỗ nhỏ hơn.
+        </div>
+
+        <p><strong>Bài 3: Bài toán chia cắt khối nến</strong></p>
+        <div class="math-step">
+            a) Số viên sáp nhỏ của Phần N là:<br>
+            $$ 24 - 10 = 14 \text{ (viên)} $$
+        </div>
+        <div class="math-step">
+            b) <strong>CÓ</strong>.<br>
+            Thể tích của khối nến C ($24$ viên) đúng bằng tổng thể tích của Phần M ($10$ viên) cộng với Phần N ($14$ viên). Việc tách ra thành các phần nhỏ không làm thay đổi tổng thể tích ban đầu của vật.
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-width=1.0">
+    <title>Bài 40: Diện tích hình tròn - Toán Lớp 5</title>
+    <!-- Cấu hình MathJax để render công thức toán học -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+      window.MathJax = {
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']],
+          displayMath: [['$$', '$$'], ['\\[', '\\]']]
+        }
+      };
+    </script>
+    <style>
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            background-color: #f4f9f4; 
+            color: #333; 
+            line-height: 1.6; 
+            padding: 20px; 
+            margin: 0;
+        }
+        .container { 
+            max-width: 800px; 
+            margin: 0 auto; 
+            background: #fff; 
+            padding: 30px; 
+            border-radius: 12px; 
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1); 
+        }
+        h1 { color: #2e7d32; text-align: center; border-bottom: 2px solid #a5d6a7; padding-bottom: 10px; }
+        h2 { color: #1565c0; margin-top: 30px; }
+        h3 { color: #d84315; }
+        .theory-box { 
+            background: #e3f2fd; 
+            padding: 15px; 
+            border-left: 5px solid #1976d2; 
+            border-radius: 5px; 
+            margin-bottom: 20px; 
+        }
+        .exercise-box { 
+            background: #fff3e0; 
+            padding: 15px; 
+            border-left: 5px solid #ff9800; 
+            border-radius: 5px; 
+            margin-bottom: 20px; 
+        }
+        .solution-box { 
+            background: #e8f5e9; 
+            padding: 15px; 
+            border-left: 5px solid #43a047; 
+            border-radius: 5px; 
+            margin-top: 30px; 
+        }
+        ul { margin-top: 5px; }
+        .math-step { margin-left: 20px; margin-bottom: 15px; }
+        .highlight { font-weight: bold; color: #d32f2f; }
+        .rule-box { background-color: #fff9c4; padding: 10px; border-radius: 5px; border-left: 4px solid #fbc02d; font-weight: bold; margin-top: 10px; }
+        .tip-box { background-color: #e8eaf6; padding: 10px; border-radius: 5px; border-left: 4px solid #3f51b5; font-style: italic; margin-top: 15px; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Bài 40: Diện tích hình tròn</h1>
+    <p style="text-align: center; font-style: italic;">"Chu vi như vòng ranh giới bảo vệ bên ngoài, còn diện tích chính là toàn bộ không gian tĩnh lặng, tròn đầy được vun bồi ở bên trong mặt phẳng ấy."</p>
+
+    <h2>I. Kiến thức cần nhớ</h2>
+    <div class="theory-box">
+        <p>Để tính bề mặt (diện tích) của một hình tròn, ta tiếp tục cần đến sự trợ giúp của "người bạn" màu nhiệm <strong>$3,14$</strong>.</p>
+        
+        <div class="rule-box">
+            <strong>Quy tắc:</strong> Muốn tính diện tích của hình tròn, ta lấy <strong>bán kính nhân với bán kính</strong> rồi <strong>nhân với $3,14$</strong>.<br><br>
+            <strong>Công thức:</strong> 
+            $$ S = r \times r \times 3,14 $$
+            <em>(Trong đó: $S$ là diện tích, $r$ là bán kính hình tròn).</em>
+        </div>
+        
+        <div class="tip-box">
+            <strong>Chú ý cực kỳ quan trọng:</strong><br>
+            Công thức diện tích chỉ "chơi" với <strong>bán kính ($r$)</strong>. <br>
+            Nếu đề bài cố tình gài bẫy bằng cách cho <strong>đường kính ($d$)</strong>, các con bắt buộc phải tìm bán kính trước (bằng cách lấy đường kính chia cho $2$) rồi mới được lắp vào công thức diện tích nhé!
+        </div>
+    </div>
+
+    <h2>II. Bài tập tự luyện</h2>
+    <div class="exercise-box">
+        <p><strong>Bài 1:</strong> Tính diện tích hình tròn khi biết bán kính $r$:</p>
+        <ul>
+            <li>a) $r = 4 \text{ cm}$</li>
+            <li>b) $r = 0,5 \text{ m}$</li>
+        </ul>
+        
+        <p><strong>Bài 2: (Cảnh giác với bẫy đường kính)</strong> Tính diện tích hình tròn khi biết đường kính $d$:</p>
+        <ul>
+            <li>$d = 10 \text{ dm}$</li>
+        </ul>
+
+        <p><strong>Bài 3:</strong> Sư phụ nhờ thợ mộc đóng một mặt bàn gỗ hình tròn để chư tăng ngồi uống trà đàm đạo dưới gốc bồ đề. Biết bán kính của mặt bàn là $0,8 \text{ m}$. Con hãy tính diện tích của mặt bàn gỗ đó.</p>
+
+        <p><strong>Bài 4: (Toán tư duy tổng hợp)</strong> Giữa sân sau của chùa có một hồ hoa súng hình tròn. Sáng nay chú Hỉ dùng dây thừng đo được <strong>chu vi</strong> của mặt hồ là $18,84 \text{ m}$. Sư phụ cười hiền từ hỏi: <em>"Đố con biết diện tích mặt nước của hồ hoa súng là bao nhiêu mét vuông?"</em>. Con hãy giúp chú Hỉ tính nhé!</p>
+    </div>
+
+    <h2>III. Lời giải chi tiết (Làm nháp cẩn thận rồi mới xem đáp án nha!)</h2>
+    <div class="solution-box">
+        <p><strong>Bài 1: Tính diện tích trực tiếp từ bán kính</strong></p>
+        <div class="math-step">
+            a) Diện tích hình tròn là:<br>
+            $$ S = 4 \times 4 \times 3,14 = 16 \times 3,14 = \mathbf{50,24 \text{ (cm}^2)} $$
+        </div>
+        <div class="math-step">
+            b) Diện tích hình tròn là:<br>
+            $$ S = 0,5 \times 0,5 \times 3,14 = 0,25 \times 3,14 = \mathbf{0,785 \text{ (m}^2)} $$
+        </div>
+
+        <p><strong>Bài 2: Tìm bán kính trước khi tính diện tích</strong></p>
+        <div class="math-step">
+            <em>Phân tích: Đề cho đường kính $d = 10 \text{ dm}$, ta phải tìm bán kính trước.</em><br>
+            Bán kính của hình tròn là:<br>
+            $$ r = 10 : 2 = 5 \text{ (dm)} $$<br>
+            Diện tích của hình tròn là:<br>
+            $$ S = 5 \times 5 \times 3,14 = 25 \times 3,14 = \mathbf{78,5 \text{ (dm}^2)} $$
+        </div>
+
+        <p><strong>Bài 3: Bài toán mặt bàn đàm đạo</strong></p>
+        <div class="math-step">
+            <em>Bài giải:</em><br>
+            Diện tích của mặt bàn gỗ hình tròn là:<br>
+            $$ 0,8 \times 0,8 \times 3,14 = 0,64 \times 3,14 = 2,0096 \text{ (m}^2) $$<br>
+            <strong>Đáp số:</strong> $2,0096 \text{ m}^2$.
+        </div>
+
+        <p><strong>Bài 4: Bài toán hồ hoa súng (Tổng hợp Chu vi & Diện tích)</strong></p>
+        <div class="math-step">
+            <em>Phân tích: Để tính được diện tích, ta bắt buộc phải có Bán kính. Đề cho Chu vi, vậy ta áp dụng bài học hôm trước (Bài 39) để tìm bán kính trước nhé.</em><br><br>
+            <em>Bài giải:</em><br>
+            <strong>Bước 1:</strong> Bán kính của hồ hoa súng là:<br>
+            $$ 18,84 : 3,14 : 2 = 3 \text{ (m)} $$<br>
+            <strong>Bước 2:</strong> Diện tích mặt nước của hồ hoa súng là:<br>
+            $$ 3 \times 3 \times 3,14 = 9 \times 3,14 = 28,26 \text{ (m}^2) $$<br>
+            <strong>Đáp số:</strong> $28,26 \text{ m}^2$.
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>

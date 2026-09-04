@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-width=1.0">
+    <title>Bài 44: Luyện tập chung - Toán Lớp 5</title>
+    <!-- Cấu hình MathJax để render công thức toán học -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+      window.MathJax = {
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']],
+          displayMath: [['$$', '$$'], ['\\[', '\\]']]
+        }
+      };
+    </script>
+    <style>
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            background-color: #f4f9f4; 
+            color: #333; 
+            line-height: 1.6; 
+            padding: 20px; 
+            margin: 0;
+        }
+        .container { 
+            max-width: 800px; 
+            margin: 0 auto; 
+            background: #fff; 
+            padding: 30px; 
+            border-radius: 12px; 
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1); 
+        }
+        h1 { color: #2e7d32; text-align: center; border-bottom: 2px solid #a5d6a7; padding-bottom: 10px; }
+        h2 { color: #1565c0; margin-top: 30px; }
+        h3 { color: #d84315; }
+        .theory-box { 
+            background: #e3f2fd; 
+            padding: 15px; 
+            border-left: 5px solid #1976d2; 
+            border-radius: 5px; 
+            margin-bottom: 20px; 
+        }
+        .exercise-box { 
+            background: #fff3e0; 
+            padding: 15px; 
+            border-left: 5px solid #ff9800; 
+            border-radius: 5px; 
+            margin-bottom: 20px; 
+        }
+        .solution-box { 
+            background: #e8f5e9; 
+            padding: 15px; 
+            border-left: 5px solid #43a047; 
+            border-radius: 5px; 
+            margin-top: 30px; 
+        }
+        ul { margin-top: 5px; }
+        .math-step { margin-left: 20px; margin-bottom: 15px; }
+        .highlight { font-weight: bold; color: #d32f2f; }
+        .rule-box { background-color: #fff9c4; padding: 10px; border-radius: 5px; border-left: 4px solid #fbc02d; font-weight: bold; margin-top: 10px; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Bài 44: Luyện tập chung</h1>
+    <p style="text-align: center; font-style: italic;">"Sự tu tập không nằm ở việc nôn nóng học thật nhiều điều mới mỗi ngày, mà là sự kiên trì ôn luyện những gì đã biết cho đến khi tường tận và thấu suốt."</p>
+
+    <h2>I. Nhìn lại chặng đường đã qua</h2>
+    <div class="theory-box">
+        <p>Hôm nay, chúng ta cùng ngồi lại để ôn tập toàn bộ 3 dạng toán về tỉ số phần trăm. Các con hãy nhớ kỹ "bảng chỉ dẫn" này nhé:</p>
+        
+        <div class="rule-box">
+            <ul>
+                <li><strong>Dạng 1 (Tìm Tỉ số phần trăm của A và B):</strong> Lấy $A$ chia $B$, rồi nhân nhẩm kết quả với $100$ và thêm ký hiệu <strong>%</strong>.</li>
+                <li><strong>Dạng 2 (Tìm một phần nhỏ từ Tổng thể):</strong> Lấy Tổng thể chia cho $100$ rồi nhân với số phần trăm cần tìm.</li>
+                <li><strong>Dạng 3 (Tìm Tổng thể từ một phần nhỏ):</strong> Lấy giá trị của phần nhỏ chia cho số phần trăm của nó, rồi nhân với $100$.</li>
+            </ul>
+        </div>
+        <p><em>*Lưu ý: Các con hoàn toàn có thể sử dụng máy tính cầm tay để kiểm tra lại các bước tính toán phức tạp.</em></p>
+    </div>
+
+    <h2>II. Bài tập tự luyện</h2>
+    <div class="exercise-box">
+        <p><strong>Bài 1: Xác định đúng dạng toán và giải nhanh:</strong></p>
+        <ul>
+            <li>a) Tìm tỉ số phần trăm của 18 và 45.</li>
+            <li>b) Tìm 35% của 240 kg.</li>
+            <li>c) Tìm một số, biết 15% của số đó là 45.</li>
+        </ul>
+        
+        <p><strong>Bài 2:</strong> Vườn bồ đề của chùa có tất cả 80 cây. Mùa xuân ấm áp, hiện đã có 32 cây đâm chồi non rực rỡ. Hỏi số cây đã đâm chồi non chiếm bao nhiêu phần trăm tổng số cây trong vườn?</p>
+
+        <p><strong>Bài 3:</strong> Để chuẩn bị cho Đại lễ, đạo tràng dự kiến gói 500 chiếc bánh tét chay. Đến buổi trưa, các Phật tử đã hoàn thành được 60% kế hoạch. Hỏi đạo tràng đã gói được bao nhiêu chiếc bánh tét?</p>
+
+        <p><strong>Bài 4:</strong> Sư phụ kiểm tra sổ sách nhà bếp. Chú tiểu báo cáo rằng tiền mua nấm hương tháng này là 1 500 000 đồng, tương ứng với đúng 25% tổng chi phí đi chợ của tháng. Hỏi tổng chi phí đi chợ tháng này của nhà chùa là bao nhiêu tiền?</p>
+    </div>
+
+    <h2>III. Lời giải chi tiết (Tự tĩnh tâm làm nháp rồi mới xem nhé)</h2>
+    <div class="solution-box">
+        <p><strong>Bài 1: Ôn tập 3 dạng cơ bản</strong></p>
+        <div class="math-step">
+            a) <strong>(Dạng 1)</strong> Tỉ số phần trăm của 18 và 45 là:<br>
+            $$ 18 : 45 = 0,4 = \mathbf{40\%} $$
+        </div>
+        <div class="math-step">
+            b) <strong>(Dạng 2)</strong> 35% của 240 kg là:<br>
+            $$ 240 : 100 \times 35 = 2,4 \times 35 = \mathbf{84 \text{ (kg)}} $$
+        </div>
+        <div class="math-step">
+            c) <strong>(Dạng 3)</strong> Số cần tìm là:<br>
+            $$ 45 : 15 \times 100 = 3 \times 100 = \mathbf{300} $$
+        </div>
+
+        <p><strong>Bài 2: Bài toán Vườn bồ đề (Dạng 1)</strong></p>
+        <div class="math-step">
+            <em>Bài giải:</em><br>
+            Tỉ số phần trăm của số cây đâm chồi non so với tổng số cây là:<br>
+            $$ 32 : 80 = 0,4 = 40\% $$<br>
+            <strong>Đáp số:</strong> 40%.
+        </div>
+
+        <p><strong>Bài 3: Bài toán Gói bánh tét (Dạng 2)</strong></p>
+        <div class="math-step">
+            <em>Bài giải:</em><br>
+            Số bánh tét chay đạo tràng đã gói được là:<br>
+            $$ 500 : 100 \times 60 = 5 \times 60 = 300 \text{ (chiếc)} $$<br>
+            <strong>Đáp số:</strong> 300 chiếc bánh.
+        </div>
+
+        <p><strong>Bài 4: Bài toán Sổ sách nhà bếp (Dạng 3)</strong></p>
+        <div class="math-step">
+            <em>Bài giải:</em><br>
+            Tổng chi phí đi chợ tháng này của nhà chùa là:<br>
+            $$ 1 \ 500 \ 000 : 25 \times 100 = 60 \ 000 \times 100 = 6 \ 000 \ 000 \text{ (đồng)} $$<br>
+            <strong>Đáp số:</strong> 6 000 000 đồng.
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>

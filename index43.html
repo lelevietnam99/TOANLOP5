@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-width=1.0">
+    <title>Bài 43: Thực hành sử dụng máy tính cầm tay - Toán Lớp 5</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+      window.MathJax = {
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']],
+          displayMath: [['$$', '$$'], ['\\[', '\\]']]
+        }
+      };
+    </script>
+    <style>
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            background-color: #f4f9f4; 
+            color: #333; 
+            line-height: 1.6; 
+            padding: 20px; 
+            margin: 0;
+        }
+        .container { 
+            max-width: 800px; 
+            margin: 0 auto; 
+            background: #fff; 
+            padding: 30px; 
+            border-radius: 12px; 
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1); 
+        }
+        h1 { color: #2e7d32; text-align: center; border-bottom: 2px solid #a5d6a7; padding-bottom: 10px; }
+        h2 { color: #1565c0; margin-top: 30px; }
+        h3 { color: #d84315; }
+        .theory-box { 
+            background: #e3f2fd; 
+            padding: 15px; 
+            border-left: 5px solid #1976d2; 
+            border-radius: 5px; 
+            margin-bottom: 20px; 
+        }
+        .exercise-box { 
+            background: #fff3e0; 
+            padding: 15px; 
+            border-left: 5px solid #ff9800; 
+            border-radius: 5px; 
+            margin-bottom: 20px; 
+        }
+        .solution-box { 
+            background: #e8f5e9; 
+            padding: 15px; 
+            border-left: 5px solid #43a047; 
+            border-radius: 5px; 
+            margin-top: 30px; 
+        }
+        ul { margin-top: 5px; }
+        .math-step { margin-left: 20px; margin-bottom: 15px; }
+        .highlight { font-weight: bold; color: #d32f2f; }
+        .rule-box { background-color: #fff9c4; padding: 10px; border-radius: 5px; border-left: 4px solid #fbc02d; font-weight: bold; margin-top: 10px; }
+        .tip-box { background-color: #e8eaf6; padding: 10px; border-radius: 5px; border-left: 4px solid #3f51b5; font-style: italic; margin-top: 15px; }
+        .key-btn { display: inline-block; background-color: #e0e0e0; border: 1px solid #9e9e9e; border-radius: 4px; padding: 2px 8px; font-weight: bold; margin: 0 2px; box-shadow: 1px 1px 2px rgba(0,0,0,0.2); }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Bài 43: Thực hành và trải nghiệm<br>sử dụng máy tính cầm tay</h1>
+    <p style="text-align: center; font-style: italic;">"Máy móc dẫu có nhanh nhạy đến đâu cũng chỉ là công cụ hỗ trợ. Sự cẩn trọng, tỉ mỉ và trí tuệ của con mới là người làm chủ đưa ra kết quả đúng đắn nhất."</p>
+
+    <h2>I. Lời khuyên của sư phụ khi dùng máy</h2>
+    <div class="theory-box">
+        <p>Hôm nay chúng ta sẽ dùng máy tính để giải quyết các công việc lớn trong chùa. Nhưng trước khi bấm phím, các con hãy nhớ 2 nguyên tắc sau:</p>
+        
+        <div class="rule-box">
+            <ul>
+                <li><strong>Nguyên tắc 1: Ước lượng trước trong đầu.</strong><br>
+                Ví dụ con cần tính <strong>49 × 2</strong>. Tâm ta tự biết 49 gần bằng 50, nên kết quả phải xấp xỉ 100. Nếu màn hình hiện ra 980, chắc chắn con đã lỡ tay bấm nhầm thêm một số 0.</li>
+                <li><strong>Nguyên tắc 2: Kiểm tra lại các phím đã bấm.</strong><br>
+                Đôi khi tay ta vội vàng bấm phím <span class="key-btn">+</span> nhưng lại trượt sang phím <span class="key-btn">-</span>. Hãy làm chậm lại một nhịp và thở đều khi bấm nhé!</li>
+            </ul>
+        </div>
+    </div>
+
+    <h2>II. Trải nghiệm thực tế (Được phép dùng máy tính)</h2>
+    <div class="exercise-box">
+        <p><strong>Bài 1: Phụ giúp nhà bếp chuẩn bị lễ Vu Lan</strong></p>
+        <p>Sáng nay, Phật tử cúng dường cho bếp chùa các loại củ quả để nấu cỗ chay gồm: <strong>45,5 kg</strong> bí đỏ; <strong>28,75 kg</strong> cà rốt và <strong>15,4 kg</strong> khoai tây. Con hãy bấm máy tính xem tổng khối lượng củ quả nhà bếp nhận được là bao nhiêu ki-lô-gam?</p>
+        
+        <p><strong>Bài 2: Tính toán chi phí tu sửa chánh điện</strong></p>
+        <p>Để lát lại phần nền chánh điện bị hỏng, sư phụ đã đặt mua <strong>145</strong> thùng gạch men. Biết giá mỗi thùng gạch là <strong>125 000 đồng</strong>. Dùng máy tính cầm tay, con hãy tính giúp sư phụ tổng số tiền cần phải thanh toán cho cửa hàng vật liệu.</p>
+
+        <p><strong>Bài 3: Quỹ thiện nguyện mùa đông (Tính tỉ số phần trăm)</strong></p>
+        <p>Thùng phước sương của chùa tháng này thu nhận được <strong>24 500 000 đồng</strong>. Sư phụ quyết định trích ra đúng <strong>45%</strong> số tiền này để mua áo ấm gửi tặng các em nhỏ vùng cao. Con hãy bấm phím <span class="key-btn">%</span> trên máy tính để tìm xem số tiền sư phụ dành mua áo ấm là bao nhiêu?</p>
+    </div>
+
+    <h2>III. Lời giải và cách bấm máy</h2>
+    <div class="solution-box">
+        <p><strong>Bài 1: Bài toán nhà bếp</strong></p>
+        <div class="math-step">
+            <em>Cách thực hành:</em><br>
+            Con cần cộng khối lượng của 3 loại củ quả lại với nhau.<br>
+            Bấm máy: <span class="key-btn">4</span> <span class="key-btn">5</span> <span class="key-btn">.</span> <span class="key-btn">5</span> <span class="key-btn">+</span> <span class="key-btn">2</span> <span class="key-btn">8</span> <span class="key-btn">.</span> <span class="key-btn">7</span> <span class="key-btn">5</span> <span class="key-btn">+</span> <span class="key-btn">1</span> <span class="key-btn">5</span> <span class="key-btn">.</span> <span class="key-btn">4</span> <span class="key-btn">=</span><br>
+            Màn hình hiện: <strong>89.65</strong><br>
+            <strong>Đáp số:</strong> 89,65 kg.
+        </div>
+
+        <p><strong>Bài 2: Bài toán chi phí tu sửa</strong></p>
+        <div class="math-step">
+            <em>Cách thực hành:</em><br>
+            Ta dùng phép tính nhân để tính tổng số tiền.<br>
+            Bấm máy: <span class="key-btn">1</span> <span class="key-btn">4</span> <span class="key-btn">5</span> <span class="key-btn">×</span> <span class="key-btn">1</span> <span class="key-btn">2</span> <span class="key-btn">5</span> <span class="key-btn">0</span> <span class="key-btn">0</span> <span class="key-btn">0</span> <span class="key-btn">=</span><br>
+            Màn hình hiện: <strong>18125000</strong><br>
+            <strong>Đáp số:</strong> 18 125 000 đồng.
+        </div>
+
+        <p><strong>Bài 3: Bài toán quỹ thiện nguyện</strong></p>
+        <div class="math-step">
+            <em>Cách thực hành:</em><br>
+            Để tìm 45% của 24 500 000 đồng, con sử dụng phím phần trăm.<br>
+            Bấm máy: <span class="key-btn">2</span> <span class="key-btn">4</span> <span class="key-btn">5</span> <span class="key-btn">0</span> <span class="key-btn">0</span> <span class="key-btn">0</span> <span class="key-btn">0</span> <span class="key-btn">×</span> <span class="key-btn">4</span> <span class="key-btn">5</span> <span class="key-btn">%</span><br>
+            Màn hình hiện: <strong>11025000</strong><br>
+            <strong>Đáp số:</strong> 11 025 000 đồng.
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>

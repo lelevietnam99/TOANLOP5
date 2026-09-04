@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-width=1.0">
+    <title>Bài 35: Hình thang - Toán Lớp 5</title>
+    <!-- Cấu hình MathJax để render công thức toán học -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+      window.MathJax = {
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']],
+          displayMath: [['$$', '$$'], ['\\[', '\\]']]
+        }
+      };
+    </script>
+    <style>
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            background-color: #f4f9f4; 
+            color: #333; 
+            line-height: 1.6; 
+            padding: 20px; 
+            margin: 0;
+        }
+        .container { 
+            max-width: 800px; 
+            margin: 0 auto; 
+            background: #fff; 
+            padding: 30px; 
+            border-radius: 12px; 
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1); 
+        }
+        h1 { color: #2e7d32; text-align: center; border-bottom: 2px solid #a5d6a7; padding-bottom: 10px; }
+        h2 { color: #1565c0; margin-top: 30px; }
+        h3 { color: #d84315; }
+        .theory-box { 
+            background: #e3f2fd; 
+            padding: 15px; 
+            border-left: 5px solid #1976d2; 
+            border-radius: 5px; 
+            margin-bottom: 20px; 
+        }
+        .exercise-box { 
+            background: #fff3e0; 
+            padding: 15px; 
+            border-left: 5px solid #ff9800; 
+            border-radius: 5px; 
+            margin-bottom: 20px; 
+        }
+        .solution-box { 
+            background: #e8f5e9; 
+            padding: 15px; 
+            border-left: 5px solid #43a047; 
+            border-radius: 5px; 
+            margin-top: 30px; 
+        }
+        ul { margin-top: 5px; }
+        .math-step { margin-left: 20px; margin-bottom: 15px; }
+        .highlight { font-weight: bold; color: #d32f2f; }
+        .rule-box { background-color: #fff9c4; padding: 10px; border-radius: 5px; border-left: 4px solid #fbc02d; font-weight: bold; margin-top: 10px; }
+        .tip-box { background-color: #e8eaf6; padding: 10px; border-radius: 5px; border-left: 4px solid #3f51b5; font-style: italic; margin-top: 15px; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Bài 35: Hình thang</h1>
+    <p style="text-align: center; font-style: italic;">"Những bậc thềm đá dẫn lên chánh điện vô cùng vững chãi nhờ có hai mặt trên và dưới song song với nhau. Hình thang cũng mang trong mình sự cân bằng và vững vàng như thế!"</p>
+
+    <h2>I. Kiến thức cần nhớ</h2>
+    <div class="theory-box">
+        <h3>1. Đặc điểm của hình thang</h3>
+        <p>Hình thang là một hình có 4 cạnh (tứ giác), nhưng nó có một đặc điểm vô cùng đặc biệt:</p>
+        <div class="rule-box">
+            Hình thang có <strong>đúng một cặp cạnh đối diện song song</strong> với nhau.
+        </div>
+        <ul>
+            <li>Hai cạnh song song đó được gọi là <strong>hai cạnh đáy</strong>. Cạnh dài hơn gọi là <strong>đáy lớn</strong>, cạnh ngắn hơn gọi là <strong>đáy bé</strong>.</li>
+            <li>Hai cạnh còn lại (không song song) được gọi là <strong>hai cạnh bên</strong>.</li>
+        </ul>
+
+        <h3>2. Đường cao của hình thang</h3>
+        <p>Nếu ta kẻ một đoạn thẳng từ một điểm trên đáy này, đâm <strong>vuông góc</strong> thẳng xuống đáy kia, thì đoạn thẳng đó gọi là <strong>đường cao</strong> của hình thang.</p>
+
+        <h3>3. Hình thang vuông</h3>
+        <p>Đây là một người bạn đặc biệt trong gia đình hình thang.</p>
+        <div class="tip-box">
+            Nếu một hình thang có <strong>một cạnh bên vuông góc với hai đáy</strong>, thì hình đó được gọi là <strong>hình thang vuông</strong>.<br>
+            Trong hình thang vuông, cạnh bên vuông góc đó cũng chính là <strong>đường cao</strong> của hình thang luôn! Rất dễ nhận biết phải không các con?
+        </div>
+    </div>
+
+    <h2>II. Bài tập tự luyện</h2>
+    <div class="exercise-box">
+        <p><strong>Bài 1:</strong> Quan sát mặt cắt của một bậc thềm đá có dạng hình thang $ABCD$. Biết cạnh $AB$ song song với cạnh $CD$ và cạnh $AB$ ngắn hơn cạnh $CD$. Con hãy cho biết:</p>
+        <ul>
+            <li>a) Cạnh nào là đáy bé? Cạnh nào là đáy lớn?</li>
+            <li>b) Hai cạnh bên là những cạnh nào?</li>
+        </ul>
+        
+        <p><strong>Bài 2:</strong> Sư phụ phác thảo một mảnh vườn hình thang $MNPQ$, có đáy $MN$ song song với đáy $PQ$. Từ đỉnh $M$, sư phụ kẻ một đường thẳng vuông góc xuống cạnh $PQ$ và cắt $PQ$ tại điểm $H$. Hãy cho biết đoạn thẳng $MH$ được gọi là gì trong hình thang $MNPQ$?</p>
+
+        <p><strong>Bài 3:</strong> Một bức tường gạch ngăn cách khu nội viện có hình dạng một hình thang vuông. Hình thang này có tên là $EGHK$, trong đó cạnh bên $EG$ vuông góc với cả hai đáy. Sư chú Hỉ thắc mắc không biết đo đường cao của bức tường ở đâu. Con hãy chỉ cho chú Hỉ biết cạnh nào chính là đường cao nhé!</p>
+    </div>
+
+    <h2>III. Lời giải chi tiết (Làm nháp xong mới được xem nha!)</h2>
+    <div class="solution-box">
+        <p><strong>Bài 1: Cấu tạo của hình thang $ABCD$</strong></p>
+        <div class="math-step">
+            a) Vì $AB$ song song với $CD$, nên $AB$ và $CD$ là hai đáy.<br>
+            Do $AB$ ngắn hơn $CD$ nên: <strong>$AB$ là đáy bé</strong>, <strong>$CD$ là đáy lớn</strong>.
+        </div>
+        <div class="math-step">
+            b) Hai cạnh còn lại không song song là hai cạnh bên.<br>
+            Vậy hai cạnh bên là: <strong>cạnh $BC$ và cạnh $AD$</strong>.
+        </div>
+
+        <p><strong>Bài 2: Đường cao của hình thang $MNPQ$</strong></p>
+        <div class="math-step">
+            <em>Trả lời:</em><br>
+            Đoạn thẳng $MH$ được kẻ từ đỉnh $M$ (nằm trên đáy $MN$) vuông góc xuống đáy $PQ$, nên đoạn thẳng $MH$ được gọi là <strong>đường cao</strong> của hình thang $MNPQ$.
+        </div>
+
+        <p><strong>Bài 3: Hình thang vuông</strong></p>
+        <div class="math-step">
+            <em>Trả lời:</em><br>
+            Trong hình thang vuông, cạnh bên vuông góc với hai đáy cũng chính là chiều cao của hình thang đó.<br>
+            Vì cạnh bên $EG$ vuông góc với hai đáy, nên con hãy nói với chú Hỉ: <strong>Cạnh $EG$ chính là đường cao</strong> của bức tường.
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>

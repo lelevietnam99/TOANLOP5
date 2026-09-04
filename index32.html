@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-width=1.0">
+    <title>Bài 32: Hình tam giác - Toán Lớp 5</title>
+    <!-- Cấu hình MathJax để render công thức toán học -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+      window.MathJax = {
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']],
+          displayMath: [['$$', '$$'], ['\\[', '\\]']]
+        }
+      };
+    </script>
+    <style>
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            background-color: #f4f9f4; 
+            color: #333; 
+            line-height: 1.6; 
+            padding: 20px; 
+            margin: 0;
+        }
+        .container { 
+            max-width: 800px; 
+            margin: 0 auto; 
+            background: #fff; 
+            padding: 30px; 
+            border-radius: 12px; 
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1); 
+        }
+        h1 { color: #2e7d32; text-align: center; border-bottom: 2px solid #a5d6a7; padding-bottom: 10px; }
+        h2 { color: #1565c0; margin-top: 30px; }
+        h3 { color: #d84315; }
+        .theory-box { 
+            background: #e3f2fd; 
+            padding: 15px; 
+            border-left: 5px solid #1976d2; 
+            border-radius: 5px; 
+            margin-bottom: 20px; 
+        }
+        .exercise-box { 
+            background: #fff3e0; 
+            padding: 15px; 
+            border-left: 5px solid #ff9800; 
+            border-radius: 5px; 
+            margin-bottom: 20px; 
+        }
+        .solution-box { 
+            background: #e8f5e9; 
+            padding: 15px; 
+            border-left: 5px solid #43a047; 
+            border-radius: 5px; 
+            margin-top: 30px; 
+        }
+        ul { margin-top: 5px; }
+        .math-step { margin-left: 20px; margin-bottom: 15px; }
+        .highlight { font-weight: bold; color: #d32f2f; }
+        .rule-box { background-color: #fff9c4; padding: 10px; border-radius: 5px; border-left: 4px solid #fbc02d; font-weight: bold; margin-top: 10px; }
+        .tip-box { background-color: #e8eaf6; padding: 10px; border-radius: 5px; border-left: 4px solid #3f51b5; font-style: italic; margin-top: 15px; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Bài 32: Hình tam giác</h1>
+    <p style="text-align: center; font-style: italic;">"Tư thế ngồi thiền kiết già của Đức Phật tạo thành một hình tam giác vô cùng vững chãi. Ba cạnh nương tựa vào nhau mang lại sự tĩnh lặng và an định cho thân tâm!"</p>
+
+    <h2>I. Kiến thức cần nhớ</h2>
+    <div class="theory-box">
+        <h3>1. Cấu tạo của hình tam giác</h3>
+        <p>Đúng như tên gọi ("tam" là ba, "giác" là góc), một hình tam giác luôn luôn có:</p>
+        <ul>
+            <li><strong>3 đỉnh:</strong> Là 3 điểm nhọn (Ví dụ: đỉnh $A$, đỉnh $B$, đỉnh $C$).</li>
+            <li><strong>3 cạnh:</strong> Là 3 đoạn thẳng nối các đỉnh lại với nhau (Ví dụ: cạnh $AB$, cạnh $BC$, cạnh $CA$).</li>
+            <li><strong>3 góc:</strong> Được tạo bởi 2 cạnh kề nhau (Ví dụ: góc đỉnh $A$, góc đỉnh $B$, góc đỉnh $C$).</li>
+        </ul>
+
+        <h3>2. Cạnh đáy và Đường cao</h3>
+        <p>Đây là hai khái niệm quan trọng nhất để học bài diện tích ở phần sau, các con cần chú ý nhé!</p>
+        <div class="rule-box">
+            <ul>
+                <li><strong>Cạnh đáy:</strong> Con có thể chọn BẤT KỲ cạnh nào trong 3 cạnh làm đáy cũng được.</li>
+                <li><strong>Đường cao:</strong> Từ đỉnh đối diện với cạnh đáy, ta kẻ một đường thẳng <strong>vuông góc</strong> xuống đáy. Đoạn thẳng đó gọi là đường cao (kí hiệu là $h$).</li>
+            </ul>
+        </div>
+        
+        <div class="tip-box">
+            <strong>Bí kíp nhận diện tam giác vuông:</strong><br>
+            Nếu hình tam giác có một góc vuông (như góc tường chánh điện), thì hai cạnh tạo nên góc vuông đó chính là <strong>đáy và đường cao</strong> của nhau đấy! Thật tiện lợi phải không nào!
+        </div>
+    </div>
+
+    <h2>II. Bài tập tự luyện</h2>
+    <div class="exercise-box">
+        <p><strong>Bài 1:</strong> Quan sát một chiếc oản (phẩm oản cúng Phật) có mặt trước là hình tam giác $MNP$. Con hãy nhẩm kể tên:</p>
+        <ul>
+            <li>a) 3 đỉnh của tam giác.</li>
+            <li>b) 3 cạnh của tam giác.</li>
+            <li>c) 3 góc của tam giác.</li>
+        </ul>
+        
+        <p><strong>Bài 2:</strong> Trong tam giác $ABC$, sư phụ kẻ một đường thẳng từ đỉnh $A$, đâm vuông góc xuống cạnh $BC$ tại điểm $H$. Con hãy cho biết:</p>
+        <ul>
+            <li>a) Cạnh đáy trong trường hợp này là cạnh nào?</li>
+            <li>b) Đường cao trong trường hợp này là đoạn thẳng nào?</li>
+        </ul>
+
+        <p><strong>Bài 3:</strong> Sân sau chùa có một bồn hoa hình tam giác vuông $DEG$ (vuông tại đỉnh $D$). Chú Hỉ đang đứng ở đỉnh $E$ nhìn xuống cạnh đáy $DG$. Nếu lấy $DG$ làm cạnh đáy, thì đường cao của tam giác này là cạnh nào? Vì sao?</p>
+    </div>
+
+    <h2>III. Lời giải chi tiết (Làm nháp xong mới xem nhé các con)</h2>
+    <div class="solution-box">
+        <p><strong>Bài 1: Cấu tạo hình tam giác $MNP$</strong></p>
+        <div class="math-step">
+            a) 3 đỉnh: <strong>Đỉnh $M$, đỉnh $N$, đỉnh $P$.</strong>
+        </div>
+        <div class="math-step">
+            b) 3 cạnh: <strong>Cạnh $MN$, cạnh $NP$, cạnh $PM$.</strong>
+        </div>
+        <div class="math-step">
+            c) 3 góc: <strong>Góc đỉnh $M$, góc đỉnh $N$, góc đỉnh $P$.</strong>
+        </div>
+
+        <p><strong>Bài 2: Đáy và đường cao tam giác $ABC$</strong></p>
+        <div class="math-step">
+            a) Đường thẳng từ đỉnh $A$ đâm vuông góc xuống cạnh $BC$. Vậy cạnh đáy là: <strong>cạnh $BC$</strong>.
+        </div>
+        <div class="math-step">
+            b) Đoạn thẳng kẻ từ $A$ vuông góc với $BC$ tại $H$ được gọi là đường cao. Vậy đường cao là: <strong>đoạn $AH$</strong>.
+        </div>
+
+        <p><strong>Bài 3: Đặc điểm của tam giác vuông</strong></p>
+        <div class="math-step">
+            <em>Phân tích:</em> Tam giác $DEG$ vuông tại $D$, nghĩa là cạnh $DE$ vuông góc với cạnh $DG$.<br>
+            <em>Trả lời:</em><br>
+            Nếu lấy $DG$ làm cạnh đáy, thì đường thẳng hạ từ đỉnh đối diện (đỉnh $E$) vuông góc xuống $DG$ chính là cạnh $ED$.<br>
+            Vậy đường cao trong trường hợp này là <strong>cạnh $ED$</strong> (hay cạnh $DE$).<br>
+            <em>(Giải thích thêm: Trong tam giác vuông, hai cạnh góc vuông đóng vai trò là đáy và đường cao của nhau).</em>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>

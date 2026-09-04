@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-width=1.0">
+    <title>Bài 41: Tìm giá trị phần trăm của một số - Toán Lớp 5</title>
+    <!-- Cấu hình MathJax để render công thức toán học -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+      window.MathJax = {
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']],
+          displayMath: [['$$', '$$'], ['\\[', '\\]']]
+        }
+      };
+    </script>
+    <style>
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            background-color: #f4f9f4; 
+            color: #333; 
+            line-height: 1.6; 
+            padding: 20px; 
+            margin: 0;
+        }
+        .container { 
+            max-width: 800px; 
+            margin: 0 auto; 
+            background: #fff; 
+            padding: 30px; 
+            border-radius: 12px; 
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1); 
+        }
+        h1 { color: #2e7d32; text-align: center; border-bottom: 2px solid #a5d6a7; padding-bottom: 10px; }
+        h2 { color: #1565c0; margin-top: 30px; }
+        h3 { color: #d84315; }
+        .theory-box { 
+            background: #e3f2fd; 
+            padding: 15px; 
+            border-left: 5px solid #1976d2; 
+            border-radius: 5px; 
+            margin-bottom: 20px; 
+        }
+        .exercise-box { 
+            background: #fff3e0; 
+            padding: 15px; 
+            border-left: 5px solid #ff9800; 
+            border-radius: 5px; 
+            margin-bottom: 20px; 
+        }
+        .solution-box { 
+            background: #e8f5e9; 
+            padding: 15px; 
+            border-left: 5px solid #43a047; 
+            border-radius: 5px; 
+            margin-top: 30px; 
+        }
+        ul { margin-top: 5px; }
+        .math-step { margin-left: 20px; margin-bottom: 15px; }
+        .highlight { font-weight: bold; color: #d32f2f; }
+        .rule-box { background-color: #fff9c4; padding: 10px; border-radius: 5px; border-left: 4px solid #fbc02d; font-weight: bold; margin-top: 10px; }
+        .tip-box { background-color: #e8eaf6; padding: 10px; border-radius: 5px; border-left: 4px solid #3f51b5; font-style: italic; margin-top: 15px; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Bài 41: Tìm giá trị phần trăm của một số</h1>
+    <p style="text-align: center; font-style: italic;">"Mỗi ngày trích ra một phần nhỏ thời gian để tĩnh tâm đọc kinh, cũng giống như việc con đang tìm ra một giá trị phần trăm vô giá trong quỹ thời gian của chính mình."</p>
+
+    <h2>I. Kiến thức cần nhớ</h2>
+    <div class="theory-box">
+        <p>Để tìm một phần nhỏ (tính bằng phần trăm) từ một tổng thể lớn, chúng ta chỉ cần làm theo một quy tắc vô cùng đơn giản.</p>
+        
+        <div class="rule-box">
+            Muốn tìm $a\%$ của số $B$, ta có 2 cách tính:
+            <ul>
+                <li><strong>Cách 1:</strong> Lấy $B$ chia cho $100$ rồi nhân với $a$. <br>
+                <em>(Nghĩa là ta chia đều tổng thể làm $100$ phần để tìm $1\%$, sau đó nhân lên với số phần ta cần tìm).</em></li>
+                <li><strong>Cách 2:</strong> Lấy $B$ nhân với $a$ rồi chia cho $100$.</li>
+            </ul>
+        </div>
+
+        <h3>Ví dụ mẫu:</h3>
+        <p>Tìm $25\%$ của $60 \text{ kg}$ gạo.</p>
+        <ul>
+            <li><em>Cách 1:</em> Ta tính: $60 : 100 \times 25 = 0,6 \times 25 = \mathbf{15} \text{ (kg)}$.</li>
+            <li><em>Cách 2:</em> Ta tính: $60 \times 25 : 100 = 1500 : 100 = \mathbf{15} \text{ (kg)}$.</li>
+        </ul>
+        <div class="tip-box">
+            <strong>Mẹo nhỏ cho các chú tiểu:</strong> Tùy vào con số đề bài cho, con thấy cách nào nhân chia nhẩm dễ hơn, ra số chẵn hơn thì mình chọn cách đó nhé!
+        </div>
+    </div>
+
+    <h2>II. Bài tập tự luyện</h2>
+    <div class="exercise-box">
+        <p><strong>Bài 1:</strong> Tính giá trị phần trăm của các đại lượng sau:</p>
+        <ul>
+            <li>a) Tìm $15\%$ của $300$.</li>
+            <li>b) Tìm $40\%$ của $250 \text{ m}$.</li>
+            <li>c) Tìm $12,5\%$ của $80 \text{ lít}$.</li>
+        </ul>
+        
+        <p><strong>Bài 2:</strong> Nhà bếp của chùa thu hoạch được $120 \text{ kg}$ đậu phộng. Sư cô đã dùng $35\%$ số đậu phộng đó để làm muối tiêu, còn lại cất vào kho. Hỏi sư cô đã dùng bao nhiêu ki-lô-gam đậu phộng để làm muối tiêu?</p>
+
+        <p><strong>Bài 3:</strong> Một thư viện Phật giáo có $4 \ 500$ cuốn sách kinh. Trong đó, sách về lịch sử Đức Phật chiếm $20\%$. Hỏi thư viện có bao nhiêu cuốn sách về lịch sử Đức Phật?</p>
+
+        <p><strong>Bài 4:</strong> Chú Hỉ để dành được $150 \ 000$ đồng tiền tiêu vặt. Nhân ngày rằm, chú quyết định trích ra $30\%$ số tiền đó để mua hoa cúng dường Tam Bảo. Hỏi chú Hỉ còn lại bao nhiêu tiền?</p>
+    </div>
+
+    <h2>III. Lời giải chi tiết (Làm cẩn thận rồi mới xem đáp án nha)</h2>
+    <div class="solution-box">
+        <p><strong>Bài 1: Tính toán cơ bản</strong></p>
+        <div class="math-step">
+            a) $15\%$ của $300$ là:<br>
+            $300 : 100 \times 15 = 3 \times 15 = \mathbf{45}$
+        </div>
+        <div class="math-step">
+            b) $40\%$ của $250 \text{ m}$ là:<br>
+            $250 \times 40 : 100 = 10000 : 100 = \mathbf{100 \text{ (m)}}$
+        </div>
+        <div class="math-step">
+            c) $12,5\%$ của $80 \text{ lít}$ là:<br>
+            $80 : 100 \times 12,5 = 0,8 \times 12,5 = \mathbf{10 \text{ (lít)}}$
+        </div>
+
+        <p><strong>Bài 2: Bài toán nhà bếp</strong></p>
+        <div class="math-step">
+            <em>Bài giải:</em><br>
+            Số ki-lô-gam đậu phộng sư cô đã dùng để làm muối tiêu là:<br>
+            $$ 120 \times 35 : 100 = 42 \text{ (kg)} $$<br>
+            <strong>Đáp số:</strong> $42 \text{ kg}$.
+        </div>
+
+        <p><strong>Bài 3: Bài toán thư viện</strong></p>
+        <div class="math-step">
+            <em>Bài giải:</em><br>
+            Số cuốn sách về lịch sử Đức Phật có trong thư viện là:<br>
+            $$ 4 \ 500 : 100 \times 20 = 45 \times 20 = 900 \text{ (cuốn)} $$<br>
+            <strong>Đáp số:</strong> $900$ cuốn.
+        </div>
+
+        <p><strong>Bài 4: Bài toán trích tiền cúng dường</strong></p>
+        <div class="math-step">
+            <em>Bài giải:</em><br>
+            <strong>Bước 1:</strong> Tính số tiền chú Hỉ dùng để mua hoa.<br>
+            Số tiền chú Hỉ dùng để mua hoa là:<br>
+            $150 \ 000 : 100 \times 30 = 45 \ 000 \text{ (đồng)}$<br><br>
+            <strong>Bước 2:</strong> Tính số tiền còn lại.<br>
+            Số tiền chú Hỉ còn lại là:<br>
+            $150 \ 000 - 45 \ 000 = 105 \ 000 \text{ (đồng)}$<br>
+            <strong>Đáp số:</strong> $105 \ 000$ đồng.
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-width=1.0">
+    <title>Bài 31: Luyện tập chung về Tỉ số phần trăm - Toán Lớp 5</title>
+    <!-- Cấu hình MathJax để render công thức toán học -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+      window.MathJax = {
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']],
+          displayMath: [['$$', '$$'], ['\\[', '\\]']]
+        }
+      };
+    </script>
+    <style>
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            background-color: #f4f9f4; 
+            color: #333; 
+            line-height: 1.6; 
+            padding: 20px; 
+            margin: 0;
+        }
+        .container { 
+            max-width: 800px; 
+            margin: 0 auto; 
+            background: #fff; 
+            padding: 30px; 
+            border-radius: 12px; 
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1); 
+        }
+        h1 { color: #2e7d32; text-align: center; border-bottom: 2px solid #a5d6a7; padding-bottom: 10px; }
+        h2 { color: #1565c0; margin-top: 30px; }
+        h3 { color: #d84315; }
+        .theory-box { 
+            background: #e3f2fd; 
+            padding: 15px; 
+            border-left: 5px solid #1976d2; 
+            border-radius: 5px; 
+            margin-bottom: 20px; 
+        }
+        .exercise-box { 
+            background: #fff3e0; 
+            padding: 15px; 
+            border-left: 5px solid #ff9800; 
+            border-radius: 5px; 
+            margin-bottom: 20px; 
+        }
+        .solution-box { 
+            background: #e8f5e9; 
+            padding: 15px; 
+            border-left: 5px solid #43a047; 
+            border-radius: 5px; 
+            margin-top: 30px; 
+        }
+        ul { margin-top: 5px; }
+        .math-step { margin-left: 20px; margin-bottom: 15px; }
+        .highlight { font-weight: bold; color: #d32f2f; }
+        table { width: 100%; border-collapse: collapse; margin-top: 10px; background: #fff; }
+        th, td { border: 1px solid #90caf9; padding: 12px; text-align: left; }
+        th { background-color: #bbdefb; color: #0d47a1; text-align: center;}
+        .tip-box { background-color: #fff9c4; padding: 10px; border-radius: 5px; border-left: 4px solid #fbc02d; font-style: italic; margin-top: 15px; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Bài 31: Luyện tập chung về Tỉ số phần trăm</h1>
+    <p style="text-align: center; font-style: italic;">"Tu tập là quá trình góp nhặt từng chút một để thấy được sự toàn vẹn. Hôm nay, chúng ta cùng nhìn lại cả 3 dạng toán tỉ số phần trăm để trí tuệ thêm sáng tỏ nhé!"</p>
+
+    <h2>I. Bí kíp nhận diện đề bài</h2>
+    <div class="theory-box">
+        <p>Trong các bài kiểm tra, 3 dạng toán tỉ số phần trăm thường bị trộn lẫn. Các con hãy ghi nhớ bảng sau để không bao giờ bị nhầm lẫn:</p>
+        
+        <table>
+            <tr>
+                <th>Dạng toán</th>
+                <th>Dấu hiệu nhận biết (Câu hỏi)</th>
+                <th>Cách giải</th>
+            </tr>
+            <tr>
+                <td><strong>Dạng 1</strong></td>
+                <td>Hỏi: <em>"A chiếm bao nhiêu phần trăm của B?"</em><br>(Đi tìm số \%)</td>
+                <td>Lấy <strong>$A : B$</strong> rồi viết thành phần trăm (nhân nhẩm $100$ và thêm $\%$).</td>
+            </tr>
+            <tr>
+                <td><strong>Dạng 2</strong></td>
+                <td>Cho tổng thể ($100\%$). Hỏi: <em>"Tìm $a\%$ của tổng thể?"</em><br>(Đi tìm một phần)</td>
+                <td>Lấy Tổng thể <strong>chia $100$ rồi nhân với $a$</strong>.</td>
+            </tr>
+            <tr>
+                <td><strong>Dạng 3</strong></td>
+                <td>Cho một phần là $a\%$. Hỏi: <em>"Tìm tổng thể (tất cả, ban đầu)?"</em><br>(Đi tìm $100\%$)</td>
+                <td>Lấy Giá trị của phần đó <strong>chia cho $a$ rồi nhân với $100$</strong>.</td>
+            </tr>
+        </table>
+        
+        <div class="tip-box">
+            <strong>Thần chú rút gọn:</strong><br>
+            - Tìm số $\%$ $\rightarrow$ Cứ lấy 2 số CHIA cho nhau.<br>
+            - Tìm một CỤC NHỎ $\rightarrow$ CHIA $100$ trước.<br>
+            - Tìm TẤT CẢ $\rightarrow$ NHÂN $100$ ở cuối.
+        </div>
+    </div>
+
+    <h2>II. Bài tập tự luyện</h2>
+    <div class="exercise-box">
+        <p><strong>Bài 1: Xác định nhanh (Chỉ ra Dạng mấy rồi tính):</strong></p>
+        <ul>
+            <li>a) Tìm tỉ số phần trăm của $12$ và $50$.</li>
+            <li>b) Tìm $15\%$ của $200 \text{ kg}$.</li>
+            <li>c) Tìm một số, biết $30\%$ của số đó là $90 \text{ m}$.</li>
+        </ul>
+        
+        <p><strong>Bài 2:</strong> Tủ sách Phật pháp của chùa có tất cả $120$ cuốn kinh sách, trong đó có $48$ cuốn là kinh Pháp Hoa. Hỏi số kinh Pháp Hoa chiếm bao nhiêu phần trăm tổng số kinh sách trong tủ?</p>
+
+        <p><strong>Bài 3:</strong> Đạo tràng có $500$ Phật tử đăng ký tham gia khóa tu mùa hè. Theo thống kê, có $45\%$ số người tham gia là Phật tử thanh thiếu niên (dưới 18 tuổi). Hỏi có bao nhiêu Phật tử thanh thiếu niên tham gia khóa tu?</p>
+
+        <p><strong>Bài 4:</strong> Chú tiểu Hỉ ra vườn nhổ cỏ dại. Chú đã nhổ được $36$ bụi cỏ. Sư phụ đi ngang qua mỉm cười nói: <em>"Giỏi lắm, con đã hoàn thành được $40\%$ công việc rồi đấy!"</em>. Hỏi chú Hỉ cần nhổ tất cả bao nhiêu bụi cỏ để làm sạch toàn bộ khu vườn?</p>
+    </div>
+
+    <h2>III. Lời giải chi tiết (Phân tích kỹ đề rồi mới xem đáp án nha)</h2>
+    <div class="solution-box">
+        <p><strong>Bài 1: Kỹ năng tính toán cơ bản</strong></p>
+        <div class="math-step">
+            a) <strong>(Dạng 1)</strong> Tỉ số phần trăm của $12$ và $50$ là:<br>
+            $12 : 50 = 0,24 = \mathbf{24\%}$
+        </div>
+        <div class="math-step">
+            b) <strong>(Dạng 2)</strong> $15\%$ của $200 \text{ kg}$ là:<br>
+            $200 : 100 \times 15 = 2 \times 15 = \mathbf{30 \text{ (kg)}}$
+        </div>
+        <div class="math-step">
+            c) <strong>(Dạng 3)</strong> Số đó là:<br>
+            $90 : 30 \times 100 = 3 \times 100 = \mathbf{300 \text{ (m)}}$
+        </div>
+
+        <p><strong>Bài 2: Bài toán Tủ sách (Dạng 1)</strong></p>
+        <div class="math-step">
+            <em>Phân tích: Đề hỏi "chiếm bao nhiêu phần trăm" -> Đây là Dạng 1.</em><br>
+            <em>Bài giải:</em><br>
+            Tỉ số phần trăm của số kinh Pháp Hoa so với tổng số kinh sách là:<br>
+            $$ 48 : 120 = 0,4 = 40\% $$<br>
+            <strong>Đáp số:</strong> $40\%$.
+        </div>
+
+        <p><strong>Bài 3: Bài toán Khóa tu (Dạng 2)</strong></p>
+        <div class="math-step">
+            <em>Phân tích: Đề đã cho tổng thể là $500$ người, yêu cầu tìm số lượng của $45\%$ -> Đây là Dạng 2.</em><br>
+            <em>Bài giải:</em><br>
+            Số Phật tử thanh thiếu niên tham gia khóa tu là:<br>
+            $$ 500 : 100 \times 45 = 5 \times 45 = 225 \text{ (người)} $$<br>
+            <strong>Đáp số:</strong> $225$ người.
+        </div>
+
+        <p><strong>Bài 4: Bài toán Nhổ cỏ (Dạng 3)</strong></p>
+        <div class="math-step">
+            <em>Phân tích: Đề cho biết $40\%$ tương ứng với $36$ bụi cỏ, yêu cầu tìm "tất cả" (tức là $100\%$) -> Đây là Dạng 3.</em><br>
+            <em>Bài giải:</em><br>
+            Tổng số bụi cỏ chú Hỉ cần nhổ để làm sạch khu vườn là:<br>
+            $$ 36 : 40 \times 100 = 0,9 \times 100 = 90 \text{ (bụi cỏ)} $$<br>
+            <em>(Hoặc lấy: $36 \times 100 : 40 = 3600 : 40 = 90$).</em><br>
+            <strong>Đáp số:</strong> $90$ bụi cỏ.
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>

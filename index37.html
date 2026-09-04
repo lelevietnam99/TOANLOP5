@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-width=1.0">
+    <title>Bài 37: Hình tròn. Đường tròn - Toán Lớp 5</title>
+    <!-- Cấu hình MathJax để render công thức toán học -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+      window.MathJax = {
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']],
+          displayMath: [['$$', '$$'], ['\\[', '\\]']]
+        }
+      };
+    </script>
+    <style>
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            background-color: #f4f9f4; 
+            color: #333; 
+            line-height: 1.6; 
+            padding: 20px; 
+            margin: 0;
+        }
+        .container { 
+            max-width: 800px; 
+            margin: 0 auto; 
+            background: #fff; 
+            padding: 30px; 
+            border-radius: 12px; 
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1); 
+        }
+        h1 { color: #2e7d32; text-align: center; border-bottom: 2px solid #a5d6a7; padding-bottom: 10px; }
+        h2 { color: #1565c0; margin-top: 30px; }
+        h3 { color: #d84315; }
+        .theory-box { 
+            background: #e3f2fd; 
+            padding: 15px; 
+            border-left: 5px solid #1976d2; 
+            border-radius: 5px; 
+            margin-bottom: 20px; 
+        }
+        .exercise-box { 
+            background: #fff3e0; 
+            padding: 15px; 
+            border-left: 5px solid #ff9800; 
+            border-radius: 5px; 
+            margin-bottom: 20px; 
+        }
+        .solution-box { 
+            background: #e8f5e9; 
+            padding: 15px; 
+            border-left: 5px solid #43a047; 
+            border-radius: 5px; 
+            margin-top: 30px; 
+        }
+        ul { margin-top: 5px; }
+        .math-step { margin-left: 20px; margin-bottom: 15px; }
+        .highlight { font-weight: bold; color: #d32f2f; }
+        .rule-box { background-color: #fff9c4; padding: 10px; border-radius: 5px; border-left: 4px solid #fbc02d; font-weight: bold; margin-top: 10px; }
+        .tip-box { background-color: #e8eaf6; padding: 10px; border-radius: 5px; border-left: 4px solid #3f51b5; font-style: italic; margin-top: 15px; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Bài 37: Hình tròn. Đường tròn</h1>
+    <p style="text-align: center; font-style: italic;">"Giống như bánh xe Pháp luân (Pháp luân thường chuyển) không có điểm bắt đầu cũng chẳng có điểm kết thúc, hình tròn tượng trưng cho sự viên mãn, bình đẳng và trọn vẹn trong tu tập."</p>
+
+    <h2>I. Kiến thức cần nhớ</h2>
+    <div class="theory-box">
+        <h3>1. Phân biệt "Đường tròn" và "Hình tròn"</h3>
+        <ul>
+            <li><strong>Đường tròn:</strong> Chỉ là cái viền mỏng manh bao quanh bên ngoài (giống như một chiếc vòng tay của em bé).</li>
+            <li><strong>Hình tròn:</strong> Bao gồm cả đường viền bên ngoài và toàn bộ phần mặt phẳng đặc bên trong (giống như một đồng xu hay cái thớt thái rau của nhà bếp).</li>
+        </ul>
+
+        <h3>2. Tâm, Bán kính, Đường kính</h3>
+        <p>Để vẽ được một đường tròn bằng compa, ta cần một điểm đặt mũi nhọn cố định. Điểm đó gọi là cái <strong>Tâm</strong> (Tâm tĩnh lặng thì đường tròn vẽ ra mới tròn trịa!).</p>
+        
+        <div class="rule-box">
+            <ul>
+                <li><strong>Tâm (thường gọi là Tâm $O$):</strong> Là điểm nằm chính giữa hình tròn.</li>
+                <li><strong>Bán kính (kí hiệu là $r$):</strong> Là đoạn thẳng nối từ Tâm $O$ ra một điểm bất kỳ trên đường viền. Mọi bán kính trong một hình tròn đều dài bằng nhau.</li>
+                <li><strong>Đường kính (kí hiệu là $d$):</strong> Là đoạn thẳng đi thẳng từ bên này sang bên kia đường viền, <strong>bắt buộc phải đi ngang qua Tâm $O$</strong>.</li>
+            </ul>
+        </div>
+        
+        <div class="tip-box">
+            <strong>Mối quan hệ đặc biệt:</strong><br>
+            - Đường kính gấp 2 lần bán kính: $\mathbf{d = r \times 2}$<br>
+            - Bán kính bằng một nửa đường kính: $\mathbf{r = d : 2}$
+        </div>
+    </div>
+
+    <h2>II. Bài tập tự luyện</h2>
+    <div class="exercise-box">
+        <p><strong>Bài 1:</strong> Tính đường kính ($d$) của hình tròn khi biết bán kính ($r$):</p>
+        <ul>
+            <li>a) $r = 5 \text{ cm}$</li>
+            <li>b) $r = 3,2 \text{ dm}$</li>
+            <li>c) $r = \frac{1}{2} \text{ m}$</li>
+        </ul>
+        
+        <p><strong>Bài 2:</strong> Tính bán kính ($r$) của hình tròn khi biết đường kính ($d$):</p>
+        <ul>
+            <li>a) $d = 14 \text{ cm}$</li>
+            <li>b) $d = 8,6 \text{ m}$</li>
+        </ul>
+
+        <p><strong>Bài 3:</strong> Sư phụ muốn vẽ một bồn hoa hình tròn giữa sân chùa bằng một sợi dây thừng. Sư phụ đóng một chiếc cọc cố định ở giữa sân làm Tâm, rồi buộc một đầu dây thừng vào cọc, đầu kia buộc vào một viên phấn để quay thành vòng tròn. Biết sợi dây thừng dài $4 \text{ m}$. Hỏi bồn hoa đó có đường kính là bao nhiêu mét?</p>
+
+        <p><strong>Bài 4: Đố vui (Đúng hay Sai?)</strong></p>
+        <ul>
+            <li>a) Đoạn thẳng dài nhất trong một hình tròn chính là đường kính.</li>
+            <li>b) Hai bán kính bất kỳ ghép lại sẽ luôn luôn tạo thành một đường kính.</li>
+        </ul>
+    </div>
+
+    <h2>III. Lời giải chi tiết (Làm xong mới được xem nhé!)</h2>
+    <div class="solution-box">
+        <p><strong>Bài 1: Tìm đường kính (Gấp đôi bán kính)</strong></p>
+        <div class="math-step">
+            a) $d = 5 \times 2 = \mathbf{10 \text{ (cm)}}$
+        </div>
+        <div class="math-step">
+            b) $d = 3,2 \times 2 = \mathbf{6,4 \text{ (dm)}}$
+        </div>
+        <div class="math-step">
+            c) $d = \frac{1}{2} \times 2 = \frac{2}{2} = \mathbf{1 \text{ (m)}}$
+        </div>
+
+        <p><strong>Bài 2: Tìm bán kính (Chia đôi đường kính)</strong></p>
+        <div class="math-step">
+            a) $r = 14 : 2 = \mathbf{7 \text{ (cm)}}$
+        </div>
+        <div class="math-step">
+            b) $r = 8,6 : 2 = \mathbf{4,3 \text{ (m)}}$
+        </div>
+
+        <p><strong>Bài 3: Bài toán vẽ bồn hoa bằng dây thừng</strong></p>
+        <div class="math-step">
+            <em>Phân tích:</em> Chiếc cọc đóng ở giữa sân đóng vai trò là <strong>Tâm $O$</strong>. Chiều dài sợi dây thừng căng từ cọc ra đến viên phấn chính là <strong>Bán kính ($r$)</strong>. Vậy bán kính $r = 4 \text{ m}$.<br>
+            <em>Bài giải:</em><br>
+            Đường kính của bồn hoa hình tròn là:<br>
+            $$ 4 \times 2 = 8 \text{ (m)} $$<br>
+            <strong>Đáp số:</strong> $8 \text{ m}$.
+        </div>
+
+        <p><strong>Bài 4: Đố vui Hình tròn</strong></p>
+        <div class="math-step">
+            a) <strong>ĐÚNG.</strong> Bất kỳ đoạn thẳng nào nối 2 điểm trên đường tròn mà không đi qua tâm đều sẽ ngắn hơn đường kính.<br>
+            b) <strong>SAI.</strong> Hai bán kính ghép lại chỉ tạo thành đường kính khi chúng cùng nằm trên một đường thẳng (phải đi thẳng qua tâm). Nếu hai bán kính tạo thành một góc gấp khúc (chữ V) thì chúng không thể là đường kính được!
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>

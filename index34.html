@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-width=1.0">
+    <title>Bài 34: Luyện tập Diện tích hình tam giác - Toán Lớp 5</title>
+    <!-- Cấu hình MathJax để render công thức toán học -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+      window.MathJax = {
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']],
+          displayMath: [['$$', '$$'], ['\\[', '\\]']]
+        }
+      };
+    </script>
+    <style>
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            background-color: #f4f9f4; 
+            color: #333; 
+            line-height: 1.6; 
+            padding: 20px; 
+            margin: 0;
+        }
+        .container { 
+            max-width: 800px; 
+            margin: 0 auto; 
+            background: #fff; 
+            padding: 30px; 
+            border-radius: 12px; 
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1); 
+        }
+        h1 { color: #2e7d32; text-align: center; border-bottom: 2px solid #a5d6a7; padding-bottom: 10px; }
+        h2 { color: #1565c0; margin-top: 30px; }
+        h3 { color: #d84315; }
+        .theory-box { 
+            background: #e3f2fd; 
+            padding: 15px; 
+            border-left: 5px solid #1976d2; 
+            border-radius: 5px; 
+            margin-bottom: 20px; 
+        }
+        .exercise-box { 
+            background: #fff3e0; 
+            padding: 15px; 
+            border-left: 5px solid #ff9800; 
+            border-radius: 5px; 
+            margin-bottom: 20px; 
+        }
+        .solution-box { 
+            background: #e8f5e9; 
+            padding: 15px; 
+            border-left: 5px solid #43a047; 
+            border-radius: 5px; 
+            margin-top: 30px; 
+        }
+        ul { margin-top: 5px; }
+        .math-step { margin-left: 20px; margin-bottom: 15px; }
+        .highlight { font-weight: bold; color: #d32f2f; }
+        .rule-box { background-color: #fff9c4; padding: 10px; border-radius: 5px; border-left: 4px solid #fbc02d; font-weight: bold; margin-top: 10px; }
+        .tip-box { background-color: #e8eaf6; padding: 10px; border-radius: 5px; border-left: 4px solid #3f51b5; font-style: italic; margin-top: 15px; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Bài 34: Luyện tập về Diện tích hình tam giác</h1>
+    <p style="text-align: center; font-style: italic;">"Đi tìm cội nguồn của một dòng sông cũng giống như giải một bài toán ngược. Biết kết quả rồi, ta cùng suy ngược lại để tìm ra điểm bắt đầu nhé!"</p>
+
+    <h2>I. Bí kíp giải bài toán ngược</h2>
+    <div class="theory-box">
+        <p>Ở bài trước, các con đã biết công thức xuôi: <strong>Diện tích = (Đáy $\times$ Cao) $: 2$</strong>.</p>
+        <p>Vậy nếu đề bài cho biết Diện tích ($S$) rồi, bắt ta tìm Cạnh đáy ($a$) hoặc Chiều cao ($h$) thì làm sao?</p>
+        
+        <div class="rule-box">
+            <ul>
+                <li><strong>Muốn tìm độ dài đáy:</strong> Ta lấy Diện tích nhân với $2$, rồi chia cho chiều cao. <br> $a = S \times 2 : h$</li>
+                <li><strong>Muốn tìm chiều cao:</strong> Ta lấy Diện tích nhân với $2$, rồi chia cho độ dài đáy. <br> $h = S \times 2 : a$</li>
+            </ul>
+        </div>
+
+        <div class="tip-box">
+            <strong>Thần chú dễ nhớ:</strong><br>
+            <em>"Diện tích nhân hai trước tiên, <br>
+            Rồi đem chia đáy (hoặc cao) là thành!"</em><br><br>
+            Các con nhớ nhé, phải luôn luôn <strong>lấy Diện tích nhân $2$</strong> trước rồi mới làm bước tiếp theo!
+        </div>
+    </div>
+
+    <h2>II. Bài tập tự luyện</h2>
+    <div class="exercise-box">
+        <p><strong>Bài 1:</strong> Tìm độ dài cạnh đáy của hình tam giác biết:</p>
+        <ul>
+            <li>Diện tích là $24 \text{ cm}^2$ và chiều cao là $6 \text{ cm}$.</li>
+        </ul>
+        
+        <p><strong>Bài 2:</strong> Tìm chiều cao của hình tam giác biết:</p>
+        <ul>
+            <li>Diện tích là $17,5 \text{ m}^2$ và độ dài đáy là $5 \text{ m}$.</li>
+        </ul>
+
+        <p><strong>Bài 3:</strong> Sư phụ cắt một miếng ván gỗ hình tam giác để làm giá đỡ mặt bàn trà. Miếng ván có diện tích là $1200 \text{ cm}^2$ và độ dài đáy là $60 \text{ cm}$. Hỏi chiều cao của miếng ván gỗ đó là bao nhiêu xăng-ti-mét?</p>
+
+        <p><strong>Bài 4: (Bài toán mở rộng đất)</strong> Vườn rau của chùa có hình tam giác với diện tích $45 \text{ m}^2$ và cạnh đáy dài $15 \text{ m}$. Sư phụ muốn kéo dài cạnh đáy thêm $5 \text{ m}$ nữa để trồng thêm xà lách (chiều cao không đổi). Hỏi phần diện tích đất được mở rộng thêm là bao nhiêu?</p>
+    </div>
+
+    <h2>III. Lời giải chi tiết (Nhẩm thần chú rồi làm nháp thử nhé)</h2>
+    <div class="solution-box">
+        <p><strong>Bài 1: Tìm cạnh đáy</strong></p>
+        <div class="math-step">
+            <em>Bài giải:</em><br>
+            Độ dài cạnh đáy của hình tam giác là:<br>
+            $$ 24 \times 2 : 6 = 48 : 6 = 8 \text{ (cm)} $$<br>
+            <strong>Đáp số:</strong> $8 \text{ cm}$.
+        </div>
+
+        <p><strong>Bài 2: Tìm chiều cao</strong></p>
+        <div class="math-step">
+            <em>Bài giải:</em><br>
+            Chiều cao của hình tam giác là:<br>
+            $$ 17,5 \times 2 : 5 = 35 : 5 = 7 \text{ (m)} $$<br>
+            <strong>Đáp số:</strong> $7 \text{ m}$.
+        </div>
+
+        <p><strong>Bài 3: Bài toán miếng ván gỗ (Tìm chiều cao)</strong></p>
+        <div class="math-step">
+            <em>Bài giải:</em><br>
+            Chiều cao của miếng ván gỗ hình tam giác là:<br>
+            $$ 1200 \times 2 : 60 = 2400 : 60 = 40 \text{ (cm)} $$<br>
+            <strong>Đáp số:</strong> $40 \text{ cm}$.
+        </div>
+
+        <p><strong>Bài 4: Bài toán mở rộng đất (Nâng cao)</strong></p>
+        <div class="math-step">
+            <em>Bài giải:</em><br>
+            <strong>Bước 1:</strong> Tìm chiều cao của vườn rau hình tam giác ban đầu.<br>
+            Chiều cao của vườn rau là:<br>
+            $45 \times 2 : 15 = 90 : 15 = 6 \text{ (m)}$<br><br>
+            
+            <strong>Bước 2:</strong> Tính phần diện tích mở rộng.<br>
+            Phần đất mở rộng thêm cũng là một hình tam giác. Hình tam giác mới này có đáy là $5 \text{ m}$ và có chung chiều cao với vườn rau ban đầu (chiều cao $6 \text{ m}$).<br>
+            Diện tích phần đất mở rộng thêm là:<br>
+            $$ \frac{5 \times 6}{2} = \frac{30}{2} = 15 \text{ (m}^2) $$<br>
+            <strong>Đáp số:</strong> $15 \text{ m}^2$.
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>

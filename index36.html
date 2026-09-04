@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-width=1.0">
+    <title>Bài 36: Diện tích hình thang - Toán Lớp 5</title>
+    <!-- Cấu hình MathJax để render công thức toán học -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+      window.MathJax = {
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']],
+          displayMath: [['$$', '$$'], ['\\[', '\\]']]
+        }
+      };
+    </script>
+    <style>
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            background-color: #f4f9f4; 
+            color: #333; 
+            line-height: 1.6; 
+            padding: 20px; 
+            margin: 0;
+        }
+        .container { 
+            max-width: 800px; 
+            margin: 0 auto; 
+            background: #fff; 
+            padding: 30px; 
+            border-radius: 12px; 
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1); 
+        }
+        h1 { color: #2e7d32; text-align: center; border-bottom: 2px solid #a5d6a7; padding-bottom: 10px; }
+        h2 { color: #1565c0; margin-top: 30px; }
+        h3 { color: #d84315; }
+        .theory-box { 
+            background: #e3f2fd; 
+            padding: 15px; 
+            border-left: 5px solid #1976d2; 
+            border-radius: 5px; 
+            margin-bottom: 20px; 
+        }
+        .exercise-box { 
+            background: #fff3e0; 
+            padding: 15px; 
+            border-left: 5px solid #ff9800; 
+            border-radius: 5px; 
+            margin-bottom: 20px; 
+        }
+        .solution-box { 
+            background: #e8f5e9; 
+            padding: 15px; 
+            border-left: 5px solid #43a047; 
+            border-radius: 5px; 
+            margin-top: 30px; 
+        }
+        ul { margin-top: 5px; }
+        .math-step { margin-left: 20px; margin-bottom: 15px; }
+        .highlight { font-weight: bold; color: #d32f2f; }
+        .rule-box { background-color: #fff9c4; padding: 10px; border-radius: 5px; border-left: 4px solid #fbc02d; font-weight: bold; margin-top: 10px; }
+        .poem-box { background-color: #fce4ec; padding: 15px; border-radius: 8px; border: 2px dashed #f06292; font-style: italic; text-align: center; font-size: 18px; margin: 20px 0; color: #880e4f; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Bài 36: Diện tích hình thang</h1>
+    <p style="text-align: center; font-style: italic;">"Trong tu tập, người lớn dìu dắt người nhỏ cùng nhau tinh tấn. Hình thang cũng vậy, đáy lớn đáy bé phải hòa hợp cộng vào nhau thì mới tính được sự trọn vẹn!"</p>
+
+    <h2>I. Kiến thức cần nhớ</h2>
+    <div class="theory-box">
+        <p>Để tính diện tích hình thang, các con chỉ cần nhẩm thuộc lòng 4 câu thơ thần chú này, bảo đảm không bao giờ làm sai bài tập:</p>
+        
+        <div class="poem-box">
+            "Muốn tính diện tích hình thang,<br>
+            Đáy lớn đáy nhỏ ta mang cộng vào.<br>
+            Cộng vào nhân với chiều cao,<br>
+            Chia đôi lấy nửa thế nào cũng ra!"
+        </div>
+
+        <div class="rule-box">
+            <strong>Quy tắc bằng chữ:</strong> Muốn tính diện tích hình thang, ta lấy <strong>tổng độ dài hai đáy</strong> nhân với <strong>chiều cao</strong> (cùng một đơn vị đo) rồi <strong>chia cho $2$</strong>.
+            <br><br>
+            <strong>Công thức:</strong> 
+            $$ S = \frac{(a + b) \times h}{2} \quad \text{hoặc} \quad S = (a + b) \times h : 2 $$
+            <em>(Trong đó: $S$ là diện tích; $a, b$ là độ dài hai đáy; $h$ là chiều cao).</em>
+        </div>
+        
+        <p><em>*Lưu ý: Cũng giống như hình tam giác, các con phải nhớ <strong>"chia cho 2"</strong> và phải đưa các số đo về <strong>cùng một đơn vị</strong> trước khi tính nhé!</em></p>
+    </div>
+
+    <h2>II. Bài tập tự luyện</h2>
+    <div class="exercise-box">
+        <p><strong>Bài 1:</strong> Tính diện tích hình thang biết:</p>
+        <ul>
+            <li>a) Đáy lớn $12 \text{ cm}$, đáy bé $8 \text{ cm}$, chiều cao $5 \text{ cm}$.</li>
+            <li>b) Đáy lớn $2,5 \text{ m}$, đáy bé $1,5 \text{ m}$, chiều cao $1,2 \text{ m}$.</li>
+        </ul>
+        
+        <p><strong>Bài 2: (Cạm bẫy đơn vị)</strong> Tính diện tích hình thang có đáy lớn $2 \text{ m}$, đáy bé $15 \text{ dm}$ và chiều cao $12 \text{ dm}$.</p>
+
+        <p><strong>Bài 3:</strong> Sư phụ muốn lát gạch cho một khoảnh sân trước điện Quan Âm. Khoảnh sân có hình thang với độ dài đáy lớn là $15 \text{ m}$, đáy bé là $10 \text{ m}$ và chiều cao là $8 \text{ m}$. Hỏi diện tích khoảnh sân đó là bao nhiêu mét vuông?</p>
+
+        <p><strong>Bài 4:</strong> Chú tiểu dùng giấy bìa cắt một hình thang vuông có đáy lớn $6 \text{ cm}$, đáy bé $4 \text{ cm}$ và cạnh bên vuông góc dài $5 \text{ cm}$. Tính diện tích miếng bìa đó.</p>
+    </div>
+
+    <h2>III. Lời giải chi tiết (Nhẩm lại bài thơ trước khi xem đáp án nhé!)</h2>
+    <div class="solution-box">
+        <p><strong>Bài 1: Tính toán cơ bản</strong></p>
+        <div class="math-step">
+            a) Diện tích hình thang là:<br>
+            $$ \frac{(12 + 8) \times 5}{2} = \frac{20 \times 5}{2} = \frac{100}{2} = \mathbf{50 \text{ (cm}^2)} $$
+        </div>
+        <div class="math-step">
+            b) Diện tích hình thang là:<br>
+            $$ \frac{(2,5 + 1,5) \times 1,2}{2} = \frac{4 \times 1,2}{2} = \frac{4,8}{2} = \mathbf{2,4 \text{ (m}^2)} $$
+        </div>
+
+        <p><strong>Bài 2: Đổi đơn vị trước khi tính</strong></p>
+        <div class="math-step">
+            <em>Phân tích: Đáy lớn là $\text{m}$, đáy bé và chiều cao là $\text{dm}$. Ta đổi hết về $\text{dm}$ cho dễ tính.</em><br>
+            Đổi: $2 \text{ m} = 20 \text{ dm}$.<br>
+            Diện tích hình thang là:<br>
+            $$ \frac{(20 + 15) \times 12}{2} = \frac{35 \times 12}{2} = \frac{420}{2} = \mathbf{210 \text{ (dm}^2)} $$
+        </div>
+
+        <p><strong>Bài 3: Bài toán lát sân chùa</strong></p>
+        <div class="math-step">
+            <em>Bài giải:</em><br>
+            Diện tích khoảnh sân hình thang là:<br>
+            $$ (15 + 10) \times 8 : 2 = 25 \times 8 : 2 = 200 : 2 = 100 \text{ (m}^2) $$<br>
+            <strong>Đáp số:</strong> $100 \text{ m}^2$.
+        </div>
+
+        <p><strong>Bài 4: Hình thang vuông</strong></p>
+        <div class="math-step">
+            <em>Phân tích: Ở Bài 35, ta đã biết cạnh bên vuông góc với hai đáy chính là <strong>chiều cao</strong>. Vậy chiều cao là $5 \text{ cm}$.</em><br>
+            <em>Bài giải:</em><br>
+            Diện tích miếng bìa hình thang vuông là:<br>
+            $$ (6 + 4) \times 5 : 2 = 10 \times 5 : 2 = 50 : 2 = 25 \text{ (cm}^2) $$<br>
+            <strong>Đáp số:</strong> $25 \text{ cm}^2$.
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>

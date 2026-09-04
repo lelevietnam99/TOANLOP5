@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-width=1.0">
+    <title>Bài 39: Luyện tập về Chu vi hình tròn - Toán Lớp 5</title>
+    <!-- Cấu hình MathJax để render công thức toán học -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+      window.MathJax = {
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']],
+          displayMath: [['$$', '$$'], ['\\[', '\\]']]
+        }
+      };
+    </script>
+    <style>
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            background-color: #f4f9f4; 
+            color: #333; 
+            line-height: 1.6; 
+            padding: 20px; 
+            margin: 0;
+        }
+        .container { 
+            max-width: 800px; 
+            margin: 0 auto; 
+            background: #fff; 
+            padding: 30px; 
+            border-radius: 12px; 
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1); 
+        }
+        h1 { color: #2e7d32; text-align: center; border-bottom: 2px solid #a5d6a7; padding-bottom: 10px; }
+        h2 { color: #1565c0; margin-top: 30px; }
+        h3 { color: #d84315; }
+        .theory-box { 
+            background: #e3f2fd; 
+            padding: 15px; 
+            border-left: 5px solid #1976d2; 
+            border-radius: 5px; 
+            margin-bottom: 20px; 
+        }
+        .exercise-box { 
+            background: #fff3e0; 
+            padding: 15px; 
+            border-left: 5px solid #ff9800; 
+            border-radius: 5px; 
+            margin-bottom: 20px; 
+        }
+        .solution-box { 
+            background: #e8f5e9; 
+            padding: 15px; 
+            border-left: 5px solid #43a047; 
+            border-radius: 5px; 
+            margin-top: 30px; 
+        }
+        ul { margin-top: 5px; }
+        .math-step { margin-left: 20px; margin-bottom: 15px; }
+        .highlight { font-weight: bold; color: #d32f2f; }
+        .rule-box { background-color: #fff9c4; padding: 10px; border-radius: 5px; border-left: 4px solid #fbc02d; font-weight: bold; margin-top: 10px; }
+        .tip-box { background-color: #e8eaf6; padding: 10px; border-radius: 5px; border-left: 4px solid #3f51b5; font-style: italic; margin-top: 15px; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Bài 39: Luyện tập về Chu vi hình tròn</h1>
+    <p style="text-align: center; font-style: italic;">"Đi hết một vòng rộng lớn bên ngoài, ta lại quay về để tìm thấy cái Tâm tĩnh lặng ở bên trong. Giải bài toán ngược cũng chính là hành trình đi tìm về cội nguồn!"</p>
+
+    <h2>I. Bí kíp giải bài toán ngược</h2>
+    <div class="theory-box">
+        <p>Ở bài trước, ta lấy Đường kính nhân với $3,14$ để ra Chu vi. Bây giờ, nếu đề bài cho biết Chu vi ($C$) trước, bắt ta đi tìm Đường kính ($d$) hoặc Bán kính ($r$) thì làm thế nào?</p>
+        
+        <div class="rule-box">
+            <ul>
+                <li><strong>Muốn tìm đường kính ($d$):</strong> Ta lấy Chu vi chia cho $3,14$.<br>
+                Công thức: <strong>$d = C : 3,14$</strong></li>
+                <br>
+                <li><strong>Muốn tìm bán kính ($r$):</strong> Ta lấy Chu vi chia cho $3,14$ rồi chia tiếp cho $2$.<br>
+                Công thức: <strong>$r = C : 3,14 : 2$</strong></li>
+            </ul>
+        </div>
+        
+        <div class="tip-box">
+            <strong>Mẹo tính toán:</strong><br>
+            Chia cho một số thập phân như $3,14$ đôi khi sẽ làm các con hơi "ngợp". Đừng quên "bùa hộ mệnh" ở Bài 25 nhé: <strong>Hãy dịch chuyển dấu phẩy sang phải 2 bước</strong> ở cả số bị chia và số chia để làm mất dấu phẩy ở số $3,14$ (biến nó thành $314$) rồi mới chia bình thường!
+        </div>
+    </div>
+
+    <h2>II. Bài tập tự luyện</h2>
+    <div class="exercise-box">
+        <p><strong>Bài 1:</strong> Tìm đường kính ($d$) của hình tròn biết:</p>
+        <ul>
+            <li>a) Chu vi $C = 15,7 \text{ cm}$</li>
+            <li>b) Chu vi $C = 31,4 \text{ m}$</li>
+        </ul>
+        
+        <p><strong>Bài 2:</strong> Tìm bán kính ($r$) của hình tròn biết:</p>
+        <ul>
+            <li>Chu vi $C = 18,84 \text{ dm}$</li>
+        </ul>
+
+        <p><strong>Bài 3:</strong> Sư phụ lấy một sợi dây đo vòng quanh một cột gỗ lim lớn trong chánh điện thì thấy sợi dây dài đúng $0,942 \text{ m}$. Hỏi đường kính của cột gỗ lim đó là bao nhiêu mét?</p>
+
+        <p><strong>Bài 4: (Toán ứng dụng thực tế)</strong> Chú tiểu Hỉ giăng một vòng dây thừng dài $12,56 \text{ m}$ để làm ranh giới cho một bồn hoa súng hình tròn. Sư phụ muốn đặt một đài sen bằng đá ở đúng tâm bồn hoa. Hỏi từ mép dây thừng đi vào đến đài sen (tâm) dài bao nhiêu mét?</p>
+    </div>
+
+    <h2>III. Lời giải chi tiết (Làm nháp cẩn thận rồi mới xem đáp án nha!)</h2>
+    <div class="solution-box">
+        <p><strong>Bài 1: Tìm đường kính</strong></p>
+        <div class="math-step">
+            a) Đường kính của hình tròn là:<br>
+            $$ d = 15,7 : 3,14 = \mathbf{5 \text{ (cm)}} $$
+            <em>(Nhẩm: $1570 : 314 = 5$).</em>
+        </div>
+        <div class="math-step">
+            b) Đường kính của hình tròn là:<br>
+            $$ d = 31,4 : 3,14 = \mathbf{10 \text{ (m)}} $$
+            <em>(Nhẩm: $3140 : 314 = 10$).</em>
+        </div>
+
+        <p><strong>Bài 2: Tìm bán kính</strong></p>
+        <div class="math-step">
+            Bán kính của hình tròn là:<br>
+            $$ r = 18,84 : 3,14 : 2 = 6 : 2 = \mathbf{3 \text{ (dm)}} $$
+            <em>(Nhẩm: $18,84 : 3,14 = 6$, sau đó lấy $6$ chia $2$ bằng $3$).</em>
+        </div>
+
+        <p><strong>Bài 3: Bài toán đo cột gỗ chánh điện</strong></p>
+        <div class="math-step">
+            <em>Phân tích: Chiều dài sợi dây đo vòng quanh cây cột chính là chu vi của cây cột hình tròn.</em><br>
+            <em>Bài giải:</em><br>
+            Đường kính của cột gỗ lim là:<br>
+            $$ 0,942 : 3,14 = 0,3 \text{ (m)} $$<br>
+            <em>(Nhẩm: $0,942 : 3,14 \rightarrow 94,2 : 314 = 0,3$).</em><br>
+            <strong>Đáp số:</strong> $0,3 \text{ m}$.
+        </div>
+
+        <p><strong>Bài 4: Bài toán bồn hoa súng</strong></p>
+        <div class="math-step">
+            <em>Phân tích: Chiều dài vòng dây thừng ($12,56 \text{ m}$) chính là chu vi bồn hoa. Khoảng cách từ mép dây thừng (viền) vào đến đài sen (Tâm) chính là <strong>Bán kính</strong> của bồn hoa.</em><br>
+            <em>Bài giải:</em><br>
+            Khoảng cách từ mép dây thừng vào đến đài sen là:<br>
+            $$ 12,56 : 3,14 : 2 = 4 : 2 = 2 \text{ (m)} $$<br>
+            <strong>Đáp số:</strong> $2 \text{ m}$.
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
