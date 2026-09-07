@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-width=1.0">
+    <title>Bài 51: Diện tích hình lập phương - Toán Lớp 5</title>
+    <!-- Cấu hình MathJax để render công thức toán học -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+      window.MathJax = {
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']],
+          displayMath: [['$$', '$$'], ['\\[', '\\]']]
+        }
+      };
+    </script>
+    <style>
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            background-color: #f4f9f4; 
+            color: #333; 
+            line-height: 1.6; 
+            padding: 20px; 
+            margin: 0;
+        }
+        .container { 
+            max-width: 800px; 
+            margin: 0 auto; 
+            background: #fff; 
+            padding: 30px; 
+            border-radius: 12px; 
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1); 
+        }
+        h1 { color: #2e7d32; text-align: center; border-bottom: 2px solid #a5d6a7; padding-bottom: 10px; }
+        h2 { color: #1565c0; margin-top: 30px; }
+        h3 { color: #d84315; }
+        .theory-box { 
+            background: #e3f2fd; 
+            padding: 15px; 
+            border-left: 5px solid #1976d2; 
+            border-radius: 5px; 
+            margin-bottom: 20px; 
+        }
+        .exercise-box { 
+            background: #fff3e0; 
+            padding: 15px; 
+            border-left: 5px solid #ff9800; 
+            border-radius: 5px; 
+            margin-bottom: 20px; 
+        }
+        .solution-box { 
+            background: #e8f5e9; 
+            padding: 15px; 
+            border-left: 5px solid #43a047; 
+            border-radius: 5px; 
+            margin-top: 30px; 
+        }
+        ul { margin-top: 5px; }
+        .math-step { margin-left: 20px; margin-bottom: 15px; }
+        .highlight { font-weight: bold; color: #d32f2f; }
+        .rule-box { background-color: #fff9c4; padding: 10px; border-radius: 5px; border-left: 4px solid #fbc02d; font-weight: bold; margin-top: 10px; }
+        .tip-box { background-color: #e8eaf6; padding: 10px; border-radius: 5px; border-left: 4px solid #3f51b5; font-style: italic; margin-top: 15px; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Bài 51: Diện tích xung quanh và diện tích toàn phần<br>của hình lập phương</h1>
+    <p style="text-align: center; font-style: italic;">"Một khối trầm hương đúc vuông vức, sáu mặt đều bình đẳng như nhau. Người tu học cũng giữ tâm bình đẳng, không thiên vị, vững chãi trước mọi hoàn cảnh."</p>
+
+    <h2>I. Kiến thức cần nhớ</h2>
+    <div class="theory-box">
+        <p>Hình lập phương là một "người anh em song sinh" đặc biệt của hình hộp chữ nhật, nơi mà chiều dài, chiều rộng và chiều cao đều bằng nhau. Nhờ sự bình đẳng đó, <strong>cả $6$ mặt của hình lập phương đều là những hình vuông bằng hệt nhau!</strong></p>
+        
+        <h3>1. Diện tích xung quanh ($S_{xq}$)</h3>
+        <p>Vì xung quanh có $4$ mặt bên, và mỗi mặt đều là hình vuông, nên ta có:</p>
+        <div class="rule-box">
+            <strong>Quy tắc:</strong> Muốn tính diện tích xung quanh của hình lập phương, ta lấy <strong>diện tích một mặt</strong> nhân với <strong>$4$</strong>.<br>
+            <strong>Công thức:</strong> 
+            $$ S_{xq} = (a \times a) \times 4 $$
+            <em>(Trong đó: $a$ là độ dài cạnh).</em>
+        </div>
+
+        <h3>2. Diện tích toàn phần ($S_{tp}$)</h3>
+        <p>Vì toàn bộ hình lập phương có $6$ mặt bằng nhau, nên ta có:</p>
+        <div class="rule-box">
+            <strong>Quy tắc:</strong> Muốn tính diện tích toàn phần của hình lập phương, ta lấy <strong>diện tích một mặt</strong> nhân với <strong>$6$</strong>.<br>
+            <strong>Công thức:</strong> 
+            $$ S_{tp} = (a \times a) \times 6 $$
+        </div>
+        
+        <div class="tip-box">
+            <strong>Bí kíp để không nhầm lẫn:</strong> <br>
+            Cứ nhớ "xung quanh" là $4$ bức tường (nhân $4$), còn "toàn phần" là thêm cả sàn và trần nhà thành $6$ mặt (nhân $6$) nhé các con!
+        </div>
+    </div>
+
+    <h2>II. Bài tập tự luyện</h2>
+    <div class="exercise-box">
+        <p><strong>Bài 1: Khởi động</strong></p>
+        <p>Tính diện tích xung quanh và diện tích toàn phần của hình lập phương có cạnh là:</p>
+        <ul>
+            <li>a) $5 \text{ cm}$</li>
+            <li>b) $1,2 \text{ m}$</li>
+        </ul>
+        
+        <p><strong>Bài 2: Làm lồng đèn hoa sen (Cẩn thận số mặt)</strong></p>
+        <p>Chuẩn bị cho lễ Vu Lan, chú Hỉ làm một chiếc lồng đèn hình lập phương <strong>không có nắp</strong> (mặt trên để hở). Cạnh của chiếc lồng đèn dài $20 \text{ cm}$. Hỏi chú Hỉ cần dùng bao nhiêu xăng-ti-mét vuông giấy màu để dán chiếc lồng đèn đó?</p>
+
+        <p><strong>Bài 3: Đóng hòm công đức</strong></p>
+        <p>Các bác thợ mộc đóng một chiếc hòm công đức hình lập phương (có nắp đậy kín) bằng ván gỗ. Biết cạnh của chiếc hòm dài $0,5 \text{ m}$. Con hãy tính diện tích ván gỗ cần dùng để đóng chiếc hòm đó (không tính mép hàn ghép).</p>
+    </div>
+
+    <h2>III. Lời giải chi tiết</h2>
+    <div class="solution-box">
+        <p><strong>Bài 1: Tính diện tích cơ bản</strong></p>
+        <div class="math-step">
+            <strong>Câu a:</strong><br>
+            - Diện tích một mặt là: $5 \times 5 = 25 \text{ (cm}^2)$<br>
+            - Diện tích xung quanh là: $25 \times 4 = \mathbf{100 \text{ (cm}^2)}$<br>
+            - Diện tích toàn phần là: $25 \times 6 = \mathbf{150 \text{ (cm}^2)}$
+        </div>
+        <div class="math-step">
+            <strong>Câu b:</strong><br>
+            - Diện tích một mặt là: $1,2 \times 1,2 = 1,44 \text{ (m}^2)$<br>
+            - Diện tích xung quanh là: $1,44 \times 4 = \mathbf{5,76 \text{ (m}^2)}$<br>
+            - Diện tích toàn phần là: $1,44 \times 6 = \mathbf{8,64 \text{ (m}^2)}$
+        </div>
+
+        <p><strong>Bài 2: Bài toán lồng đèn hoa sen (Dạng khuyết mặt)</strong></p>
+        <div class="math-step">
+            <em>Phân tích: Lồng đèn hình lập phương "không có nắp" tức là chỉ có $5$ mặt ($4$ mặt xung quanh và $1$ mặt đáy dưới). Ta chỉ nhân với $5$ thôi nhé!</em><br>
+            <em>Bài giải:</em><br>
+            Diện tích một mặt của lồng đèn là:<br>
+            $$ 20 \times 20 = 400 \text{ (cm}^2) $$
+            Diện tích giấy màu cần dùng để dán lồng đèn là:<br>
+            $$ 400 \times 5 = 2000 \text{ (cm}^2) $$<br>
+            <strong>Đáp số:</strong> $2000 \text{ cm}^2$.
+        </div>
+
+        <p><strong>Bài 3: Bài toán hòm công đức</strong></p>
+        <div class="math-step">
+            <em>Phân tích: Hòm có nắp đậy kín nghĩa là đầy đủ $6$ mặt (Diện tích toàn phần).</em><br>
+            <em>Bài giải:</em><br>
+            Diện tích một mặt của chiếc hòm là:<br>
+            $$ 0,5 \times 0,5 = 0,25 \text{ (m}^2) $$
+            Diện tích ván gỗ cần dùng là:<br>
+            $$ 0,25 \times 6 = 1,5 \text{ (m}^2) $$<br>
+            <strong>Đáp số:</strong> $1,5 \text{ m}^2$.
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>

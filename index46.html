@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-width=1.0">
+    <title>Bài 46: Xăng-ti-mét khối. Đề-xi-mét khối - Toán Lớp 5</title>
+    <!-- Cấu hình MathJax để render công thức toán học -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+      window.MathJax = {
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']],
+          displayMath: [['$$', '$$'], ['\\[', '\\]']]
+        }
+      };
+    </script>
+    <style>
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            background-color: #f4f9f4; 
+            color: #333; 
+            line-height: 1.6; 
+            padding: 20px; 
+            margin: 0;
+        }
+        .container { 
+            max-width: 800px; 
+            margin: 0 auto; 
+            background: #fff; 
+            padding: 30px; 
+            border-radius: 12px; 
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1); 
+        }
+        h1 { color: #2e7d32; text-align: center; border-bottom: 2px solid #a5d6a7; padding-bottom: 10px; }
+        h2 { color: #1565c0; margin-top: 30px; }
+        h3 { color: #d84315; }
+        .theory-box { 
+            background: #e3f2fd; 
+            padding: 15px; 
+            border-left: 5px solid #1976d2; 
+            border-radius: 5px; 
+            margin-bottom: 20px; 
+        }
+        .exercise-box { 
+            background: #fff3e0; 
+            padding: 15px; 
+            border-left: 5px solid #ff9800; 
+            border-radius: 5px; 
+            margin-bottom: 20px; 
+        }
+        .solution-box { 
+            background: #e8f5e9; 
+            padding: 15px; 
+            border-left: 5px solid #43a047; 
+            border-radius: 5px; 
+            margin-top: 30px; 
+        }
+        ul { margin-top: 5px; }
+        .math-step { margin-left: 20px; margin-bottom: 15px; }
+        .highlight { font-weight: bold; color: #d32f2f; }
+        .rule-box { background-color: #fff9c4; padding: 10px; border-radius: 5px; border-left: 4px solid #fbc02d; font-weight: bold; margin-top: 10px; }
+        .tip-box { background-color: #e8eaf6; padding: 10px; border-radius: 5px; border-left: 4px solid #3f51b5; font-style: italic; margin-top: 15px; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Bài 46: Xăng-ti-mét khối. Đề-xi-mét khối</h1>
+    <p style="text-align: center; font-style: italic;">"Một hạt trầm hương nhỏ bé, ngàn hạt góp lại thành khối trầm thơm ngát. Không gian lớn luôn được tạo thành từ những khoảng không gian rất nhỏ đan kết vào nhau."</p>
+
+    <h2>I. Kiến thức cần nhớ</h2>
+    <div class="theory-box">
+        <p>Để đo thể tích (khoảng không gian) của một vật, người ta dùng các đơn vị đo thể tích. Hôm nay, chúng ta làm quen với hai người bạn nhỏ nhất:</p>
+        
+        <h3>1. Xăng-ti-mét khối ($\text{cm}^3$)</h3>
+        <ul>
+            <li>Xăng-ti-mét khối là thể tích của một hình lập phương có cạnh dài $1 \text{ cm}$ (nhỏ xíu như một hạt xúc xắc).</li>
+            <li>Ký hiệu: <strong>$\text{cm}^3$</strong> (Đọc là: xăng-ti-mét khối).</li>
+        </ul>
+
+        <h3>2. Đề-xi-mét khối ($\text{dm}^3$)</h3>
+        <ul>
+            <li>Đề-xi-mét khối là thể tích của một hình lập phương có cạnh dài $1 \text{ dm}$ (to cỡ một chiếc hộp đựng trà).</li>
+            <li>Ký hiệu: <strong>$\text{dm}^3$</strong> (Đọc là: đề-xi-mét khối).</li>
+        </ul>
+
+        <h3>3. Mối quan hệ giữa $\text{dm}^3$ và $\text{cm}^3$</h3>
+        <p>Một khối $\text{dm}^3$ rất to, nó có thể chứa được vô số khối $\text{cm}^3$ nhỏ bé bên trong. Cụ thể là bao nhiêu khối nhỉ?</p>
+        <div class="rule-box">
+            <strong>Ghi nhớ:</strong><br>
+            $$ 1 \text{ dm}^3 = 1000 \text{ cm}^3 $$
+            <em>(Giải thích: Vì $1 \text{ dm} = 10 \text{ cm}$, nên thể tích sẽ gấp $10 \times 10 \times 10 = 1000$ lần đấy các con ạ).</em>
+        </div>
+        
+        <div class="tip-box">
+            <strong>Mẹo đổi đơn vị:</strong><br>
+            - Đổi từ LỚN xuống BÉ ($\text{dm}^3 \rightarrow \text{cm}^3$): Ta <strong>nhân với $1000$</strong> (thêm $3$ chữ số $0$).<br>
+            - Đổi từ BÉ lên LỚN ($\text{cm}^3 \rightarrow \text{dm}^3$): Ta <strong>chia cho $1000$</strong> (bớt $3$ chữ số $0$).
+        </div>
+    </div>
+
+    <h2>II. Bài tập tự luyện</h2>
+    <div class="exercise-box">
+        <p><strong>Bài 1: Đọc và viết các số đo thể tích sau:</strong></p>
+        <ul>
+            <li>a) $125 \text{ cm}^3$ đọc là: .......................................</li>
+            <li>b) Hai nghìn không trăm mười tám đề-xi-mét khối viết là: .......................................</li>
+        </ul>
+        
+        <p><strong>Bài 2: Đổi các đơn vị đo thể tích sau (Nhớ quy tắc 1000 nhé):</strong></p>
+        <ul>
+            <li>a) $5 \text{ dm}^3 = \dots \text{ cm}^3$</li>
+            <li>b) $4,2 \text{ dm}^3 = \dots \text{ cm}^3$</li>
+            <li>c) $8000 \text{ cm}^3 = \dots \text{ dm}^3$</li>
+        </ul>
+
+        <p><strong>Bài 3: Bài toán mộc mạc</strong></p>
+        <p>Sư phụ đang điêu khắc những khối gỗ trầm hương hình lập phương nhỏ xíu, mỗi khối có thể tích đúng $1 \text{ cm}^3$. Sư phụ muốn xếp những khối trầm này vào đầy một chiếc hộp có thể tích $2,5 \text{ dm}^3$. Hỏi sư phụ cần dùng tất cả bao nhiêu khối trầm hương nhỏ đó?</p>
+    </div>
+
+    <h2>III. Lời giải chi tiết</h2>
+    <div class="solution-box">
+        <p><strong>Bài 1: Đọc và viết số đo</strong></p>
+        <div class="math-step">
+            a) $125 \text{ cm}^3$ đọc là: <strong>Một trăm hai mươi lăm xăng-ti-mét khối.</strong>
+        </div>
+        <div class="math-step">
+            b) Hai nghìn không trăm mười tám đề-xi-mét khối viết là: <strong>$2018 \text{ dm}^3$.</strong>
+        </div>
+
+        <p><strong>Bài 2: Chuyển đổi đơn vị</strong></p>
+        <div class="math-step">
+            a) $5 \text{ dm}^3 = 5 \times 1000 = \mathbf{5000 \text{ cm}^3}$
+        </div>
+        <div class="math-step">
+            b) $4,2 \text{ dm}^3 = 4,2 \times 1000 = \mathbf{4200 \text{ cm}^3}$ <em>(Dịch dấu phẩy sang phải 3 chữ số)</em>
+        </div>
+        <div class="math-step">
+            c) $8000 \text{ cm}^3 = 8000 : 1000 = \mathbf{8 \text{ dm}^3}$
+        </div>
+
+        <p><strong>Bài 3: Bài toán khối trầm hương</strong></p>
+        <div class="math-step">
+            <em>Phân tích: Số khối trầm hương $1 \text{ cm}^3$ cần dùng chính là thể tích của chiếc hộp tính theo đơn vị $\text{cm}^3$.</em><br>
+            <em>Bài giải:</em><br>
+            Đổi: $2,5 \text{ dm}^3 = 2500 \text{ cm}^3$.<br>
+            Vì mỗi khối trầm hương có thể tích $1 \text{ cm}^3$, nên để lấp đầy chiếc hộp $2500 \text{ cm}^3$, sư phụ cần dùng số khối trầm hương là:<br>
+            $$ 2500 : 1 = 2500 \text{ (khối)} $$<br>
+            <strong>Đáp số:</strong> $2500$ khối trầm hương.
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>

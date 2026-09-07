@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-width=1.0">
+    <title>Bài 52: Thể tích của hình hộp chữ nhật - Toán Lớp 5</title>
+    <!-- Cấu hình MathJax để render công thức toán học -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+      window.MathJax = {
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']],
+          displayMath: [['$$', '$$'], ['\\[', '\\]']]
+        }
+      };
+    </script>
+    <style>
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            background-color: #f4f9f4; 
+            color: #333; 
+            line-height: 1.6; 
+            padding: 20px; 
+            margin: 0;
+        }
+        .container { 
+            max-width: 800px; 
+            margin: 0 auto; 
+            background: #fff; 
+            padding: 30px; 
+            border-radius: 12px; 
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1); 
+        }
+        h1 { color: #2e7d32; text-align: center; border-bottom: 2px solid #a5d6a7; padding-bottom: 10px; }
+        h2 { color: #1565c0; margin-top: 30px; }
+        h3 { color: #d84315; }
+        .theory-box { 
+            background: #e3f2fd; 
+            padding: 15px; 
+            border-left: 5px solid #1976d2; 
+            border-radius: 5px; 
+            margin-bottom: 20px; 
+        }
+        .exercise-box { 
+            background: #fff3e0; 
+            padding: 15px; 
+            border-left: 5px solid #ff9800; 
+            border-radius: 5px; 
+            margin-bottom: 20px; 
+        }
+        .solution-box { 
+            background: #e8f5e9; 
+            padding: 15px; 
+            border-left: 5px solid #43a047; 
+            border-radius: 5px; 
+            margin-top: 30px; 
+        }
+        ul { margin-top: 5px; }
+        .math-step { margin-left: 20px; margin-bottom: 15px; }
+        .highlight { font-weight: bold; color: #d32f2f; }
+        .rule-box { background-color: #fff9c4; padding: 10px; border-radius: 5px; border-left: 4px solid #fbc02d; font-weight: bold; margin-top: 10px; }
+        .tip-box { background-color: #e8eaf6; padding: 10px; border-radius: 5px; border-left: 4px solid #3f51b5; font-style: italic; margin-top: 15px; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Bài 52: Thể tích của hình hộp chữ nhật</h1>
+    <p style="text-align: center; font-style: italic;">"Không gian bên trong một căn chánh điện dẫu rộng lớn đến đâu cũng được cấu thành từ ba chiều: dài, rộng và cao. Tâm người tu hành cũng vậy, cần có chiều sâu của từ bi, chiều rộng của bao dung và chiều cao của trí tuệ!"</p>
+
+    <h2>I. Kiến thức cần nhớ</h2>
+    <div class="theory-box">
+        <p>Để đo xem sức chứa (không gian bên trong) của một hình hộp chữ nhật lớn đến đâu, ta sẽ đi tìm <strong>Thể tích</strong> của nó.</p>
+        
+        <div class="rule-box">
+            <strong>Quy tắc:</strong> Muốn tính thể tích hình hộp chữ nhật, ta lấy <strong>chiều dài</strong> nhân với <strong>chiều rộng</strong> rồi nhân với <strong>chiều cao</strong> (cùng một đơn vị đo).<br><br>
+            <strong>Công thức:</strong> 
+            $$ V = a \times b \times c $$
+            <em>(Trong đó: $V$ là thể tích, $a$ là chiều dài, $b$ là chiều rộng, $c$ là chiều cao).</em>
+        </div>
+
+        <div class="tip-box">
+            <strong>Góc nhìn mở rộng:</strong> <br>
+            Vì <em>(chiều dài $\times$ chiều rộng)</em> chính là diện tích mặt đáy, nên đôi khi công thức thể tích còn được hiểu là: <br>
+            <strong>Thể tích = Diện tích mặt đáy $\times$ Chiều cao</strong>.
+        </div>
+    </div>
+
+    <h2>II. Bài tập tự luyện</h2>
+    <div class="exercise-box">
+        <p><strong>Bài 1: Tính toán cơ bản</strong></p>
+        <p>Tính thể tích của hình hộp chữ nhật có:</p>
+        <ul>
+            <li>a) Chiều dài $8 \text{ cm}$, chiều rộng $5 \text{ cm}$ và chiều cao $6 \text{ cm}$.</li>
+            <li>b) Chiều dài $2,5 \text{ m}$, chiều rộng $1,2 \text{ m}$ và chiều cao $0,8 \text{ m}$.</li>
+        </ul>
+        
+        <p><strong>Bài 2: Cạm bẫy đơn vị đo</strong></p>
+        <p>Sư phụ nhờ các bác thợ xây một bệ đá hình hộp chữ nhật để đặt tượng Quán Thế Âm. Bệ đá có chiều dài $2 \text{ m}$, chiều rộng $15 \text{ dm}$ và chiều cao $8 \text{ dm}$. Hỏi thể tích của bệ đá đó là bao nhiêu đề-xi-mét khối ($\text{dm}^3$)?</p>
+
+        <p><strong>Bài 3: Bài toán bể chứa nước sinh hoạt</strong></p>
+        <p>Nhà chùa vừa xây xong một bể nước mưa dưới lòng đất dạng hình hộp chữ nhật dài $3 \text{ m}$, rộng $2 \text{ m}$ và sâu (cao) $1,5 \text{ m}$. Biết cứ $1 \text{ dm}^3$ thể tích thì chứa được $1 \text{ lít}$ nước. Hỏi khi đầy, bể đó chứa được tất cả bao nhiêu lít nước?</p>
+    </div>
+
+    <h2>III. Lời giải chi tiết (Làm cẩn thận vào nháp rồi mới xem nhé!)</h2>
+    <div class="solution-box">
+        <p><strong>Bài 1: Tính thể tích trực tiếp</strong></p>
+        <div class="math-step">
+            <strong>Câu a:</strong><br>
+            Thể tích hình hộp chữ nhật là:<br>
+            $$ 8 \times 5 \times 6 = 40 \times 6 = \mathbf{240 \text{ (cm}^3)} $$
+        </div>
+        <div class="math-step">
+            <strong>Câu b:</strong><br>
+            Thể tích hình hộp chữ nhật là:<br>
+            $$ 2,5 \times 1,2 \times 0,8 = 3 \times 0,8 = \mathbf{2,4 \text{ (m}^3)} $$
+        </div>
+
+        <p><strong>Bài 2: Bài toán bệ đá (Đổi đơn vị)</strong></p>
+        <div class="math-step">
+            <em>Phân tích: Đề bài yêu cầu tính ra $\text{dm}^3$, nhưng chiều dài lại đang là mét. Ta phải đổi chiều dài về $\text{dm}$ trước khi nhân.</em><br>
+            <em>Bài giải:</em><br>
+            Đổi: $2 \text{ m} = 20 \text{ dm}$.<br>
+            Thể tích của bệ đá hình hộp chữ nhật là:<br>
+            $$ 20 \times 15 \times 8 = 300 \times 8 = 2400 \text{ (dm}^3) $$<br>
+            <strong>Đáp số:</strong> $2400 \text{ dm}^3$.
+        </div>
+
+        <p><strong>Bài 3: Bài toán bể nước sinh hoạt</strong></p>
+        <div class="math-step">
+            <em>Phân tích: Để biết được số lít nước, ta cần tính thể tích ra $\text{dm}^3$ (vì $1 \text{ dm}^3 = 1 \text{ lít}$). Ta có thể tính ra $\text{m}^3$ trước rồi đổi, hoặc đổi số đo ngay từ đầu đều được. Ở đây ta tính $\text{m}^3$ trước cho gọn.</em><br>
+            <em>Bài giải:</em><br>
+            Thể tích của bể nước là:<br>
+            $$ 3 \times 2 \times 1,5 = 6 \times 1,5 = 9 \text{ (m}^3) $$
+            Đổi: $9 \text{ m}^3 = 9000 \text{ dm}^3 = 9000 \text{ lít}$.<br>
+            Vậy khi đầy, bể chứa được $9000 \text{ lít}$ nước.<br>
+            <strong>Đáp số:</strong> $9000$ lít nước.
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>

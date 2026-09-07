@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-width=1.0">
+    <title>Bài 50: Diện tích xung quanh và toàn phần hình hộp chữ nhật - Toán Lớp 5</title>
+    <!-- Cấu hình MathJax để render công thức toán học -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+      window.MathJax = {
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']],
+          displayMath: [['$$', '$$'], ['\\[', '\\]']]
+        }
+      };
+    </script>
+    <style>
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            background-color: #f4f9f4; 
+            color: #333; 
+            line-height: 1.6; 
+            padding: 20px; 
+            margin: 0;
+        }
+        .container { 
+            max-width: 800px; 
+            margin: 0 auto; 
+            background: #fff; 
+            padding: 30px; 
+            border-radius: 12px; 
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1); 
+        }
+        h1 { color: #2e7d32; text-align: center; border-bottom: 2px solid #a5d6a7; padding-bottom: 10px; }
+        h2 { color: #1565c0; margin-top: 30px; }
+        h3 { color: #d84315; }
+        .theory-box { 
+            background: #e3f2fd; 
+            padding: 15px; 
+            border-left: 5px solid #1976d2; 
+            border-radius: 5px; 
+            margin-bottom: 20px; 
+        }
+        .exercise-box { 
+            background: #fff3e0; 
+            padding: 15px; 
+            border-left: 5px solid #ff9800; 
+            border-radius: 5px; 
+            margin-bottom: 20px; 
+        }
+        .solution-box { 
+            background: #e8f5e9; 
+            padding: 15px; 
+            border-left: 5px solid #43a047; 
+            border-radius: 5px; 
+            margin-top: 30px; 
+        }
+        ul { margin-top: 5px; }
+        .math-step { margin-left: 20px; margin-bottom: 15px; }
+        .highlight { font-weight: bold; color: #d32f2f; }
+        .rule-box { background-color: #fff9c4; padding: 10px; border-radius: 5px; border-left: 4px solid #fbc02d; font-weight: bold; margin-top: 10px; }
+        .tip-box { background-color: #e8eaf6; padding: 10px; border-radius: 5px; border-left: 4px solid #3f51b5; font-style: italic; margin-top: 15px; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Bài 50: Diện tích xung quanh và diện tích toàn phần<br>của hình hộp chữ nhật</h1>
+    <p style="text-align: center; font-style: italic;">"Sơn lại $4$ bức tường của chánh điện cho mới mẻ, hay bọc một lớp giấy lụa bảo vệ trọn vẹn $6$ mặt của hộp kinh thư, đều cần đến sự tính toán cẩn thận và tỉ mỉ!"</p>
+
+    <h2>I. Kiến thức cần nhớ</h2>
+    <div class="theory-box">
+        <h3>1. Diện tích xung quanh ($S_{xq}$)</h3>
+        <p>Diện tích xung quanh của hình hộp chữ nhật là tổng diện tích của <strong>$4$ mặt bên</strong> (như $4$ bức tường của một căn phòng, không tính trần và nền nhà).</p>
+        
+        <div class="rule-box">
+            <strong>Quy tắc:</strong> Muốn tính diện tích xung quanh, ta lấy <strong>chu vi mặt đáy</strong> nhân với <strong>chiều cao</strong> (cùng một đơn vị đo).<br>
+            <strong>Công thức:</strong> 
+            $$ S_{xq} = (a + b) \times 2 \times c $$
+            <em>(Trong đó: $a$ là chiều dài, $b$ là chiều rộng, $c$ là chiều cao).</em>
+        </div>
+
+        <h3>2. Diện tích toàn phần ($S_{tp}$)</h3>
+        <p>Diện tích toàn phần là tổng diện tích của cả <strong>$6$ mặt</strong> (bao gồm $4$ mặt xung quanh và $2$ mặt đáy).</p>
+        
+        <div class="rule-box">
+            <strong>Quy tắc:</strong> Muốn tính diện tích toàn phần, ta lấy <strong>diện tích xung quanh</strong> cộng với <strong>diện tích hai mặt đáy</strong>.<br>
+            <strong>Công thức:</strong> 
+            $$ S_{tp} = S_{xq} + (a \times b \times 2) $$
+        </div>
+        
+        <div class="tip-box">
+            <strong>Ghi nhớ bước làm:</strong> <br>
+            Luôn luôn tính <strong>Diện tích xung quanh</strong> trước, sau đó tính <strong>Diện tích 1 mặt đáy ($a \times b$)</strong>, rồi cuối cùng mới gộp lại để tìm <strong>Diện tích toàn phần</strong> nhé!
+        </div>
+    </div>
+
+    <h2>II. Bài tập tự luyện</h2>
+    <div class="exercise-box">
+        <p><strong>Bài 1: Tính toán cơ bản</strong></p>
+        <p>Tính diện tích xung quanh và diện tích toàn phần của hình hộp chữ nhật có:</p>
+        <ul>
+            <li>a) Chiều dài $8 \text{ cm}$, chiều rộng $5 \text{ cm}$ và chiều cao $4 \text{ cm}$.</li>
+            <li>b) Chiều dài $1,2 \text{ m}$, chiều rộng $0,8 \text{ m}$ và chiều cao $0,5 \text{ m}$.</li>
+        </ul>
+        
+        <p><strong>Bài 2: Bài toán dán giấy hộp oản</strong></p>
+        <p>Chú tiểu Hỉ dùng giấy lụa vàng để dán <strong>xung quanh</strong> (không dán mặt trên và mặt dưới) một chiếc hộp xốp đựng oản cúng Phật hình hộp chữ nhật. Hộp có chiều dài $25 \text{ cm}$, chiều rộng $15 \text{ cm}$ và chiều cao $10 \text{ cm}$. Hỏi chú Hỉ cần dùng bao nhiêu xăng-ti-mét vuông giấy lụa vàng?</p>
+
+        <p><strong>Bài 3: Bài toán sơn hòm gỗ (Sơn cả 6 mặt)</strong></p>
+        <p>Sư phụ muốn sơn một lớp sơn vec-ni bảo vệ bên ngoài chiếc hòm gỗ đựng y phục hình hộp chữ nhật. Hòm có chiều dài $2 \text{ m}$, chiều rộng $1,5 \text{ m}$ và chiều cao $1 \text{ m}$. Hỏi sư phụ phải sơn tất cả bao nhiêu mét vuông bề mặt?</p>
+    </div>
+
+    <h2>III. Lời giải chi tiết (Làm nháp cẩn thận rồi mới xem nhé!)</h2>
+    <div class="solution-box">
+        <p><strong>Bài 1: Tính diện tích hình hộp chữ nhật</strong></p>
+        <div class="math-step">
+            <strong>Câu a:</strong><br>
+            - Diện tích xung quanh là:<br>
+            $$ (8 + 5) \times 2 \times 4 = 13 \times 2 \times 4 = \mathbf{104 \text{ (cm}^2)} $$
+            - Diện tích một mặt đáy là: $8 \times 5 = 40 \text{ (cm}^2)$<br>
+            - Diện tích toàn phần là:<br>
+            $$ 104 + (40 \times 2) = 104 + 80 = \mathbf{184 \text{ (cm}^2)} $$
+        </div>
+        <div class="math-step">
+            <strong>Câu b:</strong><br>
+            - Diện tích xung quanh là:<br>
+            $$ (1,2 + 0,8) \times 2 \times 0,5 = 2 \times 2 \times 0,5 = \mathbf{2 \text{ (m}^2)} $$
+            - Diện tích một mặt đáy là: $1,2 \times 0,8 = 0,96 \text{ (m}^2)$<br>
+            - Diện tích toàn phần là:<br>
+            $$ 2 + (0,96 \times 2) = 2 + 1,92 = \mathbf{3,92 \text{ (m}^2)} $$
+        </div>
+
+        <p><strong>Bài 2: Bài toán dán hộp oản</strong></p>
+        <div class="math-step">
+            <em>Phân tích: Vì chỉ dán "xung quanh" (không dán hai mặt đáy) nên ta chỉ cần tính Diện tích xung quanh của chiếc hộp.</em><br>
+            <em>Bài giải:</em><br>
+            Diện tích giấy lụa vàng chú Hỉ cần dùng là:<br>
+            $$ (25 + 15) \times 2 \times 10 = 40 \times 2 \times 10 = 800 \text{ (cm}^2) $$<br>
+            <strong>Đáp số:</strong> $800 \text{ cm}^2$.
+        </div>
+
+        <p><strong>Bài 3: Bài toán sơn hòm gỗ</strong></p>
+        <div class="math-step">
+            <em>Phân tích: Sơn bảo vệ bên ngoài chiếc hòm gỗ (cả nắp và đáy) nghĩa là ta phải tính Diện tích toàn phần của chiếc hòm.</em><br>
+            <em>Bài giải:</em><br>
+            Diện tích xung quanh của hòm gỗ là:<br>
+            $$ (2 + 1,5) \times 2 \times 1 = 7 \text{ (m}^2) $$
+            Diện tích mặt đáy của hòm gỗ là:<br>
+            $$ 2 \times 1,5 = 3 \text{ (m}^2) $$
+            Diện tích bề mặt sư phụ phải sơn (Diện tích toàn phần) là:<br>
+            $$ 7 + (3 \times 2) = 13 \text{ (m}^2) $$<br>
+            <strong>Đáp số:</strong> $13 \text{ m}^2$.
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>

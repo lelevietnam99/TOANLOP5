@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-width=1.0">
+    <title>Bài 47: Mét khối - Toán Lớp 5</title>
+    <!-- Cấu hình MathJax để render công thức toán học -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+      window.MathJax = {
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']],
+          displayMath: [['$$', '$$'], ['\\[', '\\]']]
+        }
+      };
+    </script>
+    <style>
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            background-color: #f4f9f4; 
+            color: #333; 
+            line-height: 1.6; 
+            padding: 20px; 
+            margin: 0;
+        }
+        .container { 
+            max-width: 800px; 
+            margin: 0 auto; 
+            background: #fff; 
+            padding: 30px; 
+            border-radius: 12px; 
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1); 
+        }
+        h1 { color: #2e7d32; text-align: center; border-bottom: 2px solid #a5d6a7; padding-bottom: 10px; }
+        h2 { color: #1565c0; margin-top: 30px; }
+        h3 { color: #d84315; }
+        .theory-box { 
+            background: #e3f2fd; 
+            padding: 15px; 
+            border-left: 5px solid #1976d2; 
+            border-radius: 5px; 
+            margin-bottom: 20px; 
+        }
+        .exercise-box { 
+            background: #fff3e0; 
+            padding: 15px; 
+            border-left: 5px solid #ff9800; 
+            border-radius: 5px; 
+            margin-bottom: 20px; 
+        }
+        .solution-box { 
+            background: #e8f5e9; 
+            padding: 15px; 
+            border-left: 5px solid #43a047; 
+            border-radius: 5px; 
+            margin-top: 30px; 
+        }
+        ul { margin-top: 5px; }
+        .math-step { margin-left: 20px; margin-bottom: 15px; }
+        .highlight { font-weight: bold; color: #d32f2f; }
+        .rule-box { background-color: #fff9c4; padding: 10px; border-radius: 5px; border-left: 4px solid #fbc02d; font-weight: bold; margin-top: 10px; }
+        .tip-box { background-color: #e8eaf6; padding: 10px; border-radius: 5px; border-left: 4px solid #3f51b5; font-style: italic; margin-top: 15px; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Bài 47: Mét khối</h1>
+    <p style="text-align: center; font-style: italic;">"Từng giọt nước nhỏ gom lại sẽ đầy lu. Một mét khối nước cũng được tích tụ từ hàng triệu giọt nước nhỏ bé, giống như phước báu được vun bồi từ những thiện nguyện mỗi ngày!"</p>
+
+    <h2>I. Kiến thức cần nhớ</h2>
+    <div class="theory-box">
+        <p>Ở bài trước, ta đã học về $\text{cm}^3$ (rất nhỏ) và $\text{dm}^3$ (vừa vừa). Nhưng để đo thể tích của những thứ to lớn như một bể chứa nước mưa của chùa, hay một căn phòng, người ta phải dùng đến một đơn vị lớn hơn: <strong>Mét khối</strong>.</p>
+        
+        <h3>1. Mét khối là gì?</h3>
+        <ul>
+            <li>Mét khối là thể tích của một hình lập phương có cạnh dài $1 \text{ m}$ (To bằng khoảng một cái thùng xốp lớn).</li>
+            <li>Ký hiệu: <strong>$\text{m}^3$</strong> (Đọc là: mét khối).</li>
+        </ul>
+
+        <h3>2. Mối quan hệ giữa $\text{m}^3$, $\text{dm}^3$ và $\text{cm}^3$</h3>
+        <p>Các đơn vị đo thể tích liền kề nhau sẽ gấp kém nhau <strong>$1000$ lần</strong>. Vậy ta có bảng quy đổi kỳ diệu sau:</p>
+        
+        <div class="rule-box">
+            $$ 1 \text{ m}^3 = 1000 \text{ dm}^3 $$
+            $$ 1 \text{ m}^3 = 1 \ 000 \ 000 \text{ cm}^3 $$
+        </div>
+        
+        <div class="tip-box">
+            <strong>Bí kíp chuyển đổi siêu tốc:</strong><br>
+            - Đổi từ $\text{m}^3$ sang $\text{dm}^3$: Nhân với $1000$ (thêm $3$ số $0$).<br>
+            - Đổi từ $\text{m}^3$ sang $\text{cm}^3$: Nhân với $1 \ 000 \ 000$ (thêm $6$ số $0$).<br>
+            - Nhớ dịch chuyển dấu phẩy sang phải nếu có số thập phân nhé!
+        </div>
+    </div>
+
+    <h2>II. Bài tập tự luyện</h2>
+    <div class="exercise-box">
+        <p><strong>Bài 1: Đọc và viết các số đo thể tích sau:</strong></p>
+        <ul>
+            <li>a) $15 \text{ m}^3$ đọc là: .......................................</li>
+            <li>b) Hai trăm linh năm phẩy tư mét khối viết là: .......................................</li>
+        </ul>
+        
+        <p><strong>Bài 2: Đổi các đơn vị đo thể tích sau (Áp dụng bí kíp nhân với 1000):</strong></p>
+        <ul>
+            <li>a) $3 \text{ m}^3 = \dots \text{ dm}^3$</li>
+            <li>b) $0,45 \text{ m}^3 = \dots \text{ dm}^3$</li>
+            <li>c) $\frac{1}{2} \text{ m}^3 = \dots \text{ dm}^3$</li>
+            <li>d) $5 \text{ m}^3 = \dots \text{ cm}^3$</li>
+        </ul>
+
+        <p><strong>Bài 3: Bài toán bể nước sinh hoạt</strong></p>
+        <p>Để chuẩn bị cho khóa tu mùa hè với rất đông thiện nam tín nữ, sư phụ cho xây một bể chứa nước mưa lớn. Bể nước có thể tích là $4,5 \text{ m}^3$. Biết rằng cứ $1 \text{ dm}^3$ thì tương đương với $1 \text{ lít}$ nước. Hỏi khi đầy, bể chứa được bao nhiêu lít nước?</p>
+    </div>
+
+    <h2>III. Lời giải chi tiết (Làm nháp xong mới xem nhé)</h2>
+    <div class="solution-box">
+        <p><strong>Bài 1: Đọc và viết số đo</strong></p>
+        <div class="math-step">
+            a) $15 \text{ m}^3$ đọc là: <strong>Mười lăm mét khối.</strong>
+        </div>
+        <div class="math-step">
+            b) Hai trăm linh năm phẩy tư mét khối viết là: <strong>$205,4 \text{ m}^3$.</strong>
+        </div>
+
+        <p><strong>Bài 2: Chuyển đổi đơn vị</strong></p>
+        <div class="math-step">
+            a) $3 \text{ m}^3 = 3 \times 1000 = \mathbf{3000 \text{ dm}^3}$
+        </div>
+        <div class="math-step">
+            b) $0,45 \text{ m}^3 = 0,45 \times 1000 = \mathbf{450 \text{ dm}^3}$ <em>(Dịch dấu phẩy sang phải 3 chữ số)</em>
+        </div>
+        <div class="math-step">
+            c) $\frac{1}{2} \text{ m}^3 = \frac{1}{2} \times 1000 = \mathbf{500 \text{ dm}^3}$ <em>(Nhẩm $1000$ chia $2$ bằng $500$)</em>
+        </div>
+        <div class="math-step">
+            d) $5 \text{ m}^3 = 5 \times 1000000 = \mathbf{5000000 \text{ cm}^3}$
+        </div>
+
+        <p><strong>Bài 3: Bài toán bể nước mưa</strong></p>
+        <div class="math-step">
+            <em>Phân tích: Đề cho biết $1 \text{ dm}^3 = 1 \text{ lít}$. Vậy muốn tìm số lít nước, ta chỉ cần đổi từ $\text{m}^3$ sang $\text{dm}^3$ là xong!</em><br>
+            <em>Bài giải:</em><br>
+            Ta có: $4,5 \text{ m}^3 = 4500 \text{ dm}^3$.<br>
+            Vì $1 \text{ dm}^3 = 1 \text{ lít}$ nước, nên $4500 \text{ dm}^3$ bằng $4500 \text{ lít}$ nước.<br>
+            Vậy bể chứa được số lít nước là: $4500 \text{ lít}$.<br>
+            <strong>Đáp số:</strong> $4500$ lít nước.
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>

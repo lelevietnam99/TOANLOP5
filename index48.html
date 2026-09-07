@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-width=1.0">
+    <title>Bài 48: Luyện tập chung về Thể tích - Toán Lớp 5</title>
+    <!-- Cấu hình MathJax để render công thức toán học -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+      window.MathJax = {
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']],
+          displayMath: [['$$', '$$'], ['\\[', '\\]']]
+        }
+      };
+    </script>
+    <style>
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            background-color: #f4f9f4; 
+            color: #333; 
+            line-height: 1.6; 
+            padding: 20px; 
+            margin: 0;
+        }
+        .container { 
+            max-width: 800px; 
+            margin: 0 auto; 
+            background: #fff; 
+            padding: 30px; 
+            border-radius: 12px; 
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1); 
+        }
+        h1 { color: #2e7d32; text-align: center; border-bottom: 2px solid #a5d6a7; padding-bottom: 10px; }
+        h2 { color: #1565c0; margin-top: 30px; }
+        h3 { color: #d84315; }
+        .theory-box { 
+            background: #e3f2fd; 
+            padding: 15px; 
+            border-left: 5px solid #1976d2; 
+            border-radius: 5px; 
+            margin-bottom: 20px; 
+        }
+        .exercise-box { 
+            background: #fff3e0; 
+            padding: 15px; 
+            border-left: 5px solid #ff9800; 
+            border-radius: 5px; 
+            margin-bottom: 20px; 
+        }
+        .solution-box { 
+            background: #e8f5e9; 
+            padding: 15px; 
+            border-left: 5px solid #43a047; 
+            border-radius: 5px; 
+            margin-top: 30px; 
+        }
+        ul { margin-top: 5px; }
+        .math-step { margin-left: 20px; margin-bottom: 15px; }
+        .highlight { font-weight: bold; color: #d32f2f; }
+        .rule-box { background-color: #fff9c4; padding: 10px; border-radius: 5px; border-left: 4px solid #fbc02d; font-weight: bold; margin-top: 10px; }
+        .tip-box { background-color: #e8eaf6; padding: 10px; border-radius: 5px; border-left: 4px solid #3f51b5; font-style: italic; margin-top: 15px; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Bài 48: Luyện tập chung</h1>
+    <p style="text-align: center; font-style: italic;">"Việc tu học cũng như dòng nước chảy liên tục không ngừng. Hôm nay ta cùng nhau nhìn lại những bài học về thể tích để kiến thức thêm sâu sắc và vững vàng nhé!"</p>
+
+    <h2>I. Bảng vàng ghi nhớ</h2>
+    <div class="theory-box">
+        <p>Để giải quyết các bài toán về thể tích, các con chỉ cần thuộc lòng mối quan hệ kỳ diệu của ba đơn vị này:</p>
+        
+        <div class="rule-box">
+            <p style="text-align: center; font-size: 18px;">
+                <strong>$\text{m}^3 \longleftrightarrow \text{dm}^3 \longleftrightarrow \text{cm}^3$</strong>
+            </p>
+            <ul>
+                <li>Mỗi đơn vị đo thể tích liền kề nhau sẽ <strong>gấp hoặc kém nhau $1000$ lần</strong>.</li>
+                <li>Đổi từ lớn xuống bé: <strong>Nhân $1000$</strong> (dịch phẩy sang phải 3 chữ số).</li>
+                <li>Đổi từ bé lên lớn: <strong>Chia $1000$</strong> (dịch phẩy sang trái 3 chữ số).</li>
+            </ul>
+        </div>
+        
+        <div class="tip-box">
+            <strong>Chú ý đặc biệt:</strong> Đừng quên $1 \text{ dm}^3 = 1 \text{ lít}$ nước nhé! Khi đề bài nhắc đến lít nước, con hãy lập tức đổi mọi thứ về $\text{dm}^3$.
+        </div>
+    </div>
+
+    <h2>II. Bài tập tự luyện</h2>
+    <div class="exercise-box">
+        <p><strong>Bài 1: Đổi các số đo sau:</strong></p>
+        <ul>
+            <li>a) $2,5 \text{ m}^3 = \dots \text{ dm}^3$</li>
+            <li>b) $4000 \text{ cm}^3 = \dots \text{ dm}^3$</li>
+            <li>c) $1,05 \text{ dm}^3 = \dots \text{ cm}^3$</li>
+            <li>d) $\frac{3}{4} \text{ m}^3 = \dots \text{ dm}^3$</li>
+        </ul>
+        
+        <p><strong>Bài 2: Điền dấu ($>, <, =$) thích hợp vào chỗ chấm:</strong></p>
+        <ul>
+            <li>a) $5 \text{ m}^3 \dots 500 \text{ dm}^3$</li>
+            <li>b) $2,4 \text{ dm}^3 \dots 2400 \text{ cm}^3$</li>
+        </ul>
+
+        <p><strong>Bài 3: Bài toán tưới rau</strong></p>
+        <p>Sư phụ có một bồn chứa nước lớn đặt sau vườn, sức chứa tối đa của bồn là $1,5 \text{ m}^3$. Sáng nay bồn đang chứa đầy nước, chú tiểu Hỉ đã dùng vòi bơm lấy ra $400 \text{ lít}$ nước để tưới rau. Hỏi trong bồn hiện còn lại bao nhiêu lít nước?</p>
+
+        <p><strong>Bài 4: Bài toán bệ gỗ</strong></p>
+        <p>Để dựng một bệ gỗ kê tượng Phật trong chánh điện, các bác thợ mộc cần tổng cộng $2,4 \text{ m}^3$ gỗ. Biết mỗi khối gỗ (súc gỗ) mua về có thể tích là $120 \text{ dm}^3$. Hỏi nhà chùa cần mua bao nhiêu khối gỗ như thế để đủ làm bệ tượng?</p>
+    </div>
+
+    <h2>III. Lời giải chi tiết (Nhẩm tính cẩn thận rồi mới dò đáp án nhé)</h2>
+    <div class="solution-box">
+        <p><strong>Bài 1: Luyện tập chuyển đổi</strong></p>
+        <div class="math-step">
+            a) $2,5 \text{ m}^3 = 2,5 \times 1000 = \mathbf{2500 \text{ dm}^3}$
+        </div>
+        <div class="math-step">
+            b) $4000 \text{ cm}^3 = 4000 : 1000 = \mathbf{4 \text{ dm}^3}$
+        </div>
+        <div class="math-step">
+            c) $1,05 \text{ dm}^3 = 1,05 \times 1000 = \mathbf{1050 \text{ cm}^3}$
+        </div>
+        <div class="math-step">
+            d) $\frac{3}{4} \text{ m}^3 = \frac{3}{4} \times 1000 = 3000 : 4 = \mathbf{750 \text{ dm}^3}$
+        </div>
+
+        <p><strong>Bài 2: So sánh số đo</strong></p>
+        <div class="math-step">
+            a) Ta đổi $5 \text{ m}^3 = 5000 \text{ dm}^3$. Vì $5000 > 500$ nên: <strong>$5 \text{ m}^3 > 500 \text{ dm}^3$</strong>.
+        </div>
+        <div class="math-step">
+            b) Ta đổi $2,4 \text{ dm}^3 = 2400 \text{ cm}^3$. Vì $2400 = 2400$ nên: <strong>$2,4 \text{ dm}^3 = 2400 \text{ cm}^3$</strong>.
+        </div>
+
+        <p><strong>Bài 3: Bài toán tưới rau</strong></p>
+        <div class="math-step">
+            <em>Phân tích: Đề hỏi "lít nước", nên ta phải đổi $\text{m}^3$ ra $\text{dm}^3$.</em><br>
+            <em>Bài giải:</em><br>
+            Đổi: $1,5 \text{ m}^3 = 1500 \text{ dm}^3 = 1500 \text{ lít}$.<br>
+            Số lít nước còn lại trong bồn là:<br>
+            $$ 1500 - 400 = 1100 \text{ (lít)} $$<br>
+            <strong>Đáp số:</strong> $1100$ lít nước.
+        </div>
+
+        <p><strong>Bài 4: Bài toán bệ gỗ</strong></p>
+        <div class="math-step">
+            <em>Phân tích: Tổng số gỗ là $\text{m}^3$, nhưng mỗi khối gỗ lẻ lại là $\text{dm}^3$. Ta phải đưa về cùng một đơn vị rồi mới làm phép chia.</em><br>
+            <em>Bài giải:</em><br>
+            Đổi: $2,4 \text{ m}^3 = 2400 \text{ dm}^3$.<br>
+            Số khối gỗ nhà chùa cần mua là:<br>
+            $$ 2400 : 120 = 20 \text{ (khối)} $$<br>
+            <strong>Đáp số:</strong> $20$ khối gỗ.
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
